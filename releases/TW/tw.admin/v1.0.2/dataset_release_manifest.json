@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "tw.admin",
+  "country_iso": "TW",
+  "country_name": "Taiwan",
+  "dataset_version": "v1.0.2",
+  "engine_commit": "61b39d986043e34e5fa8a7e2b759161a5bd5d208",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/taiwan",
+    "replication_timestamp_utc": "2025-10-19T20:21:00Z",
+    "file_sha256": "6b899702570a6554c5e2bcdd30bd569c5685943acea10c054eed34843e3c215a"
+  },
+  "runtime_compat": {
+    "min": "0.1.0",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bbd03816fd09dd2c74e1dc5a6af9f99166b200ea38ba5880a6d22296b81a94b6",
+        "size": 1840132
+      },
+      "geometry_meta.json": {
+        "sha256": "b6adf1206bcff0ba7304b6e2cf9febeced6d9948ef23458ac3fc3e87ad0d1543",
+        "size": 88454
+      },
+      "hierarchy.json": {
+        "sha256": "151430782adfb9928fb331250365ba669d02c7dab1242f0ed097ad9d869ef50f",
+        "size": 915070
+      },
+      "runtime_policy.json": {
+        "sha256": "596909fb4a364b29c15d318176d27e5d7d03fc3e8018a823eeb09fff1f87cec4",
+        "size": 837
+      }
+    }
+  },
+  "generated_at": "2026-02-26T14:53:23Z"
+}

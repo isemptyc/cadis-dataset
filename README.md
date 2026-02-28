@@ -11,6 +11,7 @@ It serves as the public distribution surface for released datasets only.
 
 This repository contains release artifacts, including:
 
+- `releases/dataset_manifest.json` (repository-level dataset index)
 - `dataset_release_manifest.json`
 - `runtime_policy.json`
 - geometry and metadata files
@@ -35,6 +36,7 @@ It does **not** contain:
 ```text
 cadis-dataset/
 └── releases/
+    ├── dataset_manifest.json
     └── <ISO2>/
         └── <dataset_id>/
             └── <version>/
@@ -51,8 +53,13 @@ cadis-dataset/
 
 Release manifests use:
 
-- `profile = "cadis_dataset_release"`
-- `manifest_version = "1.0" | "1.1"`
+- `profile = "cadis.dataset.release"`
+- `schema_version = 2`
+
+Dataset index manifest uses:
+
+- `path = "releases/dataset_manifest.json"`
+- `schema_version = 1`
 
 ## Licensing and Attribution
 

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-02-26T14:53:26Z",
+  "generated_at": "2026-02-28T14:01:51Z",
   "countries": {
     "TW": {
       "tw.admin": {
-        "latest": "v1.0.2",
-        "manifest": "releases/TW/tw.admin/v1.0.2/dataset_release_manifest.json"
+        "latest": "v1.0.3",
+        "manifest": "releases/TW/tw.admin/v1.0.3/dataset_release_manifest.json"
       }
     }
   }

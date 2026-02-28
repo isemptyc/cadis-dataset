@@ -12,11 +12,9 @@ It serves as the public distribution surface for released datasets only.
 This repository contains release artifacts, including:
 
 - `releases/dataset_manifest.json` (repository-level dataset index)
-- `dataset_release_manifest.json`
-- `runtime_policy.json`
-- geometry and metadata files
-- policy-declared structural layers (e.g. `hierarchy.json`, `repair.json`)
-- optional overlay files declared by policy
+- dataset-level `DATASET_EVALUATION.md` (evaluation + reproducibility report)
+- versioned `dataset_release_manifest.json` and `dataset_release_manifest.sha256`
+- versioned `dataset_package.tar.gz` and `dataset_package.tar.gz.sha256`
 
 It does **not** contain:
 
@@ -30,6 +28,7 @@ It does **not** contain:
 2. Existing versions are never modified in place.
 3. Any dataset change must be published as a new version.
 4. Cadis runtime treats this repository as release truth for integrity and policy-layer validation.
+5. Dataset-level evaluation reports are released with datasets and document structural integrity, boundary behavior, and reproducibility metadata.
 
 ## Layout
 
@@ -39,14 +38,12 @@ cadis-dataset/
     ├── dataset_manifest.json
     └── <ISO2>/
         └── <dataset_id>/
+            ├── DATASET_EVALUATION.md
             └── <version>/
                 ├── dataset_release_manifest.json
-                ├── runtime_policy.json
-                ├── geometry.ffsf
-                ├── geometry_meta.json
-                ├── hierarchy.json         (if required)
-                ├── repair.json            (if required)
-                └── <optional overlays>
+                ├── dataset_release_manifest.sha256
+                ├── dataset_package.tar.gz
+                └── dataset_package.tar.gz.sha256
 ```
 
 ## Manifest Profile

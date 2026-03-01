@@ -200,7 +200,61 @@ Hit distribution reflects uniform land-area sampling.
 
 ---
 
-# 10. Boundary Isolation Validation
+# 11. OSM Semantic Interpretation (Cadis Perspective)
+
+Taiwan administrative polygons in OSM are generally land-aligned and do not significantly extend into maritime areas.
+
+However, structural incompleteness is observed in specific level-4 units.
+
+## 11.1 Polygon Evidence Incompleteness (Example: 高雄市)
+
+Under OSM-only evaluation:
+
+* Certain points within the geographic extent of 高雄市 failed to produce complete structural shapes.
+* These failures were not due to geometry errors.
+* They were caused by missing or incomplete parent linkage in the administrative tree.
+
+Specifically:
+
+* Polygon evidence existed.
+* But hierarchical completeness (parent chain integrity) was not always satisfied.
+* As a result, OSM-only mode produced partial structural outcomes.
+
+Cadis hierarchy supplementation layer deterministically reconstructs the required parent linkage chain.
+
+This restores structural completeness without altering polygon geometry.
+
+## 11.2 Structural Interpretation
+
+For Taiwan:
+
+* Administrative polygons are mostly land-constrained.
+* Maritime extension is minimal compared to Japan.
+* Offshore classification is more aligned with land-mask expectations.
+
+Unlike Japan, Taiwan does not demonstrate systematic maritime extension behavior in level-4 polygons.
+
+Instead, the primary structural gap is parent-link incompleteness.
+
+## 11.3 Cadis Policy Role
+
+Cadis does not modify geometry.
+
+The hierarchy layer:
+
+* Does not fabricate polygons.
+* Does not interpolate boundaries.
+* Only restores deterministic parent linkage consistency.
+
+Therefore:
+
+Observed OSM-only failures in Taiwan reflect structural linkage incompleteness, not geometric invalidity.
+
+Cadis policy enforces structural determinism while preserving original OSM boundary semantics.
+
+---
+
+# 11. Boundary Isolation Validation
 
 Under stress testing with 10% forced out-of-bound samples:
 
@@ -212,7 +266,7 @@ This confirms strict boundary containment within the TW dataset.
 
 ---
 
-# 11. Structural Observations
+# 12. Structural Observations
 
 1. Geometry integrity is high; no repair layer activation.
 2. Parent linkage incompleteness is the primary structural gap.
@@ -223,7 +277,7 @@ This confirms strict boundary containment within the TW dataset.
 
 ---
 
-# 12. Reproducibility
+# 13. Reproducibility
 
 All dataset transformations and evaluation results are reproducible using:
 
@@ -237,7 +291,7 @@ No local modifications were present at release time.
 
 ---
 
-# 13. Conclusion
+# 14. Conclusion
 
 The `tw.admin v1.0.3` dataset demonstrates:
 

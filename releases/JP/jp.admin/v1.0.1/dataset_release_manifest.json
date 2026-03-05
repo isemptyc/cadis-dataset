@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "jp.admin",
+  "country_iso": "JP",
+  "country_name": "Japan",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "1a0bee50305a8733823b2c5492206797d4ccf8ff",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/japan",
+    "replication_timestamp_utc": "2025-10-14T20:21:00Z",
+    "file_sha256": "1d26c5de2e9894bb2619c0f8479eac97c2ac98415d3c65d9cf37f43990f52c6a"
+  },
+  "runtime_compat": {
+    "min": "0.1.2",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "18d7098e90ff1600f0a354665443915c6313e6490df2eaf54ff05e38b4a5eb25",
+        "size": 20855700
+      },
+      "geometry_meta.json": {
+        "sha256": "4ca32824a593d6e0e45788226bcbbb3a8398829331bee6e7a4d9b8f1c858bc48",
+        "size": 418116
+      },
+      "hierarchy.json": {
+        "sha256": "4254489d0a1f9f6564f1918c4b3adee83e86d50b762dfb2de57056bf07fbc90e",
+        "size": 6517
+      },
+      "runtime_policy.json": {
+        "sha256": "544de7ead0f80cc29e8295348ac4e9ad5a03dcc197892e0ce5e8daf00f1a8ad6",
+        "size": 1256
+      }
+    }
+  },
+  "generated_at": "2026-03-05T15:16:18Z"
+}

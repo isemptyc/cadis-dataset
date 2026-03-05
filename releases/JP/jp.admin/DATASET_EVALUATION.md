@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `jp.admin`  
-Version: `v1.0.0`  
+Version: `v1.0.1`  
 Country: `JP`  
 Policy Version: `1.0`
 
@@ -11,7 +11,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `jp.admin v1.0.0` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `jp.admin v1.0.1` dataset under Cadis Runtime.
 
 This report:
 
@@ -34,11 +34,11 @@ It enforces structural determinism.
 | Field | Value |
 | --- | --- |
 | Dataset ID | `jp.admin` |
-| Dataset Version | `v1.0.0` |
+| Dataset Version | `v1.0.1` |
 | Country | `JP` |
 | Country Name | `Japan` |
 | Policy Version | `1.0` |
-| Hierarchy Required | `False` |
+| Hierarchy Required | `True` |
 | Repair Required | `False` |
 | Runtime Policy Detected | `True` |
 
@@ -83,8 +83,8 @@ Outside-labeled samples are intentional and do not indicate coverage defects by 
 
 | Metric | Value |
 | --- | --- |
-| Throughput | `471.930` QPS |
-| Total Runtime | `63.569 sec` |
+| Throughput | `472.080` QPS |
+| Total Runtime | `63.548 sec` |
 | Overall Pass Rate | `100.00%` |
 | Inside Coverage Pass Rate | `100.00%` |
 | Policy Pass Rate | `100.00%` |
@@ -116,9 +116,9 @@ No policy or coverage failures were observed in this 30k run.
 
 ## Interpretation
 
-* JP runtime policy for this release does not require hierarchy or repair layers.
+* JP runtime policy for this release requires hierarchy support, but no pass/fail rescue delta was observed in this run.
 * Nearby fallback provided a minimal, bounded contribution (`1` sample delta).
-* Full policy and OSM-only outcomes are effectively equivalent for this dataset at this sample size.
+* Full policy and OSM-only outcomes are effectively equivalent at this sample size for pass/fail outcomes.
 
 ---
 
@@ -128,10 +128,9 @@ No policy or coverage failures were observed in this 30k run.
 
 | Shape | Count |
 | --- | ---: |
-| `[4,7]` | 20,869 |
-| `[3,4,7]` | 6,143 |
+| `[3,4,7]` | 27,012 |
 | `[]` | 2,980 |
-| `[4]` | 8 |
+| `[3,4]` | 8 |
 
 Empty-shape outcomes correspond to:
 
@@ -143,12 +142,14 @@ Empty-shape outcomes correspond to:
 | Source | Count |
 | --- | ---: |
 | `polygon` | 27,020 |
+| `admin_tree_name` | 20,877 |
 
 ### Source Mix
 
 | Mix | Count |
 | --- | ---: |
-| `polygon` | 27,020 |
+| `admin_tree_name|polygon` | 20,877 |
+| `polygon` | 6,143 |
 | `none` | 2,980 |
 
 ---
@@ -200,7 +201,7 @@ Under the 30k stress test:
 
 * Structural non-empty outcomes (`27,020`) slightly exceed expected inside-land labels (`27,000`).
 * Only `1` sample was classified as `offshore`.
-* Several sea-surface samples were structurally contained within level-4 polygons. 
+* Several sea-surface samples were structurally contained within level-4 polygons.
 
 This indicates that:
 
@@ -233,9 +234,9 @@ This run supports strict boundary containment within the JP dataset.
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `eb287b063c7fd65c269bb9e2525bcd4cbe25552f`
-- cadis-runtime commit:
-  `6a53514efc308c25253b90906ee7fc472fd3d3f5`
+  `1a0bee50305a8733823b2c5492206797d4ccf8ff`
+- cadis commit:
+  `5639b55b1d51cc05db79062a051aed7854c01ff6`
 
 The dataset package was generated from a clean working tree.
 No local modifications were present at release time.
@@ -244,11 +245,11 @@ No local modifications were present at release time.
 
 # 14. Conclusion
 
-The `jp.admin v1.0.0` dataset demonstrates:
+The `jp.admin v1.0.1` dataset demonstrates:
 
 * Stable performance under 30k stress sampling
 * Full policy and coverage pass (`100%`)
-* No hierarchy/repair dependency for successful outcomes
+* Strong hierarchy usage footprint without pass/fail dependency in this run
 * Minimal nearby fallback contribution
 * Broad level-4 coverage across 47 units (including Okinawa)
 * Strict boundary containment behavior in this run

@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "it.admin",
+  "country_iso": "IT",
+  "country_name": "Italy",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "493860cf9f3e8a4d02ca91a50db4c8a9ed6c69f9",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/Italy",
+    "replication_timestamp_utc": "2025-10-23T20:20:52Z",
+    "file_sha256": "d85b886edcbded8f98a86ed2d48b20a53de67bc4b621e80db305c5c38c3de6eb"
+  },
+  "runtime_compat": {
+    "min": "0.3.3",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "82d611508f042ac44b053c659c3174626f67b75843f49eba5b2d1ec323190c8c",
+        "size": 22899052
+      },
+      "geometry_meta.json": {
+        "sha256": "43ada607bdc230af83822715f9a30ad2d687c0c3b21fad5b6de46addd924cfe9",
+        "size": 1865360
+      },
+      "hierarchy.json": {
+        "sha256": "0483616280f8627144b7a1392dc73d13278dac79407cf1390abe01d3f265dc03",
+        "size": 887145
+      },
+      "runtime_policy.json": {
+        "sha256": "b25b7b700dee109ece7f3f4d22410435cc3d5381e8abb7141bf4604e48414f38",
+        "size": 1265
+      }
+    }
+  },
+  "generated_at": "2026-03-11T16:55:50Z"
+}

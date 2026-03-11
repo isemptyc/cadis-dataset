@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `it.admin`
-Version: `v1.0.0`
+Version: `v1.0.1`
 Country: `IT`
 Policy Version: `1.0`
 
@@ -11,7 +11,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `it.admin v1.0.0` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `it.admin v1.0.1` dataset under Cadis Runtime.
 
 This report:
 
@@ -34,14 +34,13 @@ It enforces deterministic structural interpretation on top of the packaged datas
 | Field                   | Value                                                            |
 | ----------------------- | ---------------------------------------------------------------- |
 | Dataset ID              | `it.admin`                                                       |
-| Dataset Version         | `v1.0.0`                                                         |
+| Dataset Version         | `v1.0.1`                                                         |
 | Country                 | `IT`                                                             |
 | Country Name            | `Italy`                                                          |
 | Policy Version          | `1.0`                                                            |
 | Hierarchy Required      | `True`                                                           |
 | Repair Required         | `False`                                                          |
 | Runtime Policy Detected | `True`                                                           |
-| Dataset Dir             | `/Users/isempty/Projects/my_cadis/tmp/package/_release_stage/IT/it.admin/v1.0.0` |
 
 ---
 
@@ -243,7 +242,7 @@ No local modifications were present at release time.
 
 # 13. Conclusion
 
-The `it.admin v1.0.0` dataset passes runtime mass validation cleanly under the Cadis policy model.
+The `it.admin v1.0.1` dataset passes runtime mass validation cleanly under the Cadis policy model.
 Across 10,000 sampled points, the dataset achieved:
 
 * `100.00%` overall pass rate

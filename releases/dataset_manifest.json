@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-03-05T15:16:21Z",
+  "generated_at": "2026-03-11T04:51:16Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -12,6 +12,12 @@
       "jp.admin": {
         "latest": "v1.0.1",
         "manifest": "releases/JP/jp.admin/v1.0.1/dataset_release_manifest.json"
+      }
+    },
+    "GB": {
+      "gb.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/GB/gb.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

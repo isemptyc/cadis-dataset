@@ -213,6 +213,31 @@ Under stress testing with 10% forced out-of-bound samples:
 
 This sampled run confirms strict boundary containment within the Italy dataset.
 
+## 10.1 Venice Offshore-Focused Validation
+
+Because `offshore` handling is a meaningful behavior change in Cadis `v0.3.4`, a targeted Venice-area stress test was also executed against `it.admin v1.0.1`.
+
+Test configuration:
+
+* Sampling window: Venice-area bbox `12.15, 45.33, 12.70, 45.58`
+* Samples: `1,000`
+* Inside ratio: `0.25`
+* Expected outside ratio: `0.75`
+* Cadis version: `v0.3.4`
+
+Observed results:
+
+* Overall pass rate: `100.00%`
+* Inside coverage pass rate: `100.00%`
+* Offshore-classified samples: `301`
+* Empty-shape samples: `325`
+* Nearby-rescued samples vs `osm_only`: `339`
+* Inside failures: `0`
+
+These empty-shape cases correspond to water-adjacent or open-water points in the Venice/Adriatic test window, including the explicitly offshore-classified subset.
+
+This Venice-local run provides direct evidence that offshore classification is active and operationally relevant in a high-water, lagoon/coastal environment, while remaining boundary-safe and without causing inside-land regressions.
+
 ---
 
 # 11. Structural Observations
@@ -232,8 +257,7 @@ All evaluation results in this report are reproducible using:
 
 - cadis-dataset-engine commit:
   `493860cf9f3e8a4d02ca91a50db4c8a9ed6c69f9`
-- cadis commit:
-  `c3329ea493039a45716749487713d83645dc1c99`
+- Cadis verion: `v0.3.4`
 
 The dataset package was generated from a clean working tree.
 No local modifications were present at release time.

@@ -22,6 +22,11 @@ It does **not** contain:
 - internal build/governance tooling
 - OpenStreetMap extract files
 
+The separate `cadis-dataset-engine` repository contains reproducibility/build
+code used to generate published dataset artifacts. That repository is licensed
+under Apache License 2.0. Its code license does not apply to dataset artifacts
+distributed from this repository.
+
 ## Release Contract
 
 1. Releases are immutable once published.
@@ -65,5 +70,9 @@ Datasets in this repository are derived from OpenStreetMap data.
 © OpenStreetMap contributors  
 Licensed under the Open Database License (ODbL) 1.0  
 [https://www.openstreetmap.org/copyright](https://www.openstreetmap.org/copyright)
+
+Published dataset artifacts in this repository remain separately licensed under
+ODbL as applicable. The Apache 2.0 license of `cadis-dataset-engine` applies to
+that repository's code only.
 
 This repository does not distribute raw OpenStreetMap extracts.

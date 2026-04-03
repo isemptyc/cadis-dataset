@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "no.admin",
+  "country_iso": "NO",
+  "country_name": "Norway",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "b76e2a7c790dd07e945162332a0e8c3befe22955",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/Norway",
+    "replication_timestamp_utc": "2025-10-13T20:21:02Z",
+    "file_sha256": "c1ce5fae9add2fca84e98c5f23916beb98a722afb8b3fee696514278b12956b7"
+  },
+  "runtime_compat": {
+    "min": "0.4.3",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "faa668223dde69eefe1ac08476d76f0125d5bca0054f1677b4fe0fd04cd678f0",
+        "size": 121768
+      },
+      "geometry_meta.json": {
+        "sha256": "490de172d462d0743ae322b362459d466a3f3c97ae790df4916b2900946ce35f",
+        "size": 86260
+      },
+      "hierarchy.json": {
+        "sha256": "f643d9eecab4cd2028276c016d7c4bb28cdc2c03473786090cf90b7ac1284137",
+        "size": 40751
+      },
+      "runtime_policy.json": {
+        "sha256": "20ecaf3649c6f5d7b307bcc88b4c168b6f2c55748be37b6d4f3dd6dc4997a75a",
+        "size": 791
+      }
+    }
+  },
+  "generated_at": "2026-04-03T14:49:08Z"
+}

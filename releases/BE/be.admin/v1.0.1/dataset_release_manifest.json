@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "be.admin",
+  "country_iso": "BE",
+  "country_name": "Belgium",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "7e437fd5a8ecf6d3421f680294c5f90855e5cbf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/Belgium",
+    "replication_timestamp_utc": "2025-10-18T20:20:55Z",
+    "file_sha256": "b6d4486e30563cbef1e6d4ab406faa86921d3bfe2de665f35ddf397f38a61a3b"
+  },
+  "runtime_compat": {
+    "min": "0.4.6",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "7499bccd57fa67bbe4cabad0a693ed4fb50e0b9553f494cf6e0b8fc9c11f85c3",
+        "size": 2676232
+      },
+      "geometry_meta.json": {
+        "sha256": "7038812d7be1d4889cee29386449c1a0b14ce2c797204bd528c895bab7650f45",
+        "size": 162398
+      },
+      "hierarchy.json": {
+        "sha256": "d0130b9a558da92e454576509a21b1bf8364160028ed08bda8bac0465fcd0ca1",
+        "size": 96084
+      },
+      "runtime_policy.json": {
+        "sha256": "b25b7b700dee109ece7f3f4d22410435cc3d5381e8abb7141bf4604e48414f38",
+        "size": 1265
+      }
+    }
+  },
+  "generated_at": "2026-04-03T17:50:34Z",
+  "name_schema": "multilingual_v1"
+}

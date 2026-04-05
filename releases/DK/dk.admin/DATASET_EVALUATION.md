@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `dk.admin`  
-Version: `v1.0.0`  
+Version: `v1.0.1`  
 Country: `DK`  
 Policy Version: `1.0`
 
@@ -11,7 +11,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `dk.admin v1.0.0` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `dk.admin v1.0.1` dataset under Cadis Runtime.
 
 This report:
 
@@ -28,7 +28,7 @@ This report:
 | Field | Value |
 | --- | --- |
 | Dataset ID | `dk.admin` |
-| Dataset Version | `v1.0.0` |
+| Dataset Version | `v1.0.1` |
 | Country | `DK` |
 | Country Name | `Denmark` |
 | Policy Version | `1.0` |
@@ -227,20 +227,13 @@ Conclusion for current Denmark onboarding:
 
 The staged Denmark dataset and the evaluation results are reproducible from the following inputs:
 
-* `cadis_dataset_engine` commit:
-  `cbe74efa03045504265b6a83205294c4b691936b`
-* Cadis local version used for evaluation:
-  `0.4.4`
+- cadis-dataset-engine commit:
+  `5ff06d4d5aafb8b5bf958cbcc45ffb42013db285`
+- cadis version:
+  `v0.4.6`
 
-Clean-tree status at generation time:
-
-* `cadis_dataset_engine` was committed and clean for the official SOP staging run.
-* `cadis` support for `DK` and the `0.4.4` version bump were present locally for evaluation, but the `cadis` repo had not yet been finalized as a release commit at the time this report was written.
-
-Therefore:
-
-* engine-side dataset generation is pinned to a stable commit
-* runtime-side reproducibility currently depends on preserving the same local `cadis` support state until the `cadis` release commit is finalized
+The dataset package was generated from a clean working tree.
+No local modifications were present at release time.
 
 ---
 
@@ -256,4 +249,4 @@ Release-readiness assessment for the staged Denmark dataset:
 
 Current recommendation:
 
-* `dk.admin v1.0.0` is suitable to continue through the remaining release flow, subject to normal operator review before publish.
+* `dk.admin v1.0.1` is suitable to continue through the remaining release flow, subject to normal operator review before publish.

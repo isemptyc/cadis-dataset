@@ -4,7 +4,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `tw.admin`
-Version: `v1.0.4`
+Version: `v1.0.5`
 Country: `TW`
 Policy Version: `1.0`
 
@@ -12,7 +12,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `tw.admin v1.0.4` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `tw.admin v1.0.5` dataset under Cadis Runtime.
 
 This report:
 
@@ -35,7 +35,7 @@ It enforces structural determinism.
 | Field                   | Value      |
 | ----------------------- | ---------- |
 | Dataset ID              | `tw.admin` |
-| Dataset Version         | `v1.0.4`   |
+| Dataset Version         | `v1.0.5`   |
 | Country                 | `TW`       |
 | Policy Version          | `1.0`      |
 | Hierarchy Required      | `True`     |
@@ -282,9 +282,9 @@ This confirms strict boundary containment within the TW dataset.
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `5ff06d4d5aafb8b5bf958cbcc45ffb42013db285`
+  `4c05f9cc6ed606d78d58844dd486a97e87f53c0e`
 - cadis version:
-  `v0.4.6`
+  `v0.4.7`
 
 The dataset package was generated from a clean working tree.
 No local modifications were present at release time.
@@ -293,7 +293,7 @@ No local modifications were present at release time.
 
 # 14. Conclusion
 
-The `tw.admin v1.0.4` dataset demonstrates:
+The `tw.admin v1.0.5` dataset demonstrates:
 
 * High geometric integrity
 * Minor structural incompleteness in parent linkage

@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `gb.admin`
-Version: `v1.0.0`
+Version: `v1.0.1`
 Country: `GB`
 Policy Version: `1.0`
 
@@ -11,7 +11,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `gb.admin v1.0.0` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `gb.admin v1.0.1` dataset under Cadis Runtime.
 
 This report:
 
@@ -34,7 +34,7 @@ It enforces structural determinism.
 | Field                   | Value        |
 | ----------------------- | ------------ |
 | Dataset ID              | `gb.admin`   |
-| Dataset Version         | `v1.0.0`     |
+| Dataset Version         | `v1.0.1`     |
 | Country                 | `GB`         |
 | Policy Version          | `1.0`        |
 | Hierarchy Required      | `True`       |
@@ -226,9 +226,9 @@ This confirms strict boundary containment within the GB dataset in this runtime 
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `d50652ade1d6c05a77b04daa3f935ac686132a55`
-- cadis commit:
-  `56cec3a0579de88950d3a25d22f7b4f5741fe91c`
+  `5ff06d4d5aafb8b5bf958cbcc45ffb42013db285`
+- cadis version:
+  `v0.4.6`
 
 The dataset package was generated from a clean working tree.
 No local modifications were present at release time.
@@ -237,7 +237,7 @@ No local modifications were present at release time.
 
 # 13. Conclusion
 
-The `gb.admin v1.0.0` dataset demonstrates:
+The `gb.admin v1.0.1` dataset demonstrates:
 
 * High geometric integrity
 * Near-complete structural coverage from polygon data alone

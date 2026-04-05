@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "gb.admin",
+  "country_iso": "GB",
+  "country_name": "United Kingdom",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "5ff06d4d5aafb8b5bf958cbcc45ffb42013db285",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/United_Kingdom",
+    "replication_timestamp_utc": "2025-10-13T20:21:02Z",
+    "file_sha256": "2ca2a9dd2804237e14089643cbc655da0d4f7a34ac56e5212cb5ebf8cd015fee"
+  },
+  "runtime_compat": {
+    "min": "0.4.6",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "12d6b879d76b90c0d7a57afe1e70bee684b7a2dcf806247c332222227634633f",
+        "size": 4972576
+      },
+      "geometry_meta.json": {
+        "sha256": "e9b3caad8144fa0d3646c07d88d4c3244b9c394a5b8230e893bcbde2ca7bb47d",
+        "size": 110414
+      },
+      "hierarchy.json": {
+        "sha256": "7b2923c41f07c9420ca66c7ba96109b7d2e362ab9251369b52572007883e9bf7",
+        "size": 65232
+      },
+      "runtime_policy.json": {
+        "sha256": "26ec541e467709e2f00c796b0513a06ba153e4818649ea8919871eb1300e7eaf",
+        "size": 2292
+      }
+    }
+  },
+  "generated_at": "2026-04-05T05:38:57Z",
+  "name_schema": "multilingual_v1"
+}

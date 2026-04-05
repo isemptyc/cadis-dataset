@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `se.admin`
-Version: `v1.0.0`
+Version: `v1.0.1`
 Country: `SE`
 Policy Version: `1.0`
 
@@ -11,7 +11,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `se.admin v1.0.0` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `se.admin v1.0.1` dataset under Cadis Runtime.
 
 This report:
 
@@ -34,7 +34,7 @@ It enforces structural determinism.
 | Field                   | Value      |
 | ----------------------- | ---------- |
 | Dataset ID              | `se.admin` |
-| Dataset Version         | `v1.0.0`   |
+| Dataset Version         | `v1.0.1`   |
 | Country                 | `SE`       |
 | Policy Version          | `1.0`      |
 | Hierarchy Required      | `True`     |
@@ -227,15 +227,15 @@ This confirms strict boundary containment within the SE dataset.
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `716b5c351d8425972996a5fb4fc213c2dc8f7fda`
-- Cadis version:
-  `v0.4.2`
+  `5ff06d4d5aafb8b5bf958cbcc45ffb42013db285`
+- cadis version:
+  `v0.4.6`
 
 ---
 
 # 13. Conclusion
 
-The `se.admin v1.0.0` dataset demonstrates:
+The `se.admin v1.0.1` dataset demonstrates:
 
 * High geometric integrity
 * Strong county/municipality structural completeness

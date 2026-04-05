@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `it.admin`
-Version: `v1.0.1`
+Version: `v1.0.2`
 Country: `IT`
 Policy Version: `1.0`
 
@@ -11,7 +11,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `it.admin v1.0.1` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `it.admin v1.0.2` dataset under Cadis Runtime.
 
 This report:
 
@@ -34,7 +34,7 @@ It enforces deterministic structural interpretation on top of the packaged datas
 | Field                   | Value                                                            |
 | ----------------------- | ---------------------------------------------------------------- |
 | Dataset ID              | `it.admin`                                                       |
-| Dataset Version         | `v1.0.1`                                                         |
+| Dataset Version         | `v1.0.2`                                                         |
 | Country                 | `IT`                                                             |
 | Country Name            | `Italy`                                                          |
 | Policy Version          | `1.0`                                                            |
@@ -215,7 +215,7 @@ This sampled run confirms strict boundary containment within the Italy dataset.
 
 ## 10.1 Venice Offshore-Focused Validation
 
-Because `offshore` handling is a meaningful behavior change in Cadis `v0.3.4`, a targeted Venice-area stress test was also executed against `it.admin v1.0.1`.
+Because `offshore` handling is a meaningful behavior change in Cadis `v0.3.4`, a targeted Venice-area stress test was also executed against `it.admin v1.0.2`.
 
 Test configuration:
 
@@ -256,8 +256,9 @@ This Venice-local run provides direct evidence that offshore classification is a
 All evaluation results in this report are reproducible using:
 
 - cadis-dataset-engine commit:
-  `493860cf9f3e8a4d02ca91a50db4c8a9ed6c69f9`
-- Cadis verion: `v0.3.4`
+  `5ff06d4d5aafb8b5bf958cbcc45ffb42013db285`
+- cadis version:
+  `v0.4.6`
 
 The dataset package was generated from a clean working tree.
 No local modifications were present at release time.
@@ -266,7 +267,7 @@ No local modifications were present at release time.
 
 # 13. Conclusion
 
-The `it.admin v1.0.1` dataset passes runtime mass validation cleanly under the Cadis policy model.
+The `it.admin v1.0.2` dataset passes runtime mass validation cleanly under the Cadis policy model.
 Across 10,000 sampled points, the dataset achieved:
 
 * `100.00%` overall pass rate

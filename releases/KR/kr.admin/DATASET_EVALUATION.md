@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `kr.admin`
-Version: `v1.0.0`
+Version: `v1.0.1`
 Country: `KR`
 Policy Version: `1.0`
 
@@ -11,7 +11,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `kr.admin v1.0.0` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `kr.admin v1.0.1` dataset under Cadis Runtime.
 
 This report:
 
@@ -34,7 +34,7 @@ It enforces structural determinism.
 | Field                   | Value      |
 | ----------------------- | ---------- |
 | Dataset ID              | `kr.admin` |
-| Dataset Version         | `v1.0.0`   |
+| Dataset Version         | `v1.0.1`   |
 | Country                 | `KR`       |
 | Policy Version          | `1.0`      |
 | Hierarchy Required      | `True`     |
@@ -233,9 +233,9 @@ This confirms strict boundary containment within the KR dataset.
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `f0c48f963eb28e2b6447f38747ce9bc035a85333`
-- Cadis version:
-  `v0.3.5`
+  `5ff06d4d5aafb8b5bf958cbcc45ffb42013db285`
+- cadis version:
+  `v0.4.6`
 
 The dataset package was generated from a clean working tree.
 No local modifications were present at release time.
@@ -244,7 +244,7 @@ No local modifications were present at release time.
 
 # 13. Conclusion
 
-The `kr.admin v1.0.0` dataset demonstrates:
+The `kr.admin v1.0.1` dataset demonstrates:
 
 * High geometric integrity
 * Very low structural incompleteness in sampled runtime behavior

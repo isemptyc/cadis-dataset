@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `jp.admin`  
-Version: `v1.0.1`  
+Version: `v1.0.2`  
 Country: `JP`  
 Policy Version: `1.0`
 
@@ -11,7 +11,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `jp.admin v1.0.1` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `jp.admin v1.0.2` dataset under Cadis Runtime.
 
 This report:
 
@@ -34,7 +34,7 @@ It enforces structural determinism.
 | Field | Value |
 | --- | --- |
 | Dataset ID | `jp.admin` |
-| Dataset Version | `v1.0.1` |
+| Dataset Version | `v1.0.2` |
 | Country | `JP` |
 | Country Name | `Japan` |
 | Policy Version | `1.0` |
@@ -234,9 +234,9 @@ This run supports strict boundary containment within the JP dataset.
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `1a0bee50305a8733823b2c5492206797d4ccf8ff`
-- cadis commit:
-  `5639b55b1d51cc05db79062a051aed7854c01ff6`
+  `5ff06d4d5aafb8b5bf958cbcc45ffb42013db285`
+- cadis version:
+  `v0.4.6`
 
 The dataset package was generated from a clean working tree.
 No local modifications were present at release time.
@@ -245,7 +245,7 @@ No local modifications were present at release time.
 
 # 14. Conclusion
 
-The `jp.admin v1.0.1` dataset demonstrates:
+The `jp.admin v1.0.2` dataset demonstrates:
 
 * Stable performance under 30k stress sampling
 * Full policy and coverage pass (`100%`)

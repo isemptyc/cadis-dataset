@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `no.admin`  
-Version: `v1.0.0`  
+Version: `v1.0.1`  
 Country: `NO`  
 Policy Version: `1.0`
 
@@ -12,12 +12,15 @@ Policy Version: `1.0`
 # 1. Purpose
 
 This document records the structural and runtime evaluation for the staged
-Norway dataset `no.admin v1.0.0`.
+Norway dataset `no.admin v1.0.1`.
 
 This report is based on the staged runtime dataset produced from the committed
 Norway engine revision:
 
-- Engine commit: `b76e2a7c790dd07e945162332a0e8c3befe22955`
+- cadis-dataset-engine commit:
+  `5ff06d4d5aafb8b5bf958cbcc45ffb42013db285`
+- cadis version:
+  `v0.4.6`
 - OSM snapshot: `norway-latest.osm.pbf`
 - OSM replication timestamp: `2025-10-13T20:21:02Z`
 
@@ -35,7 +38,7 @@ Observed findings:
 | Field | Value |
 | --- | --- |
 | Dataset ID | `no.admin` |
-| Dataset Version | `v1.0.0` |
+| Dataset Version | `v1.0.1` |
 | Country | `NO` |
 | Country Name | `Norway` |
 | Policy Version | `1.0` |
@@ -215,7 +218,7 @@ This confirms strict boundary containment in the evaluated runtime dataset.
 
 Current status:
 
-- Norway `no.admin v1.0.0` passes the 10,000-point runtime mass test at
+- Norway `no.admin v1.0.1` passes the 10,000-point runtime mass test at
   `100.00%`.
 - The committed Norway engine build is structurally clean for the `4 -> 7`
   model.

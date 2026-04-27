@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "fi.admin",
+  "country_iso": "FI",
+  "country_name": "Finland",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "fb36a24c8cb2f6309a88abc9b3184cd4017f5d2f",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/Finland",
+    "replication_timestamp_utc": "2026-04-26T20:21:04Z",
+    "file_sha256": "022c07a845f15443d3aeb0ab30245fc215d9509b4940de90a230594e456a638c"
+  },
+  "runtime_compat": {
+    "min": "0.6.5",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "048eab1b2a324cebc859072b20cfe1139814ff0b6162009af54266e968d2bc3a",
+        "size": 954600
+      },
+      "geometry_meta.json": {
+        "sha256": "fa66e11793b738eeda60acda9474a84c646af41f2e0482f08b5a5f4dfeb55acd",
+        "size": 114621
+      },
+      "hierarchy.json": {
+        "sha256": "74ffc4ad2c709b9e27ff6a0392a3f82d38f11124adb337abd574bbe252c545bd",
+        "size": 71654
+      },
+      "runtime_policy.json": {
+        "sha256": "7a1d42dde20ca7cd23a0b31071389d65e8d28ecded5d333bae520ae41f6d4bd6",
+        "size": 1270
+      }
+    }
+  },
+  "generated_at": "2026-04-27T07:28:18Z",
+  "name_schema": "multilingual_v1"
+}

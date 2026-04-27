@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "us.admin",
+  "country_iso": "US",
+  "country_name": "United States of America",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "fdcebd5bd9de17fd4da58f60c2b8bb96a0dd8695",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:north-america/us-state-extracts",
+    "replication_timestamp_utc": "2026-04-26T20:21:04Z",
+    "file_sha256": "09f6004536484720b2ce34cfa9340a29ff3eae40486876051a7ad5bfba6eef51"
+  },
+  "runtime_compat": {
+    "min": "0.6.7",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "7306ac928e028deb32d0ccf5ef2e99ce6078792d8f12560ff0241e1953e53239",
+        "size": 31826164
+      },
+      "geometry_meta.json": {
+        "sha256": "36a7bb1bfeb853b8ddb7c9ea4cde1b74669ba6caefaac468dcb661732f3d86e4",
+        "size": 7623951
+      },
+      "hierarchy.json": {
+        "sha256": "9d823118216940822fc91ae32795fe3bec0ce6e2c2d9a1a219e990bfef647c63",
+        "size": 4037790
+      },
+      "runtime_policy.json": {
+        "sha256": "b25b7b700dee109ece7f3f4d22410435cc3d5381e8abb7141bf4604e48414f38",
+        "size": 1265
+      }
+    }
+  },
+  "generated_at": "2026-04-27T16:16:46Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ca.admin",
+  "country_iso": "CA",
+  "country_name": "Canada",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "ff4ab52f75d6319f9008d5067386dd0ada67eb57",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:north-america/canada-province-territory-extracts",
+    "replication_timestamp_utc": "2026-04-26T20:21:04Z",
+    "file_sha256": "3b83c226992c02ac78e65ff2f8a904ce011937054737cedeaca2d4e660caf5eb"
+  },
+  "runtime_compat": {
+    "min": "0.6.8",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "86dcfed5111856750a5fcea6b2f1c7ca534dea1265181e9dd15a2b84a9deb692",
+        "size": 11146608
+      },
+      "geometry_meta.json": {
+        "sha256": "2d3e8fe02e4f18d82838afd246aaccc6b1621f728317172e7bac9a6f2eeb1302",
+        "size": 1852423
+      },
+      "hierarchy.json": {
+        "sha256": "88e8682680bcd7eb10bf6efb7aab0a57107bfdabb5b186fdc51e0e7d22a2a05c",
+        "size": 1002991
+      },
+      "runtime_policy.json": {
+        "sha256": "a7cffdc738b5a34ffe3ccb02a2ac6f8881c2f9ce7891ce3b64205876fd1b72fa",
+        "size": 4365
+      }
+    }
+  },
+  "generated_at": "2026-04-27T18:00:35Z",
+  "name_schema": "multilingual_v1"
+}

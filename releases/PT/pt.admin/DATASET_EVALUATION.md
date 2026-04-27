@@ -118,8 +118,8 @@ The test intentionally injects 10% out-of-bound points to validate boundary reje
 
 | Metric | Value |
 | ------ | ----: |
-| Throughput | `924.860` QPS |
-| Total runtime | `10.812 sec` |
+| Throughput | `878.940` QPS |
+| Total runtime | `11.377 sec` |
 | Overall pass rate | `100.00%` |
 | Policy pass rate | `100.00%` |
 | Inside coverage pass rate | `100.00%` |
@@ -146,7 +146,7 @@ Layer effect counters:
 | Nearby | 0 |
 | Total vs OSM-only | 0 |
 
-Hierarchy supplementation was used in 15 samples to complete status, but in this run it did not change pass/fail outcome counts.
+Branch-constrained hierarchy supplementation contributed ID-based nodes in 6 samples, but in this run it did not change pass/fail outcome counts.
 
 ---
 
@@ -156,10 +156,10 @@ Hierarchy supplementation was used in 15 samples to complete status, but in this
 
 | Shape | Count |
 | ----- | ----: |
-| `[6,7,8]` | 8,693 |
+| `[6,7,8]` | 8,684 |
 | `[]` | 1,000 |
 | `[4,7,8]` | 231 |
-| `[7,8]` | 59 |
+| `[7,8]` | 68 |
 | `[8]` | 11 |
 | `[6,8]` | 4 |
 | `[4,7]` | 2 |
@@ -171,15 +171,15 @@ Empty shapes correspond to the intentionally sampled outside-boundary points.
 | Source | Count |
 | ------ | ----: |
 | polygon | 9,000 |
-| admin_tree_name | 15 |
+| admin_tree_id | 6 |
 
 ## 8.3 Source Mix
 
 | Source Mix | Count |
 | ---------- | ----: |
-| polygon | 8,985 |
+| polygon | 8,994 |
 | none | 1,000 |
-| admin_tree_name\|polygon | 15 |
+| admin_tree_id\|polygon | 6 |
 
 ## 8.4 Policy Reason Distribution
 
@@ -220,7 +220,7 @@ This confirms strict boundary containment for the staged `pt.admin v1.0.0` datas
 3. Acores samples resolve through `[4,7,8]` or `[4,7]`.
 4. Madeira is covered through municipality/parish structures without a level-4 polygon in this source build.
 5. The repair layer is not required.
-6. Name-based hierarchy supplementation must avoid introducing level-6 parents when a higher-level parent is already present, because duplicate municipality names such as `Lagoa` exist across mainland and island contexts.
+6. Hierarchy supplementation is branch-constrained by feature ID/path. Name-based fallback is only temporary and only available for globally unique names when no polygon-derived branch can be established.
 
 ---
 

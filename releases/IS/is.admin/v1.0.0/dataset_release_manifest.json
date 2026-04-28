@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "is.admin",
+  "country_iso": "IS",
+  "country_name": "Iceland",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "18370af01e95ff030e13437e5274f85adf393196",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/Iceland",
+    "replication_timestamp_utc": "2026-04-26T20:21:04Z",
+    "file_sha256": "3fd8f115a08f4fb478ca970d2ddcf979a665509dfc1fd7032d5e15668dcec3a4"
+  },
+  "runtime_compat": {
+    "min": "0.8.2",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "5b7d3c4b58a85ed24a3244f2f0cedea40987c5dec43f6c0ab3fb1676f5b0624c",
+        "size": 132480
+      },
+      "geometry_meta.json": {
+        "sha256": "714ac0a88140019f0fe00ce333b1dddca0d6db56c304ab4964cf00480413263b",
+        "size": 49676
+      },
+      "hierarchy.json": {
+        "sha256": "9969c46bceb34f94f09b311813128cfc2d7b1141be1123a0661930636e7764bf",
+        "size": 26687
+      },
+      "runtime_policy.json": {
+        "sha256": "27be699b40f8ee7d953e219ba0e7e802d0fde843d6b85bdbd9a6a0baa287d62e",
+        "size": 1935
+      }
+    }
+  },
+  "generated_at": "2026-04-28T14:31:12Z",
+  "name_schema": "multilingual_v1"
+}

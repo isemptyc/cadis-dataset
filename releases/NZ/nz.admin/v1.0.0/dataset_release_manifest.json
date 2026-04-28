@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "nz.admin",
+  "country_iso": "NZ",
+  "country_name": "New Zealand",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "4fe22785aaa899299948ef0643e33862f2c79c84",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:oceania/New-Zealand",
+    "replication_timestamp_utc": "2026-03-31T20:21:06Z",
+    "file_sha256": "4d36de26ca4c86666009909087c00f272cca20d18bc359b8c5baf9a3c384e1a2"
+  },
+  "runtime_compat": {
+    "min": "0.8.1",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "f6bfd4f047f95da447f670ac2b0997a49fa73837daca84f8af1e0056079bf629",
+        "size": 175752
+      },
+      "geometry_meta.json": {
+        "sha256": "f0dd4ea326f01e021f13aff5d83bee2d2de8a31fa7eca8d2e5844faec918c486",
+        "size": 35946
+      },
+      "hierarchy.json": {
+        "sha256": "f77ca1544bf2d2d81644f9b1e57283a198a34f3db982e449ec030094d9232110",
+        "size": 20389
+      },
+      "runtime_policy.json": {
+        "sha256": "e66eead7c279c1bf18f6f5c28db9c595166424078d6a9a3ff5aa7c8b128ccd00",
+        "size": 1265
+      }
+    }
+  },
+  "generated_at": "2026-04-28T14:09:04Z",
+  "name_schema": "multilingual_v1"
+}

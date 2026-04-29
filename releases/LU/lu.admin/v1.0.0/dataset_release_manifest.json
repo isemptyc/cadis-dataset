@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "lu.admin",
+  "country_iso": "LU",
+  "country_name": "Luxembourg",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "32187d0dfbbb9cb27f85c9304a759558ee187444",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/Luxembourg",
+    "replication_timestamp_utc": "2026-04-26T20:21:04Z",
+    "file_sha256": "b18debbe55d0b3dca0b9ee5eaded920efe13c7dd04759ab83953bda51ce868c3"
+  },
+  "runtime_compat": {
+    "min": "0.8.7",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "44b9480f91fad88bab2a88a1d36b85eadb1ec79b73e83d6f02ed8f4a618ea17f",
+        "size": 599496
+      },
+      "geometry_meta.json": {
+        "sha256": "e316773f014a43f32a1e52c2194d6c70c478faa2910c6ccd5834f53dea8c72b4",
+        "size": 94690
+      },
+      "hierarchy.json": {
+        "sha256": "656e664ef28c0dabc3c58a5a7fae47fbb6dade61f98a9171f42e449166ebacb3",
+        "size": 59426
+      },
+      "runtime_policy.json": {
+        "sha256": "c345945e0313648c4126a9d785c48aae6507856d56af1be3d94814e9c31343ac",
+        "size": 1270
+      }
+    }
+  },
+  "generated_at": "2026-04-29T10:31:32Z",
+  "name_schema": "multilingual_v1"
+}

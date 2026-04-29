@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ch.admin",
+  "country_iso": "CH",
+  "country_name": "Switzerland",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "051357c09b9d68bc7df13b81244b02083750f173",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/Switzerland",
+    "replication_timestamp_utc": "2026-04-26T20:21:04Z",
+    "file_sha256": "432bff8faff3e8322d8df18389eaa0fbfb3b841ff93d876bdbe0a5e5e03f0526"
+  },
+  "runtime_compat": {
+    "min": "0.8.4",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "d729cd03817d17d71747d74961341e9c0a8bc56cb92313070a92a59c2265d813",
+        "size": 3914184
+      },
+      "geometry_meta.json": {
+        "sha256": "ffbeea0812ec76e851be349e3d6732b7c46e8aafd8cf8fdd7390cef507007a43",
+        "size": 581511
+      },
+      "hierarchy.json": {
+        "sha256": "29617c8f66838018ac7015c105831b93c3c92b6a066cbe40d51e1bf40f7c975e",
+        "size": 313050
+      },
+      "runtime_policy.json": {
+        "sha256": "b25b7b700dee109ece7f3f4d22410435cc3d5381e8abb7141bf4604e48414f38",
+        "size": 1265
+      }
+    }
+  },
+  "generated_at": "2026-04-29T05:16:32Z",
+  "name_schema": "multilingual_v1"
+}

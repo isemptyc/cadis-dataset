@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "id.admin",
+  "country_iso": "ID",
+  "country_name": "Indonesia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "32b33af997e161c0dec76e6afebc0ab3616f2c92",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/indonesia",
+    "replication_timestamp_utc": "2026-02-07T21:21:12Z",
+    "file_sha256": "4217287dd2bc350b3f20d52d33aea917ba405a47972e41612186236d3b8d2403"
+  },
+  "runtime_compat": {
+    "min": "0.8.12",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "1e1af057083a0e402c62fce5ca64f23b77ea9d447e16c7c8dbc6265304d5ca55",
+        "size": 7068332
+      },
+      "geometry_meta.json": {
+        "sha256": "158331567ec19d4d6fa72d4fa18fa71cd4806838a9b0462ce1a81c31e88aa84b",
+        "size": 2178557
+      },
+      "hierarchy.json": {
+        "sha256": "fde5a65186b13ed35186644013f91fb626aceedb7cca74395f934e87cb3b1139",
+        "size": 1185698
+      },
+      "runtime_policy.json": {
+        "sha256": "3d77e003c77d457fbdca8b5f8806f66d8a1e126ad252f6967117c3d9c87833b6",
+        "size": 2277
+      }
+    }
+  },
+  "generated_at": "2026-04-30T06:48:06Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "vn.admin",
+  "country_iso": "VN",
+  "country_name": "Vietnam",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "b20f9c00b84e5293eb019bd8e3003b8c882e2d27",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/vietnam",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "ad40bad0cad3183b500d38586483c131e26726dc7b3dc2b796fbf9043b942d4f"
+  },
+  "runtime_compat": {
+    "min": "0.8.19",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "b05a7821b1a8da2f2caf0acb177ed5304f1e427ac6d484774d05a170d19aed7f",
+        "size": 557916
+      },
+      "geometry_meta.json": {
+        "sha256": "5c8d4a95bc379ca226ef884ed20975354c6e46fdc2a53eb23b965dc7984a008d",
+        "size": 829617
+      },
+      "hierarchy.json": {
+        "sha256": "8dbeb27f2d264a10b618911c3720295f1006c2a113a046d4ec5200ddacea73b8",
+        "size": 507278
+      },
+      "runtime_policy.json": {
+        "sha256": "142daa9c45f1ec09c0c30669b3289e07aa13cdbe05bb268387624a2b0e3d9494",
+        "size": 791
+      }
+    }
+  },
+  "generated_at": "2026-05-10T17:23:07Z",
+  "name_schema": "multilingual_v1"
+}

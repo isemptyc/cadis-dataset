@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "tr.admin",
+  "country_iso": "TR",
+  "country_name": "Turkey",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "f2560696ef943388790c7cde352f13ac329c85d3",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/Turkey",
+    "replication_timestamp_utc": "2026-04-26T20:21:04Z",
+    "file_sha256": "977e1b9e6991e4d104acb65627cacf1cb1171a28122b532f93a584473ebc3c46"
+  },
+  "runtime_compat": {
+    "min": "0.8.14",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "5f31bfc2d97c551a94ffd4e2d74fe30fda5516a7bd86d0cd87807ed9c9ddbf26",
+        "size": 11527208
+      },
+      "geometry_meta.json": {
+        "sha256": "8382544848ee38c7199952a61898d71ec61c6e6ab821e6c769c329ec6ec47145",
+        "size": 3795016
+      },
+      "hierarchy.json": {
+        "sha256": "1d541b93d8df64b54078b5ffbf96893532dfb7cea65abb803f635010c16b5616",
+        "size": 2079338
+      },
+      "runtime_policy.json": {
+        "sha256": "b25b7b700dee109ece7f3f4d22410435cc3d5381e8abb7141bf4604e48414f38",
+        "size": 1265
+      }
+    }
+  },
+  "generated_at": "2026-05-10T10:44:52Z",
+  "name_schema": "multilingual_v1"
+}

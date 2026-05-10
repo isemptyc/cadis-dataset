@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "br.admin",
+  "country_iso": "BR",
+  "country_name": "Brazil",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "a99a4b0efd65c708c5a315113c2eda7f3fd5e631",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/Brazil",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "62cd166273572c84a50dc8f7e9ffef00f5cb240c4a5fe9b07bd43de1a535278a"
+  },
+  "runtime_compat": {
+    "min": "0.8.15",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "17b693ae41101eb7bfeee7018192ccc8e8118dbe733fe4dbfeceba289e11245d",
+        "size": 32918380
+      },
+      "geometry_meta.json": {
+        "sha256": "d3625beaf6296898b2548c13b3cc509ff4be8dc094da9496746bb41056d44f77",
+        "size": 3158658
+      },
+      "hierarchy.json": {
+        "sha256": "2f30536ca3a0f8c7dada2b6319d1e09259b1aa562618cfa5c796e3609c962141",
+        "size": 1667962
+      },
+      "runtime_policy.json": {
+        "sha256": "a179630579a7befca5cd8f0094817454b0eacc037881554be1a9507122f2ddcf",
+        "size": 1270
+      }
+    }
+  },
+  "generated_at": "2026-05-10T13:13:42Z",
+  "name_schema": "multilingual_v1"
+}

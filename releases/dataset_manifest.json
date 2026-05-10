@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-10T16:40:09Z",
+  "generated_at": "2026-05-10T17:03:27Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -204,6 +204,12 @@
       "mx.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/MX/mx.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "PH": {
+      "ph.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/PH/ph.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

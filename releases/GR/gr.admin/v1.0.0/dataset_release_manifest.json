@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "gr.admin",
+  "country_iso": "GR",
+  "country_name": "Greece",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "4cd93a2b3cefe5a9548d6a9a71af1b95bab1842a",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/Greece",
+    "replication_timestamp_utc": "2026-04-26T20:21:04Z",
+    "file_sha256": "f3cc5a2d89e280a7baf7703c8b07f5542a2d95559746df0380217681eea12750"
+  },
+  "runtime_compat": {
+    "min": "0.8.13",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "468a61260381f99aba67c7f95d60c2e2fe8be2ed8d1f57d2d5c98a9bb40d787c",
+        "size": 2463316
+      },
+      "geometry_meta.json": {
+        "sha256": "0967f512491327f35d0cd82c2a778fd9ba9e15e060b4c2cfd45dd18c57e5591b",
+        "size": 333200
+      },
+      "hierarchy.json": {
+        "sha256": "0c7dc79ccabacca5a22cd6cc622cfa4e833a7996151d51d33452c02cb7aa9ab6",
+        "size": 446377
+      },
+      "runtime_policy.json": {
+        "sha256": "566e4adbd904467d25142cf923d53057adc5ac46f2f90226ca3b6dd3acef3e67",
+        "size": 4505
+      }
+    }
+  },
+  "generated_at": "2026-05-10T09:09:43Z",
+  "name_schema": "multilingual_v1"
+}

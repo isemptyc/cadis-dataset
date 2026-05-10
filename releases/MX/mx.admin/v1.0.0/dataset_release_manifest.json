@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mx.admin",
+  "country_iso": "MX",
+  "country_name": "Mexico",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "7110e654df72d3f48ee86260b02ceb2f1142f6fe",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:north-america/mexico",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "c49184f607c6ee8b1629fafd1aa59f6fc638ef3cd6aae260fab22b27d641cf87"
+  },
+  "runtime_compat": {
+    "min": "0.8.17",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "1376bc65f9b383e59fcb12533d51c00381a4a802a8c254263eb99979685233d5",
+        "size": 1597044
+      },
+      "geometry_meta.json": {
+        "sha256": "4b37614149a4340bb3910c6662690b770d85a19f555cabe7aadcbf66e543473a",
+        "size": 648549
+      },
+      "hierarchy.json": {
+        "sha256": "327bf6c341c971e973b0f31d23d332224459a7fe5b29cebf05a811b3b3b0748d",
+        "size": 346971
+      },
+      "runtime_policy.json": {
+        "sha256": "142daa9c45f1ec09c0c30669b3289e07aa13cdbe05bb268387624a2b0e3d9494",
+        "size": 791
+      }
+    }
+  },
+  "generated_at": "2026-05-10T16:40:07Z",
+  "name_schema": "multilingual_v1"
+}

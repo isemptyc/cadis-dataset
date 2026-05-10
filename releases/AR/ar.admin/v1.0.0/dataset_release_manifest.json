@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ar.admin",
+  "country_iso": "AR",
+  "country_name": "Argentina",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "b4272517e6e1f0ebdd2e74a786262a406ea026b6",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/argentina",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "5a6d373a31bd969e0bdd673a55ee663b3d1f65c355db8041aa41bd584d9d1af7"
+  },
+  "runtime_compat": {
+    "min": "0.8.20",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "d680de9ccd2089c9aa19c13989291b71d22e4916797cf5279ba446d2de4fdaf3",
+        "size": 617648
+      },
+      "geometry_meta.json": {
+        "sha256": "50efd4eb235214e41b8bd3e98d6e78154e35c79a70152ccabe34f599c031e20d",
+        "size": 661707
+      },
+      "hierarchy.json": {
+        "sha256": "2cc0cf0263093bb8ca80bf33d63b7913240e7b0462eb19ea361c1d023ed93050",
+        "size": 352454
+      },
+      "runtime_policy.json": {
+        "sha256": "9385e4aef77bc33f884e6cf9ab410ac3f4031a3e3966447a155392805197cb72",
+        "size": 1275
+      }
+    }
+  },
+  "generated_at": "2026-05-10T17:51:38Z",
+  "name_schema": "multilingual_v1"
+}

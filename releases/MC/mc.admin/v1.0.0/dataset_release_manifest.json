@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mc.admin",
+  "country_iso": "MC",
+  "country_name": "Monaco",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "e4ca98de30719ee3ea98d18f2ca4deb9dddaba5a",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/monaco",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "1afe97ab14145bf3f8e62ef2712d01f8c81098add4e4eed83676844dfc392356"
+  },
+  "runtime_compat": {
+    "min": "0.8.32",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bf01c10eea4fd47abe87caf0c157d6d4170d06b91ad134c8c3cc9169e4133e65",
+        "size": 5868
+      },
+      "geometry_meta.json": {
+        "sha256": "0f677b847d20b7b2b1b3129c79d1d5cfe78a30886e33d20f10c0d51e6b730d51",
+        "size": 3074
+      },
+      "hierarchy.json": {
+        "sha256": "d6e2440b5b6b6e1c9d9c87b0b7658291c3aeac2faa79633feadf1c79ae3f966b",
+        "size": 1944
+      },
+      "runtime_policy.json": {
+        "sha256": "8de4bd25f1778e7eb642013c829aaaa3197437de635fcbfc94ac7b91e81674e6",
+        "size": 791
+      }
+    }
+  },
+  "generated_at": "2026-05-11T05:35:14Z",
+  "name_schema": "multilingual_v1"
+}

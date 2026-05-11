@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "al.admin",
+  "country_iso": "AL",
+  "country_name": "Albania",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "24818656c6fb9bd746fbbe5b8890d8c2bac5096d",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/albania",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "a847d427cca7cd4e5af1045887fe6c4a57f96361979326db8f0a83aa4c48bda7"
+  },
+  "runtime_compat": {
+    "min": "0.8.24",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "690f9d257c2da7c6e3e9038424a0a441b9ca110ee64430ac440d2a0fc686c3d1",
+        "size": 677808
+      },
+      "geometry_meta.json": {
+        "sha256": "56e5594b6e7c03be42f35c26f03a652f25b9dfa2d828b5022567ab81ebb46f11",
+        "size": 121853
+      },
+      "hierarchy.json": {
+        "sha256": "e2d2bbb07090bb1511217c3c89486f701303c590dbc67203f516f3468c48680f",
+        "size": 69029
+      },
+      "runtime_policy.json": {
+        "sha256": "86d0fdccd1bd891041f5964092fb1d893ff0b892e52d60c94ba0f0214b41f357",
+        "size": 2277
+      }
+    }
+  },
+  "generated_at": "2026-05-11T03:30:57Z",
+  "name_schema": "multilingual_v1"
+}

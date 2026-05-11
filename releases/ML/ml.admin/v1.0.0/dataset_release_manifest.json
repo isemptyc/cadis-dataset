@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ml.admin",
+  "country_iso": "ML",
+  "country_name": "Mali",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "e5ad5a11d77f3847f5ce1f285ce885343de5db86",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/mali",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "545892e025b931036f326e496b024240b3a908f92490d1468b7770f0cc6277f4"
+  },
+  "runtime_compat": {
+    "min": "0.8.127",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "aa02461ce8cc1285bbc92bf528612507b92fa46a9d9dbfdd47b80922eedcd17b",
+        "size": 69836
+      },
+      "geometry_meta.json": {
+        "sha256": "3b5daf310057124f3272c74623c44847994072f39943534802cb99fcb17049fc",
+        "size": 17844
+      },
+      "hierarchy.json": {
+        "sha256": "31a2fc9a253b16bd293e8b48a378a8784e433c5b366fed662a111118a500b243",
+        "size": 10842
+      },
+      "runtime_policy.json": {
+        "sha256": "0e19ec7a1bfcbacb7d4eb551ca2310d8c855585940a5adaa68b20d6c3cf6f3b9",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:50:39Z",
+  "name_schema": "multilingual_v1"
+}

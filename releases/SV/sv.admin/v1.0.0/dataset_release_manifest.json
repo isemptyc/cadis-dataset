@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "sv.admin",
+  "country_iso": "SV",
+  "country_name": "El Salvador",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "260cb695c6f4a83a83ad48480cb1ae72345c153e",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/el-salvador",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "b32cbe98c40422e7eee60d55cec21460f24020e295c7cfd5c71366585289c6d2"
+  },
+  "runtime_compat": {
+    "min": "0.8.55",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "3ebc0f0c83468a4386f3d16edaccee67de85d12fdb1954bf2fdfb68cb92a9e08",
+        "size": 100556
+      },
+      "geometry_meta.json": {
+        "sha256": "b61281b3830e889573ae8519a543b6aecddd1d4fe5cd64a044e99a944ec9e4d4",
+        "size": 119648
+      },
+      "hierarchy.json": {
+        "sha256": "a23540efc072469023fd78d33d68886d3a448f18832d071cc583594b2268c7cb",
+        "size": 64169
+      },
+      "runtime_policy.json": {
+        "sha256": "dd5f7bf37e8be9146b32bfedf7c16343b8e5a7bbf9c4ce842614476d564c2889",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T14:08:59Z",
+  "name_schema": "multilingual_v1"
+}

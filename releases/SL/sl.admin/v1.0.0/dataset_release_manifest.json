@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "sl.admin",
+  "country_iso": "SL",
+  "country_name": "Sierra Leone",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "c97e108cee033312ffd29c95a353d5b34f4ecc08",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/sierra-leone",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "69c767eeb64a9d1c852097aa42d4db5ea9f73a4eb564dde428283899633e1896"
+  },
+  "runtime_compat": {
+    "min": "0.8.141",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "5df7d68821ea951bbd9f2869bf4a1eabe590e7521b03f837b4ba878ee309bf2e",
+        "size": 35820
+      },
+      "geometry_meta.json": {
+        "sha256": "8359886a383b94674af82e6f4eb0e27d2fabd19d4f0b51780f12ea2ee15887ef",
+        "size": 10595
+      },
+      "hierarchy.json": {
+        "sha256": "8e2ec73edc5f15eab58f626ccdd6335c8e8e7aa99cc7c86feeb7f6dbbd9998c5",
+        "size": 6121
+      },
+      "runtime_policy.json": {
+        "sha256": "75ea0f1cb5c7a3d1652936444c5191fff7eab258d278c7111af55cfe169b4b78",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:05:07Z",
+  "name_schema": "multilingual_v1"
+}

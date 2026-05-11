@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "lr.admin",
+  "country_iso": "LR",
+  "country_name": "Liberia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "76bc784a307c54314943f856308cdf3a597f51a6",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/liberia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "9a905c5d9bb882e9561241d160c6e8a5853478d28061591e1535e9e9b1b83679"
+  },
+  "runtime_compat": {
+    "min": "0.8.123",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "c66fb0499c3aa55a35b7823655b1adefba8c77791e8dd9ccd7e7837d5e770f7e",
+        "size": 91512
+      },
+      "geometry_meta.json": {
+        "sha256": "259053267059d1d5645539754fad10e3baba548cdba7ec04928fb7cab01fa809",
+        "size": 81331
+      },
+      "hierarchy.json": {
+        "sha256": "23a56d959f8532239c7ff0482a4fac90284f1cf956a061bbe43e345434e321b6",
+        "size": 43457
+      },
+      "runtime_policy.json": {
+        "sha256": "6c1d15155fff50bdc53466d39a8700acb25241e98ec0e2c095e6006946c551b0",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:43:51Z",
+  "name_schema": "multilingual_v1"
+}

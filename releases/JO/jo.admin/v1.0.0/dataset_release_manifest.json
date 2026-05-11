@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "jo.admin",
+  "country_iso": "JO",
+  "country_name": "Jordan",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "ee27d2d1d02a5f892950e7bb447cdd5a2562ce32",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/jordan",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "1779a39eafa1530ca33657e0a3f0b149bbf422febf7bc682a653210ed9a6bb58"
+  },
+  "runtime_compat": {
+    "min": "0.8.80",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "7b4e1bbbde1d2c0088a7be2c7eef615d52cbe6ae58e9a7afab2a2209f61f9d0f",
+        "size": 38084
+      },
+      "geometry_meta.json": {
+        "sha256": "6a82940a6492ca7479d28f53088da0ffe4ddb8be875d3c7fc57c1e2793b9f661",
+        "size": 46764
+      },
+      "hierarchy.json": {
+        "sha256": "164d39e54451f247650f39ed9785d0ddc4ee982efba02fa8ae450d3b8310e6e9",
+        "size": 28879
+      },
+      "runtime_policy.json": {
+        "sha256": "fb111ac6db4ea6094b2e051f5bd62d1719aef82faaf64516bab90141df044d95",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:15:00Z",
+  "name_schema": "multilingual_v1"
+}

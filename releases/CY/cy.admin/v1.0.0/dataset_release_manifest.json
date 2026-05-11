@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cy.admin",
+  "country_iso": "CY",
+  "country_name": "Cyprus",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "e77015be3484338e9b66f4655c724c5ffb6a3c9c",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/cyprus",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "837a85874057d3dede19cc14c23b04a733264c71c428f78216cead90b85990a9"
+  },
+  "runtime_compat": {
+    "min": "0.8.38",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "66cca8e9894d3d1bda4c51ca508bf672b15d7aa44973aa29c3f2f61a537a011b",
+        "size": 1277104
+      },
+      "geometry_meta.json": {
+        "sha256": "980173961797f8f59e48f84ad483cae03310bea20fc801731ba811436f688f61",
+        "size": 150560
+      },
+      "hierarchy.json": {
+        "sha256": "033847ee334bc2b6f10a46740bcdf920e61db8a694d47d2c857c50191ae65638",
+        "size": 91011
+      },
+      "runtime_policy.json": {
+        "sha256": "2941da9129e58b6d2036bda254a60d972f2f20bbd79add03bb553bcd7e39e613",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T07:30:40Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T06:53:59Z",
+  "generated_at": "2026-05-11T07:30:43Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -324,6 +324,12 @@
       "si.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/SI/si.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "CY": {
+      "cy.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/CY/cy.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

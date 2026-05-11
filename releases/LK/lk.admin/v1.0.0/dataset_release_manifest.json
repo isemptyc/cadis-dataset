@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "lk.admin",
+  "country_iso": "LK",
+  "country_name": "Sri Lanka",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "6de5b4e12f291bdf8a11b8bf08bcc7a344a53654",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/sri-lanka",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "51d45279fdbab2e9065f085dbc04b86ab6a9ef675c285547079c323aa1a112c8"
+  },
+  "runtime_compat": {
+    "min": "0.8.92",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "dd8f275fd84f60af7f9a267cb3b0502f80fbe6f63d6d9577fa773ec604d8713b",
+        "size": 31944
+      },
+      "geometry_meta.json": {
+        "sha256": "9202474fd4be593e683d88b1a9cba22fd71ab955d8a5d44584557a4d87151ee1",
+        "size": 27936
+      },
+      "hierarchy.json": {
+        "sha256": "bdbd776388bee934a0b9b28c159110fc2eb083b98504ab8e19c8ddba9e265805",
+        "size": 16401
+      },
+      "runtime_policy.json": {
+        "sha256": "87ace5a0b7e251ff33f46e6c112d1898e337eaab7aa37c156393f79794a02ce4",
+        "size": 85258
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:35:36Z",
+  "name_schema": "multilingual_v1"
+}

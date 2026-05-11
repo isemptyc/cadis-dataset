@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "st.admin",
+  "country_iso": "ST",
+  "country_name": "Sao Tome and Principe",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "40951ed8f39af1c56870a2a7b3841337ac655c59",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/sao-tome-and-principe",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "5673cbecdd41bd01290c12e1826295d3071e659a1aa20304e28b2f229b0ae3f5"
+  },
+  "runtime_compat": {
+    "min": "0.8.137",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "b5bd7aec0ba388c028f3f1ad09efdf9326afc9234a4aadb6ea7b4ad7f3bc834b",
+        "size": 13304
+      },
+      "geometry_meta.json": {
+        "sha256": "fc26fed9ae2ac4809675366dc166be50c0c548de07f37c35142d35efbb547dcc",
+        "size": 6681
+      },
+      "hierarchy.json": {
+        "sha256": "6c87aaecdf96f0e7b2b744bdf5490d8a045332512130cc60e7f22c928f501386",
+        "size": 3634
+      },
+      "runtime_policy.json": {
+        "sha256": "85037fc3e0930f9b4305e48cb94dc883919bd76887043a9b42ad151b391dd6e6",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:02:31Z",
+  "name_schema": "multilingual_v1"
+}

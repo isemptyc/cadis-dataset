@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "kh.admin",
+  "country_iso": "KH",
+  "country_name": "Cambodia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8baf27a5e039ec07ee22c9d3a041a56f49576f0a",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/cambodia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "d1591d60f4edfb3dff325d5e35358707e4ab1794f1207d1f815ccd63ad8e4d19"
+  },
+  "runtime_compat": {
+    "min": "0.8.68",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "32fe2fcabd26023233a21c71b24be6f40157a42cfb2b4b039b74fd57e5b0237c",
+        "size": 148680
+      },
+      "geometry_meta.json": {
+        "sha256": "afbfe3d7238444885b4e4d8a727510f5114a705771d15a316bef25937fac2cc5",
+        "size": 95094
+      },
+      "hierarchy.json": {
+        "sha256": "e2fa43e0fa1ef12fddb397587c8101a50c3130e05c7ee390e33f7dae83cef294",
+        "size": 57400
+      },
+      "runtime_policy.json": {
+        "sha256": "a0fd53f5dd24d7af6625add9482f3127b4550339963ba479895ce233d3792b2c",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T16:54:15Z",
+  "name_schema": "multilingual_v1"
+}

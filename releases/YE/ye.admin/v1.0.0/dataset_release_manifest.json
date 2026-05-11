@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ye.admin",
+  "country_iso": "YE",
+  "country_name": "Yemen",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "48cff39390135d684db845a29acb1f11311a4e2a",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/yemen",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "31394ce593f268f70243b378e9c63d55f11aa9d3657463304a8e1d3f0f38e0bb"
+  },
+  "runtime_compat": {
+    "min": "0.8.97",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "d131424476098ba91d7bd723f4ab6710f512eb3078f01604bb261d5d54bea979",
+        "size": 100284
+      },
+      "geometry_meta.json": {
+        "sha256": "a6dde73daf05168782d23c414634bbdc8cf057ebcb4fb0ac54892e6837cfb709",
+        "size": 104160
+      },
+      "hierarchy.json": {
+        "sha256": "158ca36fcdfbccd7593ec6b5449310e84f5f5ad623c357afe88ea8372dab05fe",
+        "size": 63860
+      },
+      "runtime_policy.json": {
+        "sha256": "e75a86315e9c1f42807726bca4d763e5383400618fd8fa831daf2c2a642404fa",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:41:55Z",
+  "name_schema": "multilingual_v1"
+}

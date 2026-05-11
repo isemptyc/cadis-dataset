@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ni.admin",
+  "country_iso": "NI",
+  "country_name": "Nicaragua",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "903e091e9584f04972291600bb7a9bda66fd8391",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/nicaragua",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "25085ae9ebd58961e7803db7047b006adc34282b9250c4a92a71cc9abf4a3d9b"
+  },
+  "runtime_compat": {
+    "min": "0.8.61",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bfa8d0e6e2f6742abc3c47eabbd11a9278d814c25c822fcccfd9255ef846c9ae",
+        "size": 1264516
+      },
+      "geometry_meta.json": {
+        "sha256": "065366de47b1705bdfe958bd7a2f60067b89c1849a50d74341a2c32950308a7b",
+        "size": 1486036
+      },
+      "hierarchy.json": {
+        "sha256": "2d6ce87bf8b9cdabf358fcd3f8ace6f176a265476bb6c80bc5b8629afc958ddf",
+        "size": 787423
+      },
+      "runtime_policy.json": {
+        "sha256": "61429854d3120f6ab2ca931a0754f689f9ba9f5055fec2536b31666bcdbb0433",
+        "size": 19374
+      }
+    }
+  },
+  "generated_at": "2026-05-11T15:39:11Z",
+  "name_schema": "multilingual_v1"
+}

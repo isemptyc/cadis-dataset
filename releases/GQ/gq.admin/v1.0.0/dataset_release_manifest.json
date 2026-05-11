@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "gq.admin",
+  "country_iso": "GQ",
+  "country_name": "Equatorial Guinea",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "71901e8cac8d456a6e8da355860190ab794bdaeb",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/equatorial-guinea",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "72357510c68cae8a9006ed895ae47e660fb1bd48bb09a755eb5b38b688cb05af"
+  },
+  "runtime_compat": {
+    "min": "0.8.113",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "2c4fdf80e687927d96274f1290e41da55d6100e3f84fffc35b31428751c117aa",
+        "size": 30932
+      },
+      "geometry_meta.json": {
+        "sha256": "29746481d10dae021f0798bfe26d5f8d05412dcea6233fe60c20d9099374a050",
+        "size": 14211
+      },
+      "hierarchy.json": {
+        "sha256": "c522fb86767617cd9e98ae2b493bd873863e9ac1b9abc07c3796f33c457a888a",
+        "size": 7763
+      },
+      "runtime_policy.json": {
+        "sha256": "22c9cde8c660e14315cca2b62202c9e049732f6abcfc8369bbf103e8631a86ca",
+        "size": 9080
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:33:34Z",
+  "name_schema": "multilingual_v1"
+}

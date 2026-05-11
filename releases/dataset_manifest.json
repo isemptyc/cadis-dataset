@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T18:33:09Z",
+  "generated_at": "2026-05-11T18:33:37Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -774,6 +774,12 @@
       "eg.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/EG/eg.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "GQ": {
+      "gq.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/GQ/gq.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

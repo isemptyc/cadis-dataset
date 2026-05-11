@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ke.admin",
+  "country_iso": "KE",
+  "country_name": "Kenya",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "eb26ac20fcec88e09ae270e776687b81ebf0cc70",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/kenya",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "29da78ffd8e697fe3e9a3f103fab17001245edc5361acd3367b661c00f0eade7"
+  },
+  "runtime_compat": {
+    "min": "0.8.121",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "e62c943fbb56fc19a4fb94bb2802201161f54b5e0a069df2df891a0737959ab5",
+        "size": 533096
+      },
+      "geometry_meta.json": {
+        "sha256": "4bcd4594a8d7ae93ad4b7ede9bfc9249cc916649963978a1c8f96a6355e53f29",
+        "size": 398677
+      },
+      "hierarchy.json": {
+        "sha256": "38f83e1d12dccd295166a50e0ab2dc25c689e64c68cc1e5f13212d8cdec14366",
+        "size": 214223
+      },
+      "runtime_policy.json": {
+        "sha256": "468215ae8d3b9f5ce66378d61b017bb835e759b462938c82345a4edc25bc9617",
+        "size": 181276
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:41:40Z",
+  "name_schema": "multilingual_v1"
+}

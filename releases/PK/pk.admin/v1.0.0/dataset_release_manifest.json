@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "pk.admin",
+  "country_iso": "PK",
+  "country_name": "Pakistan",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "278bf20e0f946b84dcff9cfe08a7ba73f3ffe960",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/pakistan",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "3b6277e2a024cec9e7e7024f397056f477ed09058e2529bcca7b3f9e1b0f2239"
+  },
+  "runtime_compat": {
+    "min": "0.8.91",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "81f21160c2e9b88b21c537d9c7d3ec8b71f5f635b1a4ea81f57749ba6d6fe2b9",
+        "size": 649996
+      },
+      "geometry_meta.json": {
+        "sha256": "bfb733f4f8bc71a03f7d84b5fa87dcd27e48baa481eaca76a9fdea0ff4062355",
+        "size": 247579
+      },
+      "hierarchy.json": {
+        "sha256": "99d4bf9c224c33661cc433664335e1b4799badf3876e1cae8d3e9a114e7741a6",
+        "size": 150553
+      },
+      "runtime_policy.json": {
+        "sha256": "14068b7eecfe57a3d91273d6a9510f4ba1463c82ffb5cd553a08e58abc730e14",
+        "size": 85772
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:34:14Z",
+  "name_schema": "multilingual_v1"
+}

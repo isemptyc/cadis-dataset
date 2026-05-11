@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "jm.admin",
+  "country_iso": "JM",
+  "country_name": "Jamaica",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "605fce49ad2cf89e71fc01a9a9b775ab9ae7a311",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/jamaica",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "365c6649b02f1d16ab98c6571a856b80b3d59ca3e054a4de9947cb83d4dfafed"
+  },
+  "runtime_compat": {
+    "min": "0.8.60",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "ad823c45b0307fce890ef92f5ea26a4a7344dc80de9dd812d7057b77c89be96f",
+        "size": 34764
+      },
+      "geometry_meta.json": {
+        "sha256": "cdfd24d9b570c921336d2689292fbf9174a9c6a49abca2cb975de5541a0c1f3c",
+        "size": 7528
+      },
+      "hierarchy.json": {
+        "sha256": "ce4779c995d4d6245cbc1bc1a327a0ebc663dd36057ef3d5ba00b562858e71ea",
+        "size": 3982
+      },
+      "runtime_policy.json": {
+        "sha256": "4472739a71dc1fc27d0d4699ffecd5d15d91c7275e91c09a91d28e6c32c47ed1",
+        "size": 2252
+      }
+    }
+  },
+  "generated_at": "2026-05-11T15:28:42Z",
+  "name_schema": "multilingual_v1"
+}

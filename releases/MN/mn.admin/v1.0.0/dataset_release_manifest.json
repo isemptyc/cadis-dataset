@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mn.admin",
+  "country_iso": "MN",
+  "country_name": "Mongolia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "1dc244bf59b71f1fcd36ef48ad7b5b3ac148d1ee",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/mongolia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "0b98532829dc5a96919f9d3c8ef73d28a76f8571902a28690b7037d25821167c"
+  },
+  "runtime_compat": {
+    "min": "0.8.87",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "e5060711254120b1db272aac1ed5576e096ff73b011a4806031a5734445b0cfc",
+        "size": 117904
+      },
+      "geometry_meta.json": {
+        "sha256": "6189aa7336e96a568e613a24058b83f51a1daf82f6a280549c38e8d2aed2a928",
+        "size": 119409
+      },
+      "hierarchy.json": {
+        "sha256": "282ddf82f69765beb1176adb1b0c15bf940c17e9af5c651aad1cabbbe8621726",
+        "size": 78473
+      },
+      "runtime_policy.json": {
+        "sha256": "07c19a0a2f151133ccaa867e5c73d09748fc3449bbb0b38ac989d399899c32c8",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:24:38Z",
+  "name_schema": "multilingual_v1"
+}

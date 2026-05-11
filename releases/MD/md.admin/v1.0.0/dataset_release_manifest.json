@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "md.admin",
+  "country_iso": "MD",
+  "country_name": "Moldova",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "387098d9b74a694d1dbac05aeec744a877876852",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/moldova",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "f4ada111bee3a9c12f3b86d1cb654282d3fea613a00743f611a4c42e93520fbb"
+  },
+  "runtime_compat": {
+    "min": "0.8.42",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "230bb98b01612c5311deded09ca919ea2a5ef5aec47471c6d41863f51dee8df7",
+        "size": 2750260
+      },
+      "geometry_meta.json": {
+        "sha256": "0783f9acdc588878c12f071323487b02484bc793bd48f29ef0863262ef40db6e",
+        "size": 708540
+      },
+      "hierarchy.json": {
+        "sha256": "8116fa51a9e8a0b2ff3ea6a2ed47d60fff9774b3c9245f55cdfbda6953a1b48a",
+        "size": 427070
+      },
+      "runtime_policy.json": {
+        "sha256": "8a54c3d46a5d744899a859f55e87b8fbacc062fe4d3ad95b234b7e671734bc7d",
+        "size": 1260
+      }
+    }
+  },
+  "generated_at": "2026-05-11T08:19:39Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cd.admin",
+  "country_iso": "CD",
+  "country_name": "Democratic Republic of the Congo",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "70caf125320989fea2214c667e838e9630515d02",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/congo-democratic-republic",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "8fd54adc686c953950f5fd2a441b270bc5586a3ef952399186ef52169d50bf15"
+  },
+  "runtime_compat": {
+    "min": "0.8.110",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "f311b0b2acef74a0b28ba91dd50e906f4fced6165dbd60cbd8189dfea9b05441",
+        "size": 443120
+      },
+      "geometry_meta.json": {
+        "sha256": "b5d2b61bd24dc8ab67849636e1c575d02f729de22d9c22d285729798993c8520",
+        "size": 464360
+      },
+      "hierarchy.json": {
+        "sha256": "61fa93f77f0a2f6c696dfb1fdc0b4c03a81fbf0a810354b19513754c66d54e4a",
+        "size": 243608
+      },
+      "runtime_policy.json": {
+        "sha256": "e093cb18620d757ac2f3c12b0c8ee1eae3235f8aa826a1d4764f54c4b2ef2b43",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:31:08Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "sr.admin",
+  "country_iso": "SR",
+  "country_name": "Suriname",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "610a954a829f42ecfe0c4dd931d77bd33473c820",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/suriname",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "cbc0b3480c75a194ddebc39874b4c02f736e7d2539bcba94fee26be7ae95ef80"
+  },
+  "runtime_compat": {
+    "min": "0.8.48",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "1df8846b988ef80c241d68d646f4c0e829b471e92fe515ff795817286d35849f",
+        "size": 27172
+      },
+      "geometry_meta.json": {
+        "sha256": "3a3b054d76db73434c27409465d0fd7a3013bf607664052f8bb022e111b99129",
+        "size": 17791
+      },
+      "hierarchy.json": {
+        "sha256": "ee6e8d40d36ce4962bf11d0706118958972dc6bfdf2ab382db1632ab3092127c",
+        "size": 9429
+      },
+      "runtime_policy.json": {
+        "sha256": "85bc2f423739e8dd23b568bfb9cd67781f3102014cee7b8f8263048c16421364",
+        "size": 786
+      }
+    }
+  },
+  "generated_at": "2026-05-11T11:26:18Z",
+  "name_schema": "multilingual_v1"
+}

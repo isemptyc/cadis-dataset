@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "gm.admin",
+  "country_iso": "GM",
+  "country_name": "Gambia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "4619adc67aede192c56c01980c9c7e660d63c9fe",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/senegal-and-gambia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "884b5bbf37b2be76e87264e3a16fb15326b4aa9c6c7f47bf9e802a1f284c7576"
+  },
+  "runtime_compat": {
+    "min": "0.8.139",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "fd886e3686d6ab532611c798b33900ccb84149d02d46cab6c663e77698f045f8",
+        "size": 16560
+      },
+      "geometry_meta.json": {
+        "sha256": "4649c7f6b1891043949c61f0f2893a30d9a8e038d5f6c5ba30099b95709b368d",
+        "size": 14993
+      },
+      "hierarchy.json": {
+        "sha256": "388cb0c75839ee2aa8354c864ce968dbc2c081e8b09d998db311bdf82ecf035c",
+        "size": 8291
+      },
+      "runtime_policy.json": {
+        "sha256": "934c25515efe2621c118c1895a2a4410ae1768c3c8e770d922c187b851055786",
+        "size": 40314
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:04:12Z",
+  "name_schema": "multilingual_v1"
+}

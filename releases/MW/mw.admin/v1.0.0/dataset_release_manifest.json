@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mw.admin",
+  "country_iso": "MW",
+  "country_name": "Malawi",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "ab4860c3aab9b5c91f8022c1e0a87342d6fd1148",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/malawi",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "769823386e66098f32c0cf697f509e29d7a7fe711f1deee659f5b174035ea9c5"
+  },
+  "runtime_compat": {
+    "min": "0.8.126",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "b45231dbaf78721aa57430137d1570ffd3269544ea2d0e1bbf9fc156480bc53f",
+        "size": 29212
+      },
+      "geometry_meta.json": {
+        "sha256": "cc5fa30c1b96ebc49daf08c865ccca26c37af233fa0357264c7c2a80fb92d09e",
+        "size": 23122
+      },
+      "hierarchy.json": {
+        "sha256": "aeec5e3452fb6a88a2964d758cb962d949cf9fd469a6c0ae40ef70fe35b25603",
+        "size": 12800
+      },
+      "runtime_policy.json": {
+        "sha256": "d8a31b10424493aef30861d4fe7f4832e8ca3ee872388dae54ff8fc16afc3425",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:48:53Z",
+  "name_schema": "multilingual_v1"
+}

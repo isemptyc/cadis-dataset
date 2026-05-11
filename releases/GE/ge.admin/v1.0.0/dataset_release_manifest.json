@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ge.admin",
+  "country_iso": "GE",
+  "country_name": "Georgia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "6f71b221efa0efe8dde38af46654cf0095b53944",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/georgia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "b83911459bb7ea5d1dcd0f0ed4c143cf48fc8fd2313e5ad2cefadb2e52c87a02"
+  },
+  "runtime_compat": {
+    "min": "0.8.39",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "e8861b2b6e57234139d059ddddbf9fcc5bbf112adb8e4ea918ce9011c9c31a98",
+        "size": 215920
+      },
+      "geometry_meta.json": {
+        "sha256": "95b72dce09c91af7dc4e55ffea59043f4c00dbf52cd601ac2c92c6bac0c84172",
+        "size": 111234
+      },
+      "hierarchy.json": {
+        "sha256": "45e1c87c3526d06d657e0f616bfd2ff9ac28916deae27aa7effc78f08d856ce1",
+        "size": 78699
+      },
+      "runtime_policy.json": {
+        "sha256": "a87a6d64c12b4ebf32e5e30e1555c2dcd52d31c6e5f80ac111954e9a36bdb780",
+        "size": 2290
+      }
+    }
+  },
+  "generated_at": "2026-05-11T07:43:09Z",
+  "name_schema": "multilingual_v1"
+}

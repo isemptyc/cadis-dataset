@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mg.admin",
+  "country_iso": "MG",
+  "country_name": "Madagascar",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "d1cea0c6219a9c7e76e1d6decb1e0296926c9ec9",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/madagascar",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "561ec4951c5cd4947711b67b209842104e21f21b3b82763dce60e1259d3c0f52"
+  },
+  "runtime_compat": {
+    "min": "0.8.125",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "f2726ac9786cbce9dc38441f9a663e94f2e36fa8259e4a1da7d1cb04421b33a8",
+        "size": 508404
+      },
+      "geometry_meta.json": {
+        "sha256": "dbe99a4b5e195f56239301cb365cb8f4637e4653ca8224ed25d5a289eacb171e",
+        "size": 281167
+      },
+      "hierarchy.json": {
+        "sha256": "3e8f3b74e9130896552ea3ffae8b5d5017f000fe10b0ddb9f5d116ed540c4696",
+        "size": 149986
+      },
+      "runtime_policy.json": {
+        "sha256": "18a60770a57ed1751889abc037ee46d68fa13a249cc49c31d77ab30d48949bc2",
+        "size": 85772
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:47:26Z",
+  "name_schema": "multilingual_v1"
+}

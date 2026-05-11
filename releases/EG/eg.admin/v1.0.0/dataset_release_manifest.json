@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "eg.admin",
+  "country_iso": "EG",
+  "country_name": "Egypt",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "0bcd074802d1a5d59fbe0c4e5d8a74cbe955b30b",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/egypt",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "dfeff9f6af5528e38813f45e0706a05943162f4001d1ebdd92850fc9f5f644fb"
+  },
+  "runtime_compat": {
+    "min": "0.8.112",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "cd57649324f1fd83c641a3b9ca98382030d024aa1100d03f437330b9d70c8bb4",
+        "size": 7084
+      },
+      "geometry_meta.json": {
+        "sha256": "6805577ef847900811228fe40b438deb9d67d8ab7107d6cf1eed860859e6dfa2",
+        "size": 12234
+      },
+      "hierarchy.json": {
+        "sha256": "5627e0724ee0a8ccd989a354dda06c87c8ca7eb406a12760a1b9f0186f5c5118",
+        "size": 7588
+      },
+      "runtime_policy.json": {
+        "sha256": "e093cb18620d757ac2f3c12b0c8ee1eae3235f8aa826a1d4764f54c4b2ef2b43",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:33:07Z",
+  "name_schema": "multilingual_v1"
+}

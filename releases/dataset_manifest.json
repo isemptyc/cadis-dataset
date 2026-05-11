@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T18:31:42Z",
+  "generated_at": "2026-05-11T18:33:09Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -768,6 +768,12 @@
       "dj.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/DJ/dj.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "EG": {
+      "eg.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/EG/eg.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

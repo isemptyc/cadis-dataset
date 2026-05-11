@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "kw.admin",
+  "country_iso": "KW",
+  "country_name": "Kuwait",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "866312ffd679bdfec6468b488cf1bc43bbcbc251",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/gcc-states",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "e70d3e9906ce96834abf16cabd2a29de665972f98fad5336c1d226b11ee02acc"
+  },
+  "runtime_compat": {
+    "min": "0.8.71",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "47be244b7ae057f29bdae90074e4ddad344e1eb83cdd22c3d92b4ef381049e0b",
+        "size": 87028
+      },
+      "geometry_meta.json": {
+        "sha256": "5db1911da3bcec7bde923ada7a26140b20123af12b7051a9fbf519688432f3a6",
+        "size": 307338
+      },
+      "hierarchy.json": {
+        "sha256": "4fdac2ad7c496880113bba4b35aef370a504ad12513f641069dd33c9f7dddbe8",
+        "size": 186854
+      },
+      "runtime_policy.json": {
+        "sha256": "08edd38592a424464f049bb278cf45358fd443194ffb71eee40c517aecde8607",
+        "size": 181276
+      }
+    }
+  },
+  "generated_at": "2026-05-11T16:58:05Z",
+  "name_schema": "multilingual_v1"
+}

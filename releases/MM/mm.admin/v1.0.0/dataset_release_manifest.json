@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mm.admin",
+  "country_iso": "MM",
+  "country_name": "Myanmar",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "5cb70b6f97d37ea63ea582b6a5ecabba35e7cda5",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/myanmar",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "220e972c03bafa75bb9c08e0903402f0216b3339090232e95f4c80a24ee98a55"
+  },
+  "runtime_compat": {
+    "min": "0.8.88",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "480a178b888468d2e3ab3f29ab13cd4d985ba0d893ea66e50db37f33c221f57d",
+        "size": 840440
+      },
+      "geometry_meta.json": {
+        "sha256": "d1a69e349b55bf9114e4c29cbdd66de474eb2053d19b7ebe647670efc0067a64",
+        "size": 721580
+      },
+      "hierarchy.json": {
+        "sha256": "10c393afb99553b73e0055c1cc357ed2037ab3abd1c17846666fa334e3d2b6b9",
+        "size": 434616
+      },
+      "runtime_policy.json": {
+        "sha256": "87ace5a0b7e251ff33f46e6c112d1898e337eaab7aa37c156393f79794a02ce4",
+        "size": 85258
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:26:41Z",
+  "name_schema": "multilingual_v1"
+}

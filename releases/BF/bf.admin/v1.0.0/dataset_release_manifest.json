@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "bf.admin",
+  "country_iso": "BF",
+  "country_name": "Burkina Faso",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "4b854aeb60768d6c1a7cdfbc2c536d5858c727bd",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/burkina-faso",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "218056314dc865f082acc7f90408d1598b6187eeb65bf4805381c168a9f1795c"
+  },
+  "runtime_compat": {
+    "min": "0.8.102",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "91d951aa7abc536ad859db8b3d49d2c33c01d94a15c3007c3f0571b81c953c11",
+        "size": 120668
+      },
+      "geometry_meta.json": {
+        "sha256": "f3ce01eafc2424c4fbb3e48be269f3310742c7eca4677d8ef3ebb7239856fd4d",
+        "size": 72835
+      },
+      "hierarchy.json": {
+        "sha256": "8e366d42c0ea4d74503a676907529d5f4c0fc1d5e6a5a1fabc359205ccb2c53a",
+        "size": 39373
+      },
+      "runtime_policy.json": {
+        "sha256": "ea7626a7b0a1e587b8569e9552a2168d7b8606f9eaab830fda575f3363ad2899",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:21:13Z",
+  "name_schema": "multilingual_v1"
+}

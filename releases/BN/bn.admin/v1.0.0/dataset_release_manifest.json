@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "bn.admin",
+  "country_iso": "BN",
+  "country_name": "Brunei",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "b1356eabe7c7755628945178cc74129a06bf36d0",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/malaysia-singapore-brunei",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "1594a4d7222661568c13b417d149a41790800e19be4138dd943fb562635eb065"
+  },
+  "runtime_compat": {
+    "min": "0.8.85",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bb8058129e69c41c4a3d725098177f792bc41668aa67f76c63705d9f111ce8be",
+        "size": 35336
+      },
+      "geometry_meta.json": {
+        "sha256": "e604ecafea7b882ea2b7f8d166afb00775770bb96128a654a6304c10c5d66e3a",
+        "size": 82816
+      },
+      "hierarchy.json": {
+        "sha256": "9d44130dd8b47a77974547738f14dadd876a9c9d496125e8be392816d8a2dc47",
+        "size": 45355
+      },
+      "runtime_policy.json": {
+        "sha256": "68edfadb0e7c23c155d30bd9a68d77192b665a85c88f0f5d4e7fceda45e25883",
+        "size": 182302
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:23:03Z",
+  "name_schema": "multilingual_v1"
+}

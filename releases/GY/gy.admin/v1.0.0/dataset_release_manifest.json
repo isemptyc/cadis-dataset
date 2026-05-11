@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "gy.admin",
+  "country_iso": "GY",
+  "country_name": "Guyana",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "510abf0e93935677264854c0ab8f30766ed1ecbe",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/guyana",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "246fab981c14cb538333453fd5f597c2e06228fb8b16a0743490368627796067"
+  },
+  "runtime_compat": {
+    "min": "0.8.46",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "cef9e2b9e6e38cd31d60c9ba4bf490b24b3040766ac517389e51623d2e9cc641",
+        "size": 70988
+      },
+      "geometry_meta.json": {
+        "sha256": "2cbfbdba21aa60fd80850c700ba7acabd66d9ee0de08bff3df9484d47344b938",
+        "size": 89526
+      },
+      "hierarchy.json": {
+        "sha256": "dd62b7c317fbd40dc38d48da0417166f26591f1a95daefe068d49fb9417a8276",
+        "size": 48414
+      },
+      "runtime_policy.json": {
+        "sha256": "943bac7f1d13712a704e2b3fdb82479f84c270a8c46e9656742db9ffd9486499",
+        "size": 2320
+      }
+    }
+  },
+  "generated_at": "2026-05-11T09:58:37Z",
+  "name_schema": "multilingual_v1"
+}

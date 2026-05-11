@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mz.admin",
+  "country_iso": "MZ",
+  "country_name": "Mozambique",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "5452a4bb584fa290a4390c89b73360e74e72e99e",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/mozambique",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "8ca61d4c4916b6508c61c188aa7d1aa90ba9d7f292d37025b855b0b8f0677d5a"
+  },
+  "runtime_compat": {
+    "min": "0.8.131",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "db6d852ca606779028be55fd9cc764d6e2c619d3cd00594234b481fcf76d2603",
+        "size": 289616
+      },
+      "geometry_meta.json": {
+        "sha256": "3091f19d6ce0cb0711459aaf724a3c12b13eff3cb3ea248d5b4a72c1b9fe23a3",
+        "size": 100821
+      },
+      "hierarchy.json": {
+        "sha256": "c163722dfa7cfcebfab099b32c8c9c6dbf323dbd13586b786317940c29b4b784",
+        "size": 53579
+      },
+      "runtime_policy.json": {
+        "sha256": "5ce928e53268ce9c34f52366a74519e5c3892488ab2ab7452858aa24590e696c",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:55:29Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ci.admin",
+  "country_iso": "CI",
+  "country_name": "Ivory Coast",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "375ee942910f1a673700b83e2f8b7892f024c8b5",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/ivory-coast",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "86544ddb2861d3de1c8c78e249a6660a3d8acf4ef19c28f0ed5efdd12baca9d7"
+  },
+  "runtime_compat": {
+    "min": "0.8.120",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "5f72bbadee76fd1d4a5a19c6d27738327d44319fe41e216bc70777cc33b74621",
+        "size": 88052
+      },
+      "geometry_meta.json": {
+        "sha256": "e24345845fab50fd7135703e92a8f283fbe9ab90e50277714292bb85ae26e478",
+        "size": 45992
+      },
+      "hierarchy.json": {
+        "sha256": "dceaca0139a76d6ea88ef18133149af02cc01aa2f43e6df97783c89c45a4a6e2",
+        "size": 24761
+      },
+      "runtime_policy.json": {
+        "sha256": "934c25515efe2621c118c1895a2a4410ae1768c3c8e770d922c187b851055786",
+        "size": 40314
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:39:30Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T17:37:29Z",
+  "generated_at": "2026-05-11T17:38:18Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -666,6 +666,12 @@
       "tj.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/TJ/tj.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "TM": {
+      "tm.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/TM/tm.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

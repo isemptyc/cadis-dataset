@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "tm.admin",
+  "country_iso": "TM",
+  "country_name": "Turkmenistan",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "82da728d42d49dab69adbc939a95c53c4908224b",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/turkmenistan",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "0e4d1c31397efd26ce1861b1543203be748eaa05a2af504dcd2b092b1fb099e2"
+  },
+  "runtime_compat": {
+    "min": "0.8.95",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "1c5771099fa215e7fe5f663ab5b903226d76642ed6bbe00834d622abcab75a3a",
+        "size": 34224
+      },
+      "geometry_meta.json": {
+        "sha256": "b25b9b9682209b2f76d58a2f0a9908df7e7ea9352c1cccaf5500a99c2eb2ddc4",
+        "size": 35247
+      },
+      "hierarchy.json": {
+        "sha256": "bc5662cf105d152a5c6ba8ba855609bc83f9c69af52ed296fc5890f5aff94414",
+        "size": 22049
+      },
+      "runtime_policy.json": {
+        "sha256": "39d558af45c0d3310ca10245515b8ae56fcc9597b90c58ee9b493bce1d305238",
+        "size": 40572
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:38:16Z",
+  "name_schema": "multilingual_v1"
+}

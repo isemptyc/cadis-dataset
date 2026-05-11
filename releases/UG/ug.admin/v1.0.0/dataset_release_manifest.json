@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ug.admin",
+  "country_iso": "UG",
+  "country_name": "Uganda",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "0a2e909e0f7e935ae80c65acca79ae96438e6ba8",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/uganda",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "0666916e6e6a1dcb200136b7de8e3a4da1c39245701574f6346bbe1ee3ca5a78"
+  },
+  "runtime_compat": {
+    "min": "0.8.150",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "c9464b44a607db7e30b2ed2d0e819320f6848856b099858a54686581c8cbcabd",
+        "size": 90384
+      },
+      "geometry_meta.json": {
+        "sha256": "a878441164e4b7c597e45cb3cbc8b66fad5c668152c51c32b2f5ee1787732c23",
+        "size": 151024
+      },
+      "hierarchy.json": {
+        "sha256": "45c07aee3a4cedabaa5c7caffb4a060b3bb5abefaadaeb534f05a3f32d833869",
+        "size": 79796
+      },
+      "runtime_policy.json": {
+        "sha256": "7bc1f5af6efbe22a4e7b79dc35f512a46f02fe3defd6a385ad595351f993ba73",
+        "size": 384558
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:20:53Z",
+  "name_schema": "multilingual_v1"
+}

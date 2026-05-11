@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cu.admin",
+  "country_iso": "CU",
+  "country_name": "Cuba",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "1d0088addbb28ca50bf1aee796350943e16b37e4",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/cuba",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "ed2edc50da2d97837bacedbcaa33aa158092f71620ff7c3252ef30335ed1bb82"
+  },
+  "runtime_compat": {
+    "min": "0.8.54",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "0bb3bca6e3211ccb09d3f9724d5decc1efbe44b08f7e53b6f116683b65499c58",
+        "size": 284772
+      },
+      "geometry_meta.json": {
+        "sha256": "e9c0d749590c86fd697f7835d3fd2ddf7b01ee43b81c8ec7afd9a649a0af0384",
+        "size": 119388
+      },
+      "hierarchy.json": {
+        "sha256": "22c9908f164935d30aed0962e0ede1059f084c711d9efe8796aff0099c72f843",
+        "size": 63602
+      },
+      "runtime_policy.json": {
+        "sha256": "2343119a36ff56a21d2627bfc3a34cc5e1714debf1d51fb37bb71c209c74679f",
+        "size": 19244
+      }
+    }
+  },
+  "generated_at": "2026-05-11T13:30:57Z",
+  "name_schema": "multilingual_v1"
+}

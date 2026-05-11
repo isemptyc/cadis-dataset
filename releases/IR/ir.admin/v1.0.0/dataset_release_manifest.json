@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ir.admin",
+  "country_iso": "IR",
+  "country_name": "Iran",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "89bb5f3151894fa5b26faaf8b56c4532f7986db9",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/iran",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "6622a2c27229384120115b27df6a22c9fe09a9b9b3e5ad5da48ad04d00b39cf7"
+  },
+  "runtime_compat": {
+    "min": "0.8.76",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "78b87e72fc3df8d9aa86f3efc55850bfcfa1e05dd787f308450ccfc6eab11e98",
+        "size": 1848356
+      },
+      "geometry_meta.json": {
+        "sha256": "4abe16e45d5c562bbaf45f43d3da0d3d5c7f7ea0c28a69b89ba23d726c2fad97",
+        "size": 2698505
+      },
+      "hierarchy.json": {
+        "sha256": "686d633aab3b6b20bf4b0b1b2c648b23d7510d6d80b8abcefb27022292847229",
+        "size": 1536834
+      },
+      "runtime_policy.json": {
+        "sha256": "e219ae2cc9ad4e05a2bd08fa60a818f44c80f47a132a0fff4b765b5e4b26df81",
+        "size": 182302
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:08:34Z",
+  "name_schema": "multilingual_v1"
+}

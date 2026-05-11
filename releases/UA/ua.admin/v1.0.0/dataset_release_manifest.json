@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ua.admin",
+  "country_iso": "UA",
+  "country_name": "Ukraine",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "27b8dddcf69a35d0f04f4c2de76bb833f60b2c1a",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/ukraine",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "44d1a7db0b30d4ffff2b8ab4d85869d4d9c7c23c656862dfe281881cab20889a"
+  },
+  "runtime_compat": {
+    "min": "0.8.43",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "8206a15ba8393aab4eb862c0a15b7a8b48727b86e980596caeeec8b33430a21b",
+        "size": 5091532
+      },
+      "geometry_meta.json": {
+        "sha256": "42e598e55f472714aab310a89ceceb6772bacd9f3d719330aea07035ae619a9f",
+        "size": 2683321
+      },
+      "hierarchy.json": {
+        "sha256": "08fe4625b59af59996ee9acfbc5b0c9e90c9f48f323b23815585bc56c3c1d286",
+        "size": 1798472
+      },
+      "runtime_policy.json": {
+        "sha256": "270e7d731779afeaaab56807d1d8f022acc43fdd867ee3b285d4c1b1298b4b59",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T08:37:16Z",
+  "name_schema": "multilingual_v1"
+}

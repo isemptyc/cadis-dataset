@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "dj.admin",
+  "country_iso": "DJ",
+  "country_name": "Djibouti",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "0797f6d509925af96336a9245ef85ca94bb6ceec",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/djibouti",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "5d4d4e4b0e43270f1d2cd0eeb1dd7eb3d4f3e92673353bf61ab70fc572f5fb74"
+  },
+  "runtime_compat": {
+    "min": "0.8.111",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "64ed55c887d7c4145a0eaa430ec770a1c830fc4f9d41c7747d3497f452ea45d8",
+        "size": 4484
+      },
+      "geometry_meta.json": {
+        "sha256": "fbd02a0a207feb22ac70a09244656d77c2b2cf9af6b3a5792ef98c098363d5f8",
+        "size": 5119
+      },
+      "hierarchy.json": {
+        "sha256": "7a2167f20af791640a140b324fbeb6e281f51c361bbaa03e4d587f5eb2e17d30",
+        "size": 3097
+      },
+      "runtime_policy.json": {
+        "sha256": "1873760be7c32f7a09ae6c4663e9848cf991c49f2fa0794ec3cc956b151490cd",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:31:39Z",
+  "name_schema": "multilingual_v1"
+}

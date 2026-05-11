@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "gn.admin",
+  "country_iso": "GN",
+  "country_name": "Guinea",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "ac715eff39ac3e57ea3f67f48260e39662d50442",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/guinea",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "7a4f647fa334db18cee5fd7bd0fe3eb3ee8aba5f12c16ce7ab26e8d5d4b88cd3"
+  },
+  "runtime_compat": {
+    "min": "0.8.118",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "9814f1c3afa6af1cc4bbd5c1cb6d290b5b36d3dfd925cca3275017805450146b",
+        "size": 126180
+      },
+      "geometry_meta.json": {
+        "sha256": "6c9f24998ba860ebcc802f0b5bff31a455dfed90bd08be5d07be102c8968f16a",
+        "size": 119702
+      },
+      "hierarchy.json": {
+        "sha256": "6fb0e59035120e39e7d4de2f409180abe03aafe29ac31175453c4685e818c2d0",
+        "size": 64361
+      },
+      "runtime_policy.json": {
+        "sha256": "2fcebbe19ca8ba6a6009483c0f13fcde8720c6b398d609095c1d6c2dfe3bfbe6",
+        "size": 19244
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:38:13Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "bi.admin",
+  "country_iso": "BI",
+  "country_name": "Burundi",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "5076173850d8fad8a6f36be7b42fc54de3b76ff5",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/burundi",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "9db7ac430a8dd2728f6cb2f355011a7c32daf96c31c79bbb90ff92f81334e27b"
+  },
+  "runtime_compat": {
+    "min": "0.8.103",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "077e8c2ac4d1b345598e196e80666901a63a0e1ef3914b06ea4c1b0d19ae429b",
+        "size": 16500
+      },
+      "geometry_meta.json": {
+        "sha256": "bc4a043f08c1230cffaa80e36b0e984549abfb23378f4fb2b111241ae725ba66",
+        "size": 14461
+      },
+      "hierarchy.json": {
+        "sha256": "3dce2d9584141c1edcb7f31796fdf7f99591f185d2242b12213adb84bb1713a9",
+        "size": 8118
+      },
+      "runtime_policy.json": {
+        "sha256": "d4b29df4c09d90b62428f1bac6ee88191dc56f6701437df28a4902b4b66cae3c",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:22:02Z",
+  "name_schema": "multilingual_v1"
+}

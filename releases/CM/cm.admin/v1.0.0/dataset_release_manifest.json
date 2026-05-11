@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cm.admin",
+  "country_iso": "CM",
+  "country_name": "Cameroon",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "5b33d7d450f37656fa95b3a1c2bfbbd1c43f6c51",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/cameroon",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "174ed8b75f40a753a07b577ea1ef4ca5e3730c0c7a33500f8e966edbacb251b3"
+  },
+  "runtime_compat": {
+    "min": "0.8.104",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "fb336b3035d8f1d305723e9f98465eaebbd35c57766f10a2a4ae7c5d267572c4",
+        "size": 384044
+      },
+      "geometry_meta.json": {
+        "sha256": "7042d789a489d95466f66a00b92655e1c1a3acad19efb28ce798ab48591d9ae0",
+        "size": 125584
+      },
+      "hierarchy.json": {
+        "sha256": "feb9c9d15f8dff5e6751ee6e2f1fcdbf66869ebdc364a041b2203ab15d333de5",
+        "size": 66366
+      },
+      "runtime_policy.json": {
+        "sha256": "e093cb18620d757ac2f3c12b0c8ee1eae3235f8aa826a1d4764f54c4b2ef2b43",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:24:00Z",
+  "name_schema": "multilingual_v1"
+}

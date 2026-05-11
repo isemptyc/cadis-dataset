@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T18:22:04Z",
+  "generated_at": "2026-05-11T18:24:03Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -720,6 +720,12 @@
       "bi.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/BI/bi.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "CM": {
+      "cm.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/CM/cm.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

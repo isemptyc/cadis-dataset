@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "zm.admin",
+  "country_iso": "ZM",
+  "country_name": "Zambia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "ca0e86807ee44f118efb69f7e76c477d78b8fb54",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/zambia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "f49d67ae766dc59f9d50b13e99ceaefb5e23b0f5c84b5508c4b5151655486b3b"
+  },
+  "runtime_compat": {
+    "min": "0.8.151",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "3c7b9e7175f240859cbc4db3fbcf91026f9f3905634ae98bce40261302324bd2",
+        "size": 138908
+      },
+      "geometry_meta.json": {
+        "sha256": "6ad9ac7bd57dc8220fa13a72e7fcdfbb3a888a63e6b28af81c0bcada9a0b421a",
+        "size": 34269
+      },
+      "hierarchy.json": {
+        "sha256": "bbd91d2b5efa9337240834d3d75692a93fab478eb8658f8a3894a49e24ad23f2",
+        "size": 18870
+      },
+      "runtime_policy.json": {
+        "sha256": "3446ae47567c496832da4ea1df3ea81a6af3e2b3986c456ad47e7ac66029b400",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:22:26Z",
+  "name_schema": "multilingual_v1"
+}

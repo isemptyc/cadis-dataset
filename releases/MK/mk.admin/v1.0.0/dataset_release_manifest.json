@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mk.admin",
+  "country_iso": "MK",
+  "country_name": "Macedonia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "9eecb2ad28d6d4d24e0ad0f24e692cfd397e7a22",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/macedonia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "2a8338dd64f4b5102c7cd1c69d411d273edefd12b4726a41276ac8342b1cce72"
+  },
+  "runtime_compat": {
+    "min": "0.8.41",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "ee64119976c13a705ff3b5d11c23225adf1d4a52dd9299671587f0134ae2abb1",
+        "size": 1661872
+      },
+      "geometry_meta.json": {
+        "sha256": "1bd4b724027371375df0f442a44d758b5a5cf477624353f9b2a89ce7a1e69a59",
+        "size": 531038
+      },
+      "hierarchy.json": {
+        "sha256": "501b8480cb034879a6ab5855fc47637389f3091e7211c662e638a3758926fcce",
+        "size": 319054
+      },
+      "runtime_policy.json": {
+        "sha256": "a9f782b7bce67681fd1b6b73aa04996f1da271d71b8e5861ded928db3511816b",
+        "size": 1260
+      }
+    }
+  },
+  "generated_at": "2026-05-11T08:10:07Z",
+  "name_schema": "multilingual_v1"
+}

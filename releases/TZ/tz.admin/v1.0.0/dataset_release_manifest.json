@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "tz.admin",
+  "country_iso": "TZ",
+  "country_name": "Tanzania",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "5ab1679868cffe6d0330de675533a175abe4cb22",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/tanzania",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "cfe505303d3a533c7f6392043ab9570f507f4d574ce38744e98851f9a5167548"
+  },
+  "runtime_compat": {
+    "min": "0.8.147",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "d2d0ee49d583846c762b5933c075ff4b8e406abb94cd1c89a23da50f2ff2df11",
+        "size": 245500
+      },
+      "geometry_meta.json": {
+        "sha256": "b8a0b8ca116987b12fe4b20032b0adfcbcbe426cc86fb27b526e5f6499579017",
+        "size": 149871
+      },
+      "hierarchy.json": {
+        "sha256": "9d28c8ce289fac53e39eb5d15a150dd99541fed60c484b156e9f40b937d641d5",
+        "size": 79991
+      },
+      "runtime_policy.json": {
+        "sha256": "9c75556046b2aef514092030c70c95983117c526d919fa2773ee8fe0c4e10150",
+        "size": 40314
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:16:38Z",
+  "name_schema": "multilingual_v1"
+}

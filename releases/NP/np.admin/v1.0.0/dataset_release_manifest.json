@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "np.admin",
+  "country_iso": "NP",
+  "country_name": "Nepal",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8f9c9d798147a321d7e1d9e40f392d8d3df22c54",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/nepal",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "9645ab1fc809f9acf89a54e9dbd1b9b0c12cda38273bcd23fbee345a9de7bb68"
+  },
+  "runtime_compat": {
+    "min": "0.8.89",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "6d716bc033795ae388cb62ff7523ea9a82a11c1b75b7ef59d3b697250b76d929",
+        "size": 1594072
+      },
+      "geometry_meta.json": {
+        "sha256": "acca87861fa5f9f9d25a8eb6d8122988e554e9a5a29bc01bf061e0edc6b49ba1",
+        "size": 1899400
+      },
+      "hierarchy.json": {
+        "sha256": "c4a984f0147ab577d6bd60f090bbc0251c5b6d41ffe3d36295f0aceb9706ef9c",
+        "size": 1023184
+      },
+      "runtime_policy.json": {
+        "sha256": "40fcb873e8e9280fbafcf735aa4585b4c44083dd359e55a370660af42d0e0309",
+        "size": 40572
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:29:42Z",
+  "name_schema": "multilingual_v1"
+}

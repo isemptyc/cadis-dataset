@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "hn.admin",
+  "country_iso": "HN",
+  "country_name": "Honduras",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "c962265e4301b47369f9a537b0046b2d4de1181d",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/honduras",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "b5547b3786f671b60f63ad8e4c1926660f8831eda7fc89c1c90bd751fdc16796"
+  },
+  "runtime_compat": {
+    "min": "0.8.59",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "29ac077e818ebd158cb4da99f28a41f2bd5abb7027b6d56577f0778dc063f9f9",
+        "size": 237324
+      },
+      "geometry_meta.json": {
+        "sha256": "36d02460a565b4eba5ff833ab1a3fa5e9c40d8e55c13d79d8a8786221b36d4f9",
+        "size": 182664
+      },
+      "hierarchy.json": {
+        "sha256": "33a6b78528e3eaeb41e752fb27a31d1b6df19a8687ab57fb862a9110c68cd5ae",
+        "size": 98276
+      },
+      "runtime_policy.json": {
+        "sha256": "50d2da309f6149ed100d4388d87d1deec98516fecbcf3c68aae84c73384c7d3a",
+        "size": 19244
+      }
+    }
+  },
+  "generated_at": "2026-05-11T15:10:19Z",
+  "name_schema": "multilingual_v1"
+}

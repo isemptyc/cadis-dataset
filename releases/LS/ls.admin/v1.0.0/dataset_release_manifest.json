@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ls.admin",
+  "country_iso": "LS",
+  "country_name": "Lesotho",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "052e071d7fcf08fb5f49cd0c8fcdaeee02f1ec41",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/lesotho",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "fa2b68a7e5c78e68043bb270a17a39b268132026ccaa56383bc01aed3737eb39"
+  },
+  "runtime_compat": {
+    "min": "0.8.122",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "6b537ecb14ef7594b81a32067fb780dbe20d8c803650379efea1f3433a0e0017",
+        "size": 18068
+      },
+      "geometry_meta.json": {
+        "sha256": "94e168953487623d46ea82841035907da322efc74a7911068473f8fb492d4832",
+        "size": 3618
+      },
+      "hierarchy.json": {
+        "sha256": "0610bbffe424d55fe0bcdd4976b4493e329197540bc6c4375e6c51ece93c79ed",
+        "size": 2365
+      },
+      "runtime_policy.json": {
+        "sha256": "856c7a551605c3c19740ad45b93454b2824def6ed333e228a5a09a09541b7c0f",
+        "size": 1260
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:42:59Z",
+  "name_schema": "multilingual_v1"
+}

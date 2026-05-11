@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cv.admin",
+  "country_iso": "CV",
+  "country_name": "Cape Verde",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "a9c173643a9db7f1107e31c804edbefc468cf08d",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/cape-verde",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "2593e02cbf3e161fe92f72a4a24295059ca1a4a88ea9fbcb898e162c70fde252"
+  },
+  "runtime_compat": {
+    "min": "0.8.105",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "09ebea11069940efe2172599563fd09f00af0c355103039752010f7a2dd3350c",
+        "size": 16788
+      },
+      "geometry_meta.json": {
+        "sha256": "f9e51e50b3d9d996cdfce082b77d4867e8a89a8331d008965904b6c515ef7c90",
+        "size": 19037
+      },
+      "hierarchy.json": {
+        "sha256": "f26ce6f0bfba915d35e9cebf27412bac63f6ddf7f48f0fd2341a244aabeddd23",
+        "size": 9216
+      },
+      "runtime_policy.json": {
+        "sha256": "96e1560ae700fca3c2e872129200a94cd2ad47a1f14eec10d68929c143f457cc",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:24:33Z",
+  "name_schema": "multilingual_v1"
+}

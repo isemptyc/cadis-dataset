@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "bz.admin",
+  "country_iso": "BZ",
+  "country_name": "Belize",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "ffa38bc4b3e3d3148aec89e8d4262306d0a8c0f5",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/belize",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "9f5512497c0e56ae4e8afe24110dd40931b19ba3c5e52b28c7f7b64d7626dfe0"
+  },
+  "runtime_compat": {
+    "min": "0.8.52",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "b8c0ff1ef275d261057ad0c34ead65c44338ec521c10e976ebc7e1cf54938f1e",
+        "size": 33284
+      },
+      "geometry_meta.json": {
+        "sha256": "2343456a2a1bac26158142358c0d7de01a6af78f6fd8e60067ac4f710eb55bc4",
+        "size": 53915
+      },
+      "hierarchy.json": {
+        "sha256": "9795ec240f9d88a2f8586bed58d2386e82b8fe018ef08e11bd22242622c40c8d",
+        "size": 28632
+      },
+      "runtime_policy.json": {
+        "sha256": "e405cbbf7f362b6333929040d5583163f5c64e828b9c847b415791459f87a2ab",
+        "size": 9212
+      }
+    }
+  },
+  "generated_at": "2026-05-11T12:28:58Z",
+  "name_schema": "multilingual_v1"
+}

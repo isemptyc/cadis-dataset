@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "sh.admin",
+  "country_iso": "SH",
+  "country_name": "Saint Helena, Ascension, and Tristan da Cunha",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "aa3f42eccf2a13489244315e28d02b37708ea340",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/saint-helena-ascension-and-tristan-da-cunha",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "24cb784cca082641f0f1292f9dde8121605ad2258b8a717cfc4c835f00246105"
+  },
+  "runtime_compat": {
+    "min": "0.8.136",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "c7b21a6b07da06a8941b52279d52f95867d771243d067428761fb1603ddde6c9",
+        "size": 3616
+      },
+      "geometry_meta.json": {
+        "sha256": "9dca344a0bf90053881ba4ee383b8f6eb6185d9788277da0f4d672c87861e192",
+        "size": 3014
+      },
+      "hierarchy.json": {
+        "sha256": "bc384fcf90dbd13f4088a5b2cd55633c78e3fcae90f95d911fa5a90a7e11533e",
+        "size": 1991
+      },
+      "runtime_policy.json": {
+        "sha256": "6dc46f4f0c7717e8fc68de5fd64703d9c0e3e07714045a7e4cbb9b468095ecff",
+        "size": 2290
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:02:12Z",
+  "name_schema": "multilingual_v1"
+}

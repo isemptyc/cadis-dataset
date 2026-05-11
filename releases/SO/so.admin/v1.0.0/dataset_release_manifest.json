@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "so.admin",
+  "country_iso": "SO",
+  "country_name": "Somalia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "ce817ede8a1d86c982534dee1bb46707a16d70de",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/somalia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "7c120d819353a40c93d92931578e8294587b18fb8eca4ab489095ca2d3a5d88f"
+  },
+  "runtime_compat": {
+    "min": "0.8.142",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "afccc6ee205f49d622f7c959a49f1d33dbe6683eb6d1ed0f08576736835269e1",
+        "size": 28080
+      },
+      "geometry_meta.json": {
+        "sha256": "f51b35cc20d900f360305c4c3c9784d24d047f9c6620d6261ba49ee5c7256151",
+        "size": 34870
+      },
+      "hierarchy.json": {
+        "sha256": "7527a2b66f33785fdc2c81bf59f1ca949ae9771ef7b8345e1aa9841868220f0f",
+        "size": 21655
+      },
+      "runtime_policy.json": {
+        "sha256": "efd5ba65b95747296f4d1f4eae17eaaf48ef71994c55c825a86afc85009f4464",
+        "size": 9080
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:06:30Z",
+  "name_schema": "multilingual_v1"
+}

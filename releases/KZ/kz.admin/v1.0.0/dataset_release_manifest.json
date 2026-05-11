@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "kz.admin",
+  "country_iso": "KZ",
+  "country_name": "Kazakhstan",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "ed5d4d77c9a1f030fcbfd9af5693c07d4e793442",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/kazakhstan",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "e98c1e9cd7da90e9fd8fb835acaaa46ba87194c5756e88696637174e49c84095"
+  },
+  "runtime_compat": {
+    "min": "0.8.81",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "a9a34958332fdb742a1da980631aeae821d1b71e118c94f38c8a7fc528cbf717",
+        "size": 589596
+      },
+      "geometry_meta.json": {
+        "sha256": "fe45174d4f269db6e244c22f07b3239e67b240ce67e75b119f484d6372496c98",
+        "size": 382546
+      },
+      "hierarchy.json": {
+        "sha256": "20fc9ae36dc8c0024b56818c8ba72af600da5dc64e4ab2c1d03e919dad4b1e23",
+        "size": 242692
+      },
+      "runtime_policy.json": {
+        "sha256": "e093cb18620d757ac2f3c12b0c8ee1eae3235f8aa826a1d4764f54c4b2ef2b43",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:16:26Z",
+  "name_schema": "multilingual_v1"
+}

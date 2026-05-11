@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "er.admin",
+  "country_iso": "ER",
+  "country_name": "Eritrea",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "0cdf5ad766cb4c3c841a38ecffea517b92f7e0cb",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/eritrea",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "efb40bfa4c8d9b779072d4fe83fd33788c008a117b92b9aca51cdb01ea41de4b"
+  },
+  "runtime_compat": {
+    "min": "0.8.114",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "762f3b849afdb34bde644c436ac732009c6bf6e19f063fbbd993589115eb0852",
+        "size": 3492
+      },
+      "geometry_meta.json": {
+        "sha256": "2bb2b40c34f264c5f89b8d5ec22f03779af9aad0a1ce643dbeaf9ee084459617",
+        "size": 2233
+      },
+      "hierarchy.json": {
+        "sha256": "1cf769030f7f499d909a14a06135b30e96e3335b97a4fdc6561c45fab6f30710",
+        "size": 1467
+      },
+      "runtime_policy.json": {
+        "sha256": "9cf05825224ce6e7f6ad4a3acfb912c23f1aece648b04b2cf084c909cba6a642",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:34:18Z",
+  "name_schema": "multilingual_v1"
+}

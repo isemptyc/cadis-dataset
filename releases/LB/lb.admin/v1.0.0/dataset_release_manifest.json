@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "lb.admin",
+  "country_iso": "LB",
+  "country_name": "Lebanon",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "6ddcec08bd2caa92ef638ce8e0a67e0751af81fd",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/lebanon",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "3e298d382f1c151e048e767d795cc8620941a7f09865b9b3846ff7737a9c61bd"
+  },
+  "runtime_compat": {
+    "min": "0.8.84",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "e49e036ea1ad9ce704d0c5a90a1bbf9ef135c0cc951a0ccfafe798fc135a6382",
+        "size": 138628
+      },
+      "geometry_meta.json": {
+        "sha256": "d89448e05ba5783e725ae4861b37950608eab1492f93a7d0af04d80de85523e4",
+        "size": 309526
+      },
+      "hierarchy.json": {
+        "sha256": "ae67aa60cda7bdcdbc87643f0931f34d3dbc59a3f5db4dbcdb499a435d5ae6be",
+        "size": 182573
+      },
+      "runtime_policy.json": {
+        "sha256": "b000d89f6f01134826ec21fadb7f8f9e221c2f0eeffd184616d00fbbc1682157",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:21:31Z",
+  "name_schema": "multilingual_v1"
+}

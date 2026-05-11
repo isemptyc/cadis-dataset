@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "co.admin",
+  "country_iso": "CO",
+  "country_name": "Colombia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "308177211defa4b7c248637a37063c8550da906c",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/colombia",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "132b50922792890e7fb2be61ea013b60bacea677fedd0253a6154687431aa894"
+  },
+  "runtime_compat": {
+    "min": "0.8.22",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "410666c3be3c87cc0de7b086558f791e6552225046812f48ceb315da6ec2f998",
+        "size": 983424
+      },
+      "geometry_meta.json": {
+        "sha256": "1ff5747abb83dd0c6d48e7d4e482989a94257719a1e768fe3df6f34f0223498c",
+        "size": 1047039
+      },
+      "hierarchy.json": {
+        "sha256": "d0f4da572e4cd93fc224882da9e592da02b37c8f81fbe09d39e4f545e94e3c9f",
+        "size": 556937
+      },
+      "runtime_policy.json": {
+        "sha256": "6b49b16c5f73223598132ba4af4c331f472ab5a833c83cec7cfac4ff73ace454",
+        "size": 1270
+      }
+    }
+  },
+  "generated_at": "2026-05-11T02:48:25Z",
+  "name_schema": "multilingual_v1"
+}

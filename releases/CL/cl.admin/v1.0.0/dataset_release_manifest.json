@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cl.admin",
+  "country_iso": "CL",
+  "country_name": "Chile",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "e78243c7511aaf3a569695d690b678c8ba19b74b",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/chile",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "4de865dc75244dfb476c48821da65d63eed86ae0b7371bd2eb6b497baa58f185"
+  },
+  "runtime_compat": {
+    "min": "0.8.21",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "20f2fc770f96d1676f858735d5d7cbb0e7025d4a4d628a51b06c39e69d3ca810",
+        "size": 848820
+      },
+      "geometry_meta.json": {
+        "sha256": "16f15927050a1eceb569e6c7dffd844be24d4ab8c898eadf5b9445b854927a4e",
+        "size": 108281
+      },
+      "hierarchy.json": {
+        "sha256": "ed25d4a01be59cb3712897befb1ef129bdcfa9b7dcac7213e6c665db85a311ef",
+        "size": 57965
+      },
+      "runtime_policy.json": {
+        "sha256": "2bdb6092905a31beba4b0913bc4496b2bce620cd2dbee23f9d83bfa0d99ae6e0",
+        "size": 1275
+      }
+    }
+  },
+  "generated_at": "2026-05-11T02:10:03Z",
+  "name_schema": "multilingual_v1"
+}

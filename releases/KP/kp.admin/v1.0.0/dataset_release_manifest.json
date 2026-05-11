@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "kp.admin",
+  "country_iso": "KP",
+  "country_name": "North Korea",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "9eef20f18221d12165dfb1639cb7514a7dcf95fb",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/north-korea",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "d302a855cb190a12abecd4d223be245a895020b4c57f537b3dca086ac572b2e5"
+  },
+  "runtime_compat": {
+    "min": "0.8.90",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "e923e9838cc63922562e4b7cb7b9612693919810fd6a84e2e82b45f5ebb15684",
+        "size": 145464
+      },
+      "geometry_meta.json": {
+        "sha256": "98535f3a32bacd725f968e536d26af618e0e665e9c8b66665772053c4178a3e1",
+        "size": 82441
+      },
+      "hierarchy.json": {
+        "sha256": "001778c04b5ea140e29d83666d6f709e6cfa3606a14b87ec25a1f4064e604e87",
+        "size": 51845
+      },
+      "runtime_policy.json": {
+        "sha256": "a780277a2bde4d93a725742e9d80c12fba9156066caa77f89bcf5efadbf3b3c8",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:32:15Z",
+  "name_schema": "multilingual_v1"
+}

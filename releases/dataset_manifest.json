@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T17:29:45Z",
+  "generated_at": "2026-05-11T17:32:17Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -636,6 +636,12 @@
       "np.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/NP/np.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "KP": {
+      "kp.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/KP/kp.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

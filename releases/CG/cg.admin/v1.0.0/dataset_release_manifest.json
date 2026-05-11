@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cg.admin",
+  "country_iso": "CG",
+  "country_name": "Congo",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "7016995e103107f446c8aa43dfebf59684ca5d13",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/congo-brazzaville",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "ef725d295436b3a02e39dd7eb53e77b8a509ec7d835674d2e2aeed248367e269"
+  },
+  "runtime_compat": {
+    "min": "0.8.109",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "85258e3723a76403a008197541a3c084f0a140c15168ec5fc056f153ab8e14d7",
+        "size": 64008
+      },
+      "geometry_meta.json": {
+        "sha256": "6cf5b233603ad40a5ca9e900a838c2b9c5d1c84ef748f164bea9d5107c3685f3",
+        "size": 26686
+      },
+      "hierarchy.json": {
+        "sha256": "6ad81ac26084b4232ec440e5ec56f986dbdb423c4000e43498bf9fc6e83ee967",
+        "size": 14729
+      },
+      "runtime_policy.json": {
+        "sha256": "934c25515efe2621c118c1895a2a4410ae1768c3c8e770d922c187b851055786",
+        "size": 40314
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:28:21Z",
+  "name_schema": "multilingual_v1"
+}

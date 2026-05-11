@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cr.admin",
+  "country_iso": "CR",
+  "country_name": "Costa Rica",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "76523a9e55ac30f14c2a9311d96390b54ec6658d",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/costa-rica",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "f413dd698972333d335e79a3acaba86cbf0dcc5c32caa321ae0d208b2b3689f1"
+  },
+  "runtime_compat": {
+    "min": "0.8.53",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "a9efe66820609ae9ddc9d826ab26ffb4c15fff5b034d11b317b6b543eb43364c",
+        "size": 390184
+      },
+      "geometry_meta.json": {
+        "sha256": "bdf46edd9f86bebe0a4ba6ebc87414b317cf67aa56626df2de5c4a728ff780ec",
+        "size": 278638
+      },
+      "hierarchy.json": {
+        "sha256": "a3e40980f6427b5c2fe6b2d8f9fa42bdc4623b51529f19a755eafa3a519f19ca",
+        "size": 147782
+      },
+      "runtime_policy.json": {
+        "sha256": "66ce32e073ebc575fe55d6d4f571d9ae0b98a3cf35fd045ddff3b068e1446b74",
+        "size": 2290
+      }
+    }
+  },
+  "generated_at": "2026-05-11T13:11:24Z",
+  "name_schema": "multilingual_v1"
+}

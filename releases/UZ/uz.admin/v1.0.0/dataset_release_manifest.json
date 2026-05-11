@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "uz.admin",
+  "country_iso": "UZ",
+  "country_name": "Uzbekistan",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "3515ff8c7e6a04d72b949091e860155933646807",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/uzbekistan",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "0854833edcd8b359b98ab12ed4124b037961aa4801fbddd26bd6fb475b6c4d21"
+  },
+  "runtime_compat": {
+    "min": "0.8.96",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "f8740b01f4e0c9b91f820d41035d68ab0d8e7f971a61efb5969f3703b677cf4c",
+        "size": 161152
+      },
+      "geometry_meta.json": {
+        "sha256": "e2ea5f81d3e5568b1c12a2790ab9793be1decd5f3300e3bff3d364106e44fdd6",
+        "size": 147528
+      },
+      "hierarchy.json": {
+        "sha256": "fbd7d8645c53849f40891d94614afb3c298170a6b154a0a57db4e0e3cf011f9a",
+        "size": 100850
+      },
+      "runtime_policy.json": {
+        "sha256": "738707f358a9c78b657d309c69aaba9c504cb594b6433fa85ea3df44ab10122b",
+        "size": 40314
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:40:44Z",
+  "name_schema": "multilingual_v1"
+}

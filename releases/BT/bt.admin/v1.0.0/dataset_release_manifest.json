@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "bt.admin",
+  "country_iso": "BT",
+  "country_name": "Bhutan",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "4e1c150cbc238ce8e89761feb3ce9ae0650d09f1",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/bhutan",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "e246ac43940dd99eee26731f3a0bba8e05ca3190a9e63ea627bb7ea18a13109b"
+  },
+  "runtime_compat": {
+    "min": "0.8.67",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "b7c935a11ea5520709b5412bcdb50db829379106141a7c99d9ac5dba6547996a",
+        "size": 220948
+      },
+      "geometry_meta.json": {
+        "sha256": "b4fefdb506f5c382c7bfd10f316ac2d05cb417e6e0bb2217955f5e6f03a492ce",
+        "size": 305776
+      },
+      "hierarchy.json": {
+        "sha256": "c4514c6e68b439f408ee3fe82e25b841d9cf83cecce873244d15a7bbd8c11c82",
+        "size": 173644
+      },
+      "runtime_policy.json": {
+        "sha256": "f9a1d78a02f01f2e0e89708a7ce4e6228e780cb35ebb05d123ea12d5aad65275",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T16:53:43Z",
+  "name_schema": "multilingual_v1"
+}

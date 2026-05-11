@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "et.admin",
+  "country_iso": "ET",
+  "country_name": "Ethiopia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "5bf810fd2c44008a3c9a53c0a4a247d215fd23da",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/ethiopia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "f0bd5958567babaff6a2c128dcdf26c8d28a6f30b778dc053e6e2bd3c1cedc3f"
+  },
+  "runtime_compat": {
+    "min": "0.8.115",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "ab77710ecda72765b17f7669da0ae7671882d8cd57964781674747701b42912a",
+        "size": 73732
+      },
+      "geometry_meta.json": {
+        "sha256": "7cd3b938d27001ee340dcdbba2b4086fc211911297bd506d364ec508ebd371e8",
+        "size": 25356
+      },
+      "hierarchy.json": {
+        "sha256": "c1899485a430d226ae1eff02ede966f1d1a6c55a68b3ef0838fe01b4d4502d0c",
+        "size": 14241
+      },
+      "runtime_policy.json": {
+        "sha256": "ad0350b83317db9fea7f387c668afba614347994950751e2368d91226b01ce9d",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:35:31Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mv.admin",
+  "country_iso": "MV",
+  "country_name": "Maldives",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "f96037fe9dd367f6b8c7f68d4c9a85b341ba5abc",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/maldives",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "f00bcb9f7b6cafe32177a51f52f4c4dba1659970cdedca0f707f0f3194a8b553"
+  },
+  "runtime_compat": {
+    "min": "0.8.86",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "42821eb655a39de922d8ff2846ebf731f5f3aac2694b83fed36664ce1821f998",
+        "size": 2936
+      },
+      "geometry_meta.json": {
+        "sha256": "264e1d680933bf7ba7fae9eada5c9d459d2398488deaa897738f898ab9e0916e",
+        "size": 8914
+      },
+      "hierarchy.json": {
+        "sha256": "11b05a6c2daf8ebd0266818a382096277aaa98da80b6a1bcabeb803eec862794",
+        "size": 5656
+      },
+      "runtime_policy.json": {
+        "sha256": "9cf05825224ce6e7f6ad4a3acfb912c23f1aece648b04b2cf084c909cba6a642",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:23:31Z",
+  "name_schema": "multilingual_v1"
+}

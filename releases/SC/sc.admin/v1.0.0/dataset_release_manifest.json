@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "sc.admin",
+  "country_iso": "SC",
+  "country_name": "Seychelles",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "3cf9680f313c713e14eea65aa8274a4562ee97ed",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/seychelles",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "d9b6ce195cb99a18d8b4dd89a92f009037783a5d2961144352f434667b86f91a"
+  },
+  "runtime_compat": {
+    "min": "0.8.140",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "c59604326f2609bb1f46a657e4e63896e81cc8498ef0735988538ee44a52e40f",
+        "size": 18316
+      },
+      "geometry_meta.json": {
+        "sha256": "cdc5d12a4c8c1473f35793119f116b8cdea53fc74e3b3f7ee405488a8367e4e1",
+        "size": 8584
+      },
+      "hierarchy.json": {
+        "sha256": "53e2d9c3fb76e9e8a315fd3b6bba7547cb99c7f52e0b0dc0437739bc15f9265b",
+        "size": 4635
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:04:38Z",
+  "name_schema": "multilingual_v1"
+}

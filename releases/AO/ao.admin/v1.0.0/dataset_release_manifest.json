@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ao.admin",
+  "country_iso": "AO",
+  "country_name": "Angola",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "d886a846b45b842183c1259b5f5c877c864cb918",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/angola",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "3966f110ebe8993f8b34f3cee66836544708b453596d415d0803bd6632e6aaf3"
+  },
+  "runtime_compat": {
+    "min": "0.8.99",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "39c97a2a66281fec37518e2693cf6393882563debcd3e699fd21226fa87429d8",
+        "size": 52632
+      },
+      "geometry_meta.json": {
+        "sha256": "422f6b420fe6dc4ea4a84222f5466b427844afa9caed6170f296503da6ca74ef",
+        "size": 20681
+      },
+      "hierarchy.json": {
+        "sha256": "e58646965c580ae3ebcc15831617f90ab9fc50877b38dfeace2228aab2e227a9",
+        "size": 12324
+      },
+      "runtime_policy.json": {
+        "sha256": "9491a5c8606bb95997ddc092fcbd9bbbd98245ae197801f304b54d6c3d12e33d",
+        "size": 9080
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:18:22Z",
+  "name_schema": "multilingual_v1"
+}

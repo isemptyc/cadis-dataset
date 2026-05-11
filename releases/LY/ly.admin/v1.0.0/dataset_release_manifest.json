@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ly.admin",
+  "country_iso": "LY",
+  "country_name": "Libya",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "56f08e8fd4d79b8b1b5fbc75b72431e973c44767",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/libya",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "de0215ae17ad52e3ff9cb9928a208ff5d8b548f0ef1fd04477c13aa3970cf1d4"
+  },
+  "runtime_compat": {
+    "min": "0.8.124",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "752976ed9fb24e2a59d9cce8c5b22066fe92cafaa7d33f9b1013f8c63b8c341d",
+        "size": 5472
+      },
+      "geometry_meta.json": {
+        "sha256": "4184913812d697972ce7ecd03fac4b8126c1bdd97de4e9543ff65976d4676363",
+        "size": 7473
+      },
+      "hierarchy.json": {
+        "sha256": "46f42365f14aa18b34ce6b2f3406fe777328aeec586c3e675b958f19617312e1",
+        "size": 4784
+      },
+      "runtime_policy.json": {
+        "sha256": "0b1f664900caba1916b5eb2b3763e116fc3362b206e5944985da54e59e598e6a",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:44:46Z",
+  "name_schema": "multilingual_v1"
+}

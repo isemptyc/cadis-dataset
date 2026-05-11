@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "bo.admin",
+  "country_iso": "BO",
+  "country_name": "Bolivia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "cdb292d832b3c826ef04f7a033e45990cdb2b322",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/bolivia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "82c3a440cc05405c8a4d845ba8825d5cd9a1fc760f05b7a11adcbc604e496ac0"
+  },
+  "runtime_compat": {
+    "min": "0.8.44",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "4e7469cee3f4c6e97fcbde677a73a72cad1bcd708b3d136b91dcc1229715c516",
+        "size": 985184
+      },
+      "geometry_meta.json": {
+        "sha256": "66d373df13f67e03d3f46a3f670f574e003556076692c226d12172a8cefa0a88",
+        "size": 179901
+      },
+      "hierarchy.json": {
+        "sha256": "6ed73e34bd90421c7304d81014a9abd7c01f89343a23381685e2f40ea097d915",
+        "size": 96104
+      },
+      "runtime_policy.json": {
+        "sha256": "1e6a18dfd8a3acf2f17068b97b0584e806f811d7f87ff84b3cd2b4cc12931717",
+        "size": 4534
+      }
+    }
+  },
+  "generated_at": "2026-05-11T08:58:09Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ga.admin",
+  "country_iso": "GA",
+  "country_name": "Gabon",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "e46e028453c11d87adb31222cb02fee10c776608",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/gabon",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "224f170ff02d8bc31666a6f1b19e2ff4cbbf0c166f5bd268cb0c148e0e7db778"
+  },
+  "runtime_compat": {
+    "min": "0.8.116",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "931518d706702f7f4017ebcde0462afd532e7dd28bd2094278dc54911f24a64b",
+        "size": 95752
+      },
+      "geometry_meta.json": {
+        "sha256": "2f56672ca3edf21f5ee2f00d6a5bce8043a3d1b6659a7b5f959b671b5cba5b8c",
+        "size": 18385
+      },
+      "hierarchy.json": {
+        "sha256": "836d6b6e669eebc1514279905c93b0136792644028ed6ead07a844e47c263d8f",
+        "size": 11598
+      },
+      "runtime_policy.json": {
+        "sha256": "3446ae47567c496832da4ea1df3ea81a6af3e2b3986c456ad47e7ac66029b400",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:36:10Z",
+  "name_schema": "multilingual_v1"
+}

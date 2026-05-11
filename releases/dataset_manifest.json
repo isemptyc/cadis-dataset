@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T07:43:11Z",
+  "generated_at": "2026-05-11T07:51:26Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -336,6 +336,12 @@
       "ge.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/GE/ge.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "XK": {
+      "xk.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/XK/xk.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

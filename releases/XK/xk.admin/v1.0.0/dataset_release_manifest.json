@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "xk.admin",
+  "country_iso": "XK",
+  "country_name": "Kosovo",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "51451a0dc2ec9dde16fe4c461c7d9f35be12c3fc",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/kosovo",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "b63cbe57cbf49ab6d4b188a686180e4680589b5e9ce9bce4de410966b7f02938"
+  },
+  "runtime_compat": {
+    "min": "0.8.40",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "151b32d7d08d584a4adffb10682e98a06d94811515e401d455c452e5eb84c702",
+        "size": 314612
+      },
+      "geometry_meta.json": {
+        "sha256": "d1db0a3036b87edcbb9f3ca45cb61bcc0a8f28e9bc9745b23528273d70b6cc9d",
+        "size": 80961
+      },
+      "hierarchy.json": {
+        "sha256": "b18cbcdcc500b6512dd06401af310cde22593cb7b8ad2853b43607489a178724",
+        "size": 48552
+      },
+      "runtime_policy.json": {
+        "sha256": "0677ef9be6b99d1cbdd935e43e78455739231de31aeb95c73e751122a07fca9c",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-11T07:51:24Z",
+  "name_schema": "multilingual_v1"
+}

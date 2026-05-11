@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "pe.admin",
+  "country_iso": "PE",
+  "country_name": "Peru",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "dca45a858b27fce17b501f4d6d65edc7af5a1033",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/peru",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "71ea15e33ea1d202256256d0f98e83c1ab60f296ce655c62d1a195c2adb05a07"
+  },
+  "runtime_compat": {
+    "min": "0.8.23",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "b23b5d35c67c5e281f57b470813daa97540d822b97a7abc1d83432cbf5f8d436",
+        "size": 1170848
+      },
+      "geometry_meta.json": {
+        "sha256": "d4ca867e064a7c2f56724ced3b255d4a19f5c355bd644e6867ae753a38466475",
+        "size": 536593
+      },
+      "hierarchy.json": {
+        "sha256": "42b21fdfc2aa0c183abf2c6a0d2c242ab93ef82dd89f9e5a100ff67fa2c06d11",
+        "size": 282055
+      },
+      "runtime_policy.json": {
+        "sha256": "2bdb6092905a31beba4b0913bc4496b2bce620cd2dbee23f9d83bfa0d99ae6e0",
+        "size": 1275
+      }
+    }
+  },
+  "generated_at": "2026-05-11T03:05:25Z",
+  "name_schema": "multilingual_v1"
+}

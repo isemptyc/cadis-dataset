@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "iq.admin",
+  "country_iso": "IQ",
+  "country_name": "Iraq",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "7b655ab82ed3f7a2aa3b032f0fe8d76a1818db33",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/iraq",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "f53307132395807079b8292de5ba04785987c7dbb132eb38bcd7137bbde9ea4f"
+  },
+  "runtime_compat": {
+    "min": "0.8.77",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "60898b33b1e050a4603ac61f25f015da25ee5b756aca2b04682376995f114c73",
+        "size": 326528
+      },
+      "geometry_meta.json": {
+        "sha256": "04d2a4e3bda5f8ea38c11129703a819c24c53ef19464c69fedee6bff0e19ffa4",
+        "size": 460348
+      },
+      "hierarchy.json": {
+        "sha256": "f6681fa87964c6f1bc6da207e212803bde50f6d61559cdb493fc44b000ca3da8",
+        "size": 263941
+      },
+      "runtime_policy.json": {
+        "sha256": "39c1b88eddcfab7944cce57b6e1aafbff88defd21bbc0537590a64cb731fcc2e",
+        "size": 40056
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:09:43Z",
+  "name_schema": "multilingual_v1"
+}

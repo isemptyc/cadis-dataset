@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T17:08:37Z",
+  "generated_at": "2026-05-11T17:09:45Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -558,6 +558,12 @@
       "ir.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/IR/ir.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "IQ": {
+      "iq.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/IQ/iq.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

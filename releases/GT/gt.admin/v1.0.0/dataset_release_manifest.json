@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "gt.admin",
+  "country_iso": "GT",
+  "country_name": "Guatemala",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "2cc6a276d457074a19686a109eb74ca635d9a4e2",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/guatemala",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "b619e2b035b16591b4860a95e5ff34f93435e4ada7b3a5339bfe364dad926888"
+  },
+  "runtime_compat": {
+    "min": "0.8.56",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "509c493bbe0f4f2e3955b9a141d18ed483241b1ad9ed552c8c0e1114ac6bf116",
+        "size": 86508
+      },
+      "geometry_meta.json": {
+        "sha256": "8ac7525b904a54600fe501e3382b9e7c0a9fd4d840aa65179a344548da7cc8b5",
+        "size": 97746
+      },
+      "hierarchy.json": {
+        "sha256": "f0f9dfb680b21bb165319272b1fbdec501eb63bea11defcddbf74e52aa0a6ef6",
+        "size": 51920
+      },
+      "runtime_policy.json": {
+        "sha256": "66ce32e073ebc575fe55d6d4f571d9ae0b98a3cf35fd045ddff3b068e1446b74",
+        "size": 2290
+      }
+    }
+  },
+  "generated_at": "2026-05-11T14:36:31Z",
+  "name_schema": "multilingual_v1"
+}

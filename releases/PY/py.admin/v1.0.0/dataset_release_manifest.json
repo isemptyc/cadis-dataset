@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "py.admin",
+  "country_iso": "PY",
+  "country_name": "Paraguay",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "b308f8cc3c0bf8f1f35de3e33a6e5aab9284efcc",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/paraguay",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "e27336c619efd6b5850eeafc68373c75e207ab438c93efa203db9e6f7a6581f7"
+  },
+  "runtime_compat": {
+    "min": "0.8.47",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "8148e9296094575255cd9cf1cc6f9c8ce39c2c9e67f315dfb7f25d025992d07e",
+        "size": 538876
+      },
+      "geometry_meta.json": {
+        "sha256": "165436d1ad7c306dd039ea9fd30668782066db06983b6b74b27096b5bfd7ae3e",
+        "size": 181637
+      },
+      "hierarchy.json": {
+        "sha256": "08ae9d430090718aabeff2900b79f70bb6b707853a7aedf4d02cca586b2453cd",
+        "size": 97458
+      },
+      "runtime_policy.json": {
+        "sha256": "de4c083a7cb82244099e0b1eb8e6c84a08259fdcb73f6145d4f1f76d467a5a53",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T10:18:09Z",
+  "name_schema": "multilingual_v1"
+}

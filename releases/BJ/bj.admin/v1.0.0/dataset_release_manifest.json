@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "bj.admin",
+  "country_iso": "BJ",
+  "country_name": "Benin",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "13206c3859736a01756d6ad5b97652169ca407fa",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/benin",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "ffe0b63483f47206e0ca8ebd0b0d5a7132a37e9a5ab4311565c3513564b715cc"
+  },
+  "runtime_compat": {
+    "min": "0.8.100",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "659c3262fa9a6a7cf575c7f286d2ffc3b0767bcd1a77034aceb00b29b3a6a9be",
+        "size": 39556
+      },
+      "geometry_meta.json": {
+        "sha256": "3b5fb76314d24f6a52738eb2dc0d0266c72041ba0870871f3611a32ba4c57686",
+        "size": 30807
+      },
+      "hierarchy.json": {
+        "sha256": "b4ab07ab9726c476b6503507d354d56400e58dc9210a49b2a28e0ba3c5cc935d",
+        "size": 16936
+      },
+      "runtime_policy.json": {
+        "sha256": "07c19a0a2f151133ccaa867e5c73d09748fc3449bbb0b38ac989d399899c32c8",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:19:17Z",
+  "name_schema": "multilingual_v1"
+}

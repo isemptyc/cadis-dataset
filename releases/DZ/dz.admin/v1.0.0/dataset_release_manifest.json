@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "dz.admin",
+  "country_iso": "DZ",
+  "country_name": "Algeria",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "c51ff62e294b3236f9d954e884a3b7157438354f",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/algeria",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "fa713ae35473b501c2b8a87a48e26bb96d052051febf85898794cb66f8ec4df0"
+  },
+  "runtime_compat": {
+    "min": "0.8.98",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "cd03b99be4b16781c3a7152ed09a80313b01a2fcb08cc16b6a173d2f666ff48d",
+        "size": 919324
+      },
+      "geometry_meta.json": {
+        "sha256": "64c66121c71ec451e87c2cc740e18f50f846bebeed80e4956c5ccd70e4519d4d",
+        "size": 602953
+      },
+      "hierarchy.json": {
+        "sha256": "dc0b52d61ac5693b5cc3a61d411eec2eb95ea04078937f37d568da31767598b3",
+        "size": 358823
+      },
+      "runtime_policy.json": {
+        "sha256": "2fcebbe19ca8ba6a6009483c0f13fcde8720c6b398d609095c1d6c2dfe3bfbe6",
+        "size": 19244
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:16:20Z",
+  "name_schema": "multilingual_v1"
+}

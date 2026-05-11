@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "lv.admin",
+  "country_iso": "LV",
+  "country_name": "Latvia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "05172be2076d2507434398f15f0c26012738147e",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/latvia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "9d2fe61c028b2ca69eaccbb42cd9b80261ac5b3895ca99214fcd0572bf87fc92"
+  },
+  "runtime_compat": {
+    "min": "0.8.30",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "2d1d96029cf17d49668dfa52b918efa7158e7562e5877c06f24199eda367de88",
+        "size": 1038432
+      },
+      "geometry_meta.json": {
+        "sha256": "fb206e87fd07c9539520e660f75a8a7aa648ed757c999803a229f8900e321675",
+        "size": 510851
+      },
+      "hierarchy.json": {
+        "sha256": "74d3f4453f10aff2485f1ec13ccf78db975227bf43b53d0760ce805647396662",
+        "size": 274710
+      },
+      "runtime_policy.json": {
+        "sha256": "e154ed9399385d7e70d34c5652d5717e0f4e276f98b39fc0c8a336de7cb36b73",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T05:17:16Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "za.admin",
+  "country_iso": "ZA",
+  "country_name": "South Africa",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "89e0d481aba9a8d83a3ac440ff6f80e130dc5b9b",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/south-africa",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "d775e89f4f64c1620264a3992f5f74b9405e5ab447aaa25d24e0c0fb765cd8e6"
+  },
+  "runtime_compat": {
+    "min": "0.8.143",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bd5b169335bce2e5c09cebb26af8755cd525fcec3a00dbcf8920c4b22e01295a",
+        "size": 1544304
+      },
+      "geometry_meta.json": {
+        "sha256": "fcb9a6bc44ce4598a49cb231f7359ba0582ec9807cd80a161b1a4115e8dcbfa3",
+        "size": 1168615
+      },
+      "hierarchy.json": {
+        "sha256": "c4851b6df01b8adbd3ec3c068966ae6127297a36daefc9607a563150f95db456",
+        "size": 630377
+      },
+      "runtime_policy.json": {
+        "sha256": "6386b469a785746abfe08abc0654af14c5d169af22fcbb584787e5202d337a99",
+        "size": 40572
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:09:24Z",
+  "name_schema": "multilingual_v1"
+}

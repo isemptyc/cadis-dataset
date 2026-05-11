@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "sy.admin",
+  "country_iso": "SY",
+  "country_name": "Syria",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "0591751763120f27b28bffd87c173df4583fb33b",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/syria",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "dd02361f99f929b9b018738304ccce1193a50558124e1cc2425918cb54e65c9f"
+  },
+  "runtime_compat": {
+    "min": "0.8.93",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "14410754d75d26b9aeda83cc624a03812c29ab074ae9d9824dbe9626db78d761",
+        "size": 121740
+      },
+      "geometry_meta.json": {
+        "sha256": "7864fcc7dfe6ea3d981eed2887e02fd4aa40218c907ef32c0aa47a39865beeb8",
+        "size": 160970
+      },
+      "hierarchy.json": {
+        "sha256": "f8a1b727ca37cb3cc05346dff07d6a9809abfaba544c050d80b8960a4382a2eb",
+        "size": 107081
+      },
+      "runtime_policy.json": {
+        "sha256": "75ea0f1cb5c7a3d1652936444c5191fff7eab258d278c7111af55cfe169b4b78",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:36:39Z",
+  "name_schema": "multilingual_v1"
+}

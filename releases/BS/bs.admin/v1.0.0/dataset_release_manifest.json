@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "bs.admin",
+  "country_iso": "BS",
+  "country_name": "Bahamas",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "eb526cc6a74667683f2369d13d512b180948831c",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/bahamas",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "20d2d33afae78b839e3f6e3db05158e5a48ec62dd9e22ce6186855aa681dc1c8"
+  },
+  "runtime_compat": {
+    "min": "0.8.51",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bdad01f2cf6bcdb27920124c37a94c68bebfaec8222168d828ac5011708a38ed",
+        "size": 9048
+      },
+      "geometry_meta.json": {
+        "sha256": "83ebd6d831f5588f6dce971e7eb5ae664005691f7647ee40b9e90fe7c271c0de",
+        "size": 8912
+      },
+      "hierarchy.json": {
+        "sha256": "4ccc0dff27bff0535b968babd76a4ebf8db55468f8b0c6bcc85a55fad42f393c",
+        "size": 4937
+      },
+      "runtime_policy.json": {
+        "sha256": "9597ba5db1e3b48798431be055e10613a6e8becd45fa15e1403bfa95643b72ba",
+        "size": 786
+      }
+    }
+  },
+  "generated_at": "2026-05-11T12:14:21Z",
+  "name_schema": "multilingual_v1"
+}

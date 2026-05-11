@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ec.admin",
+  "country_iso": "EC",
+  "country_name": "Ecuador",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "51712199161c4a47d8888e96ff7282d901f36297",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/ecuador",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "6721bd38148198b2f21dd90cb06c3324cc12578697045ba897fb8e2fe420ba40"
+  },
+  "runtime_compat": {
+    "min": "0.8.45",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "a6f7df19a09ef282dc19e28ebb5185ed96dbbd4cd8ad4d318e41de3812bf452d",
+        "size": 737840
+      },
+      "geometry_meta.json": {
+        "sha256": "6f22b23e1f59b322c1ddbaa1933dd773a0726fe8410efeb0a0a12856974d7720",
+        "size": 383348
+      },
+      "hierarchy.json": {
+        "sha256": "426857be37e65783ce9b9c983dae7d331ce51093447e5fe83b301853668166dc",
+        "size": 202457
+      },
+      "runtime_policy.json": {
+        "sha256": "1e6a18dfd8a3acf2f17068b97b0584e806f811d7f87ff84b3cd2b4cc12931717",
+        "size": 4534
+      }
+    }
+  },
+  "generated_at": "2026-05-11T09:14:12Z",
+  "name_schema": "multilingual_v1"
+}

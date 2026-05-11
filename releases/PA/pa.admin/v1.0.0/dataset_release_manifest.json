@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "pa.admin",
+  "country_iso": "PA",
+  "country_name": "Panama",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "60ae50480913810002cc0f2e6b79e7e20f5b255e",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/panama",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "60100857a2bea72628b3ed484c8896afc96a4155329225cf43b2892af5bddbb1"
+  },
+  "runtime_compat": {
+    "min": "0.8.62",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "2cc5b1569d950fc6176bb7d09eb91d2b12bea0e9046e61e574bbe7d30e13ee7f",
+        "size": 452124
+      },
+      "geometry_meta.json": {
+        "sha256": "d1f7bb630721b186a7938dbb0d7f873225efe089ffc9659b2797e54f019c99bf",
+        "size": 269343
+      },
+      "hierarchy.json": {
+        "sha256": "c65f1d3f01ee7250f0a86e7b826c024e6a7926eef6fba40983207fa2968aae51",
+        "size": 144493
+      },
+      "runtime_policy.json": {
+        "sha256": "2343119a36ff56a21d2627bfc3a34cc5e1714debf1d51fb37bb71c209c74679f",
+        "size": 19244
+      }
+    }
+  },
+  "generated_at": "2026-05-11T15:48:48Z",
+  "name_schema": "multilingual_v1"
+}

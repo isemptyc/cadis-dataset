@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ng.admin",
+  "country_iso": "NG",
+  "country_name": "Nigeria",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "c32b8b5454efe2f6832fa5eca0a531678f85f9bb",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/nigeria",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "e8762ed80e93a0b934475e787deb958db8609d88b6f0c6a9ea7450717d029baa"
+  },
+  "runtime_compat": {
+    "min": "0.8.134",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "04efc48c21cd5b1120bed4ea796a8098582da32edcdae1f3cc294a3893addd5b",
+        "size": 803988
+      },
+      "geometry_meta.json": {
+        "sha256": "9f8ea864e564a8ae42c05f479b7f87ad5e272deb523a1310de3e1efb1cc2ffc4",
+        "size": 873232
+      },
+      "hierarchy.json": {
+        "sha256": "999fb556d2d43c25d416f3f85f6ae78dffe185fd02920591a58e5958cbdef71d",
+        "size": 456183
+      },
+      "runtime_policy.json": {
+        "sha256": "ca9c270676cb8661586bd39f31b18e326ccf10098c593cf46795cd2c5ae6cc1c",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:01:12Z",
+  "name_schema": "multilingual_v1"
+}

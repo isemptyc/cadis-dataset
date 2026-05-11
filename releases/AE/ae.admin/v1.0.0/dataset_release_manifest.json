@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ae.admin",
+  "country_iso": "AE",
+  "country_name": "United Arab Emirates",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "ff1e7003abf90e7a4e025bf6174df84cf6ebdf12",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/gcc-states",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "e70d3e9906ce96834abf16cabd2a29de665972f98fad5336c1d226b11ee02acc"
+  },
+  "runtime_compat": {
+    "min": "0.8.75",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "32f417c4be931bf1f0438bd49a31c276f769d858dcb9c7d4def86f6414c59d6c",
+        "size": 65496
+      },
+      "geometry_meta.json": {
+        "sha256": "849711ddcb1865c5dbc44a48defe0a77fa3fe19908ba194067efd964c9233a64",
+        "size": 145033
+      },
+      "hierarchy.json": {
+        "sha256": "672248bac4a7ca922742e8b29eac7227099d0b873885389f0472c5ba5cf826bc",
+        "size": 85939
+      },
+      "runtime_policy.json": {
+        "sha256": "08edd38592a424464f049bb278cf45358fd443194ffb71eee40c517aecde8607",
+        "size": 181276
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:03:46Z",
+  "name_schema": "multilingual_v1"
+}

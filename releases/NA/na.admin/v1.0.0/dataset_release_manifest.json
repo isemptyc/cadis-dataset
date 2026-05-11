@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "na.admin",
+  "country_iso": "NA",
+  "country_name": "Namibia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "bc050c07805d38a4f98c496e45b927d548f6d70d",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/namibia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "76e40a21368b4981a0da7a8d9dfc22f327fa315d1009585f852e61b54be9b678"
+  },
+  "runtime_compat": {
+    "min": "0.8.132",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "9d7fd883c6bc59185285d4eedff2dcb9aa612b956ced2d74491c29169f6fe5cc",
+        "size": 11656
+      },
+      "geometry_meta.json": {
+        "sha256": "3ce7960aeebd6e3b21cd625ffd25b0bb009f642bb993c913b2d4e1a47fbad52a",
+        "size": 10618
+      },
+      "hierarchy.json": {
+        "sha256": "3b96c66256455294226b5be031f4782b75f2dab0739478e9d6f20cd7a3564f56",
+        "size": 6050
+      },
+      "runtime_policy.json": {
+        "sha256": "86400491d34a129ef55294665aae75cbf2eccf520ce187c8b2cd64a9d2de819a",
+        "size": 182302
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:56:04Z",
+  "name_schema": "multilingual_v1"
+}

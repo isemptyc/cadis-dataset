@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ma.admin",
+  "country_iso": "MA",
+  "country_name": "Morocco",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "f8f20ade0c11e38ec4654fec34db2efa63babad1",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/morocco",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "189742edc02b44ff242c5bb37e1ac095dd48bddc85a3f24e7c3c0098f88cfbc7"
+  },
+  "runtime_compat": {
+    "min": "0.8.130",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "47ff494fe144b9f1c97379fec5a7f76015926bf242a3df838942b311db680b87",
+        "size": 991432
+      },
+      "geometry_meta.json": {
+        "sha256": "3c0dcb9754d6a1d14074b8fb2d32fb28c41604078ca1a3b1f5fc272e4bbb7461",
+        "size": 784979
+      },
+      "hierarchy.json": {
+        "sha256": "f95f8994c90f9cfa034f7abdb0167100f4172d13168a0263fce152dee7da4fa7",
+        "size": 451147
+      },
+      "runtime_policy.json": {
+        "sha256": "14068b7eecfe57a3d91273d6a9510f4ba1463c82ffb5cd553a08e58abc730e14",
+        "size": 85772
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:53:47Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "tn.admin",
+  "country_iso": "TN",
+  "country_name": "Tunisia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "4c53207edb911016376f4087e577de9c7bde90f2",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/tunisia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "499bce594652fba16a3530c4b0be525aa13d6d1634e21af30e246fe2ee892e05"
+  },
+  "runtime_compat": {
+    "min": "0.8.149",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "7abcbdd33423c7902831f3d8ca0eff5ba7c2b61addb70fce6d6f0c152bd19093",
+        "size": 481892
+      },
+      "geometry_meta.json": {
+        "sha256": "4160c00dcaebb445c86338f1122c0f1a725799069f327d48168f4565b8f2a0b3",
+        "size": 624917
+      },
+      "hierarchy.json": {
+        "sha256": "f4266207a85b4ea9f2b3af7abc66743f30751db96b7f70c56809290655428086",
+        "size": 342334
+      },
+      "runtime_policy.json": {
+        "sha256": "d1d1564f349af7e1467dc8d76a50272a4bea748b1b318378098999ce7ee1b8db",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:18:22Z",
+  "name_schema": "multilingual_v1"
+}

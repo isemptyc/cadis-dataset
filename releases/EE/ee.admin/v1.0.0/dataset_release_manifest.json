@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ee.admin",
+  "country_iso": "EE",
+  "country_name": "Estonia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "acbe2c8fa8336f74bcf3b9eb7dd0e6b200e768e1",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/estonia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "b13ea07caea9b77986d0bb0db28f2f650fe09143a8b4ea721c5139b3998bf95c"
+  },
+  "runtime_compat": {
+    "min": "0.8.28",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "07ca1f0d3574f885e24bf11622bf64a2be7df30f83022aabaa020866938dbb1d",
+        "size": 6239236
+      },
+      "geometry_meta.json": {
+        "sha256": "df291e85c3a3d36354a6e116c2665c08af1d5fe344c638141a435d20c94badcf",
+        "size": 1237707
+      },
+      "hierarchy.json": {
+        "sha256": "541570a185ce9b0ff4786ac8ecea9d7e249525a440a9f01fa962ad661ec945d3",
+        "size": 662978
+      },
+      "runtime_policy.json": {
+        "sha256": "45f0388cf1d579dcb9ebc2dec863d2bea7826d5e561b6c97277e12f685f88173",
+        "size": 1260
+      }
+    }
+  },
+  "generated_at": "2026-05-11T04:34:52Z",
+  "name_schema": "multilingual_v1"
+}

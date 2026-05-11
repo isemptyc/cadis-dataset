@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "me.admin",
+  "country_iso": "ME",
+  "country_name": "Montenegro",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "622f47cf9a2a61a56299fef0e44c807666137ff2",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/montenegro",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "fe1e9f1217ff7dd7e50f3a17cfea085a207e2e95df43ff6490a4d4933636a132"
+  },
+  "runtime_compat": {
+    "min": "0.8.33",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "9ef4067140a6ad38935e14a0d2e6bd6ea3946ef340b4d3ce69168001a09fddff",
+        "size": 72672
+      },
+      "geometry_meta.json": {
+        "sha256": "76c273c00cc7b9db3aeba1b40805c12915647dc39944a2fb8d0a83dbab28bc49",
+        "size": 94799
+      },
+      "hierarchy.json": {
+        "sha256": "eebedbbd6561ed14a7f8aff34fc938feebb99746712fd3ee642c525f401a07c6",
+        "size": 58606
+      },
+      "runtime_policy.json": {
+        "sha256": "48f5f1bc4f0e136b6bdfdefa11268747a5bd7b23dc8a2ba4dfd70da83f4cb9fd",
+        "size": 1260
+      }
+    }
+  },
+  "generated_at": "2026-05-11T06:04:54Z",
+  "name_schema": "multilingual_v1"
+}

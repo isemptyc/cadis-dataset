@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "rw.admin",
+  "country_iso": "RW",
+  "country_name": "Rwanda",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "2c6ab085917300b949cf3dad20fdf0087c5d5999",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/rwanda",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "65dab1ad5a5b4d8f3205d96a7b556cc2651cae24f65868ddc503fbfff89007a6"
+  },
+  "runtime_compat": {
+    "min": "0.8.135",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "24034b7e475da34886f18815ca99f69786b03b8848046f51f80a63044b92c9f2",
+        "size": 122392
+      },
+      "geometry_meta.json": {
+        "sha256": "66c502399767bc84efad0b7049cfdee76dd3a67a6e538d04cea3623f190a1325",
+        "size": 115036
+      },
+      "hierarchy.json": {
+        "sha256": "40665c1b4c51f25a92875142a90825f8958dd4f348fc73a0413cc87707e20f7c",
+        "size": 61695
+      },
+      "runtime_policy.json": {
+        "sha256": "1873760be7c32f7a09ae6c4663e9848cf991c49f2fa0794ec3cc956b151490cd",
+        "size": 4440
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:01:52Z",
+  "name_schema": "multilingual_v1"
+}

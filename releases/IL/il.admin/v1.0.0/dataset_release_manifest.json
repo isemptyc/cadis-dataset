@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "il.admin",
+  "country_iso": "IL",
+  "country_name": "Israel",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "9b088b23ede60614b5ea4cb7cda8ab1c0f798562",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/israel-and-palestine",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "5a2cdd4a9b9a22ad947e70810466319e4c5f730612ba889eafa77b51d4f109a2"
+  },
+  "runtime_compat": {
+    "min": "0.8.78",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "0ef948b6d26893db039e56d20e61a3d237493e2d8be8ce9d6177982fe0f504fd",
+        "size": 104828
+      },
+      "geometry_meta.json": {
+        "sha256": "0ce4b6f88e7467f3ece348fb12a854ca88113559fc2771c4f6a21077ee7624a6",
+        "size": 107659
+      },
+      "hierarchy.json": {
+        "sha256": "ce8193791d42e62cfe29db3e4f27d34472bb0bcb0bebc1df7ac951cb1c0d7dde",
+        "size": 63371
+      },
+      "runtime_policy.json": {
+        "sha256": "14068b7eecfe57a3d91273d6a9510f4ba1463c82ffb5cd553a08e58abc730e14",
+        "size": 85772
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:10:46Z",
+  "name_schema": "multilingual_v1"
+}

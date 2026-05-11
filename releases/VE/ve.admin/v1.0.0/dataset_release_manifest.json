@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ve.admin",
+  "country_iso": "VE",
+  "country_name": "Venezuela",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "dd9610fe5e29e973df0654122d31e29c6f4da414",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/venezuela",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "702c3fce38e2db4e2eb7944e3b00e8518c77592d9ce8c028dde4bbdb138c32ce"
+  },
+  "runtime_compat": {
+    "min": "0.8.50",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bef59e5e3a52c46169d9530c801d675a78f1faf6141319b2104bb66ce3110b5e",
+        "size": 1691292
+      },
+      "geometry_meta.json": {
+        "sha256": "9061163d27dd8aaee6daca71e005b5c84c399ac57eaf25f9c1eec3c40b9df2a6",
+        "size": 940369
+      },
+      "hierarchy.json": {
+        "sha256": "dc6b8c93304ab432942fc89f2caf234e2760133ac36cf17d672c6f20234feffb",
+        "size": 511539
+      },
+      "runtime_policy.json": {
+        "sha256": "de4c083a7cb82244099e0b1eb8e6c84a08259fdcb73f6145d4f1f76d467a5a53",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T11:54:27Z",
+  "name_schema": "multilingual_v1"
+}

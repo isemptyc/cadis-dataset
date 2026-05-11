@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "hu.admin",
+  "country_iso": "HU",
+  "country_name": "Hungary",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "4773f47e4b53c2d3c1fd7b451366cc5370b5fca7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/hungary",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "d071e7d98867725f2fe22f749bc38bc64018db9976a3a4b47e622329eeee427a"
+  },
+  "runtime_compat": {
+    "min": "0.8.29",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "086411e0db8cef5bda182891f4bd61a77bd625f6f72d8613cd48f4be3bd9c88e",
+        "size": 2059372
+      },
+      "geometry_meta.json": {
+        "sha256": "98288cf84898e80ac0bad534540b5aa1e7148a70cab8bace240770c62da3cde8",
+        "size": 865439
+      },
+      "hierarchy.json": {
+        "sha256": "c791ad4eceafb565c5e15153825617792a2c720b8dee75eee2dfe3af5419d7c0",
+        "size": 463625
+      },
+      "runtime_policy.json": {
+        "sha256": "65fad5803b1be7ec9b6f9d9ce633c421f16bcfda9c4ae9d3edeb3d9bf354ec59",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T04:51:44Z",
+  "name_schema": "multilingual_v1"
+}

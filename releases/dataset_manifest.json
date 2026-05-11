@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T16:58:55Z",
+  "generated_at": "2026-05-11T16:59:40Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -534,6 +534,12 @@
       "om.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/OM/om.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "QA": {
+      "qa.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/QA/qa.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

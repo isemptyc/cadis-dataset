@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "uy.admin",
+  "country_iso": "UY",
+  "country_name": "Uruguay",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "3d38ba56b67938db802748abacbdac0fbfacfa58",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:south-america/uruguay",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "4d91fc548866a9488f42a19620292f3d8a5465482d57ee6458219b9826baa2b0"
+  },
+  "runtime_compat": {
+    "min": "0.8.49",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "6d17d1ed004d6f307c58d038e5d3134f8630b64d4be1def5a5a9a56246298edc",
+        "size": 92684
+      },
+      "geometry_meta.json": {
+        "sha256": "ef9104ded3250569dd7023913a1d460888993932e83a9640de3b80318fdca351",
+        "size": 198979
+      },
+      "hierarchy.json": {
+        "sha256": "4b7809b86345aa08c48e0f9a81c244450b24beb22ff6b797e44f9ab26f6f0a5b",
+        "size": 106043
+      },
+      "runtime_policy.json": {
+        "sha256": "57b707d149fbdd269fcc1fc7fdecf6495212815f55e909c5035c0d667b827734",
+        "size": 1270
+      }
+    }
+  },
+  "generated_at": "2026-05-11T11:43:02Z",
+  "name_schema": "multilingual_v1"
+}

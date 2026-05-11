@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mu.admin",
+  "country_iso": "MU",
+  "country_name": "Mauritius",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8ecad1f7a771c66a4737bbc8fdcbae31f9ed4291",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/mauritius",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "c20ae78142c813b2509414d3073ec0a7b017e261932d69f6cf77222c63dd608b"
+  },
+  "runtime_compat": {
+    "min": "0.8.129",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "71dae9965f2ef9f8be77122e391fb7b2663e285c7441cdf6f1134ada605fa1a8",
+        "size": 44080
+      },
+      "geometry_meta.json": {
+        "sha256": "47d85e624b8b4c234ae0a1ec9df7355317a05e1b162bc328cfca40135138ffcf",
+        "size": 66281
+      },
+      "hierarchy.json": {
+        "sha256": "01dcd16975b899511fa57dbf7c325d476460dcfbbb281a9a5b905d38a8c83cc5",
+        "size": 36161
+      },
+      "runtime_policy.json": {
+        "sha256": "64c050293442e3048b57fbf87207b3e401d3cc8d1054daca1f64af54a8030b09",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:52:31Z",
+  "name_schema": "multilingual_v1"
+}

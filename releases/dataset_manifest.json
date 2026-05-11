@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T05:17:19Z",
+  "generated_at": "2026-05-11T05:28:10Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -282,6 +282,12 @@
       "lv.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/LV/lv.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "LT": {
+      "lt.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/LT/lt.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

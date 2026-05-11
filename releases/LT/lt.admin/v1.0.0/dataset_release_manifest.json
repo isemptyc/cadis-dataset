@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "lt.admin",
+  "country_iso": "LT",
+  "country_name": "Lithuania",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "c77bcbc14ecf97287935110b508a92cf0a8ca0c9",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/lithuania",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "5071c4116926757693ef6a54a1564cdf79777af171179e35aa10db26338a0b59"
+  },
+  "runtime_compat": {
+    "min": "0.8.31",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "f47f12be7a085f0618416c279e37802bd6c86fee45f9a3553558db014e4dd211",
+        "size": 1979976
+      },
+      "geometry_meta.json": {
+        "sha256": "937d79e0488df70c0cd5e26bfbf140471304aa105b4cca13c5b8a0d52a91706a",
+        "size": 1379386
+      },
+      "hierarchy.json": {
+        "sha256": "40729438f4208e0ee4feb948c2813c3ffc770081b1de14a1000d504448b36c95",
+        "size": 789027
+      },
+      "runtime_policy.json": {
+        "sha256": "ea7626a7b0a1e587b8569e9552a2168d7b8606f9eaab830fda575f3363ad2899",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-11T05:28:07Z",
+  "name_schema": "multilingual_v1"
+}

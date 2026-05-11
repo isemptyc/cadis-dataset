@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "tg.admin",
+  "country_iso": "TG",
+  "country_name": "Togo",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "82c64f0c14e06aa2615c13c282cf53d1628087db",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/togo",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "02a45995c641f7283d55171419b99cd6f73beffbc0a84ad047a1e29fb6ad4057"
+  },
+  "runtime_compat": {
+    "min": "0.8.148",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "ff02fcf83ea27d240d8349054eefacff3dc799a7878ca4459a9425b48105ea63",
+        "size": 23068
+      },
+      "geometry_meta.json": {
+        "sha256": "aca833e3ff9696c5ca3b70c3f0250c2dfde86367f9bc0d75c3dcae9413bcc12e",
+        "size": 24839
+      },
+      "hierarchy.json": {
+        "sha256": "e6556112dfde23a204639f9986d1c0d2f84adb427d34e9be3d5bf326cff1c26b",
+        "size": 13663
+      },
+      "runtime_policy.json": {
+        "sha256": "6c1d15155fff50bdc53466d39a8700acb25241e98ec0e2c095e6006946c551b0",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:17:30Z",
+  "name_schema": "multilingual_v1"
+}

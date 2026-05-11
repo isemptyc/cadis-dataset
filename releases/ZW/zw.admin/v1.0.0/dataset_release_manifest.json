@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "zw.admin",
+  "country_iso": "ZW",
+  "country_name": "Zimbabwe",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "7ebd5948ff885dc9e0969d9f8dea26e5bd67e986",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/zimbabwe",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "699828b32d0b5cc41c98fd075da525b05fcef19b3ab94d3393fb111ec5bdbcda"
+  },
+  "runtime_compat": {
+    "min": "0.8.152",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "ba15a744e3bfe6443ae9ed9b66d97a484aba81d317cca3266fccf28a3ddf676e",
+        "size": 97428
+      },
+      "geometry_meta.json": {
+        "sha256": "177995fa43fba5bb3f0748addbafdd2ce8675c543fc775f4b9f2b4989310b158",
+        "size": 34362
+      },
+      "hierarchy.json": {
+        "sha256": "03fe40005e9ab4dd17baa23c6a207f5475b04e5fedd622903d8e42b9d6157620",
+        "size": 17613
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:24:09Z",
+  "name_schema": "multilingual_v1"
+}

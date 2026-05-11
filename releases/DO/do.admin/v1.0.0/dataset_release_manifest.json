@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "do.admin",
+  "country_iso": "DO",
+  "country_name": "Dominican Republic",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "4f30c8f9a30930d6f372f4d818802cebddd34fbc",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:central-america/haiti-and-domrep",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "4ebf62b545fa6b17e4870dabcc6b63cb37dffe24a4e82ab101c172ad12192cc7"
+  },
+  "runtime_compat": {
+    "min": "0.8.58",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "52548a2bcab04afb903f75ed65a8486bd3e89a59bebb51e32df9616b8db823ca",
+        "size": 70260
+      },
+      "geometry_meta.json": {
+        "sha256": "047755d52620a833b3c472460cf0dd193a55d528d5a93e6c12e4777a10ce7d91",
+        "size": 47625
+      },
+      "hierarchy.json": {
+        "sha256": "01dc0008c86e132f8d94f4da520854a88299a84e69b41ba7b38c1dc9dd6c60a1",
+        "size": 25288
+      },
+      "runtime_policy.json": {
+        "sha256": "18fc68f1f20c224dc9ce39d2228eb1aa22a48c784339127ad7d25309db5ccacf",
+        "size": 1270
+      }
+    }
+  },
+  "generated_at": "2026-05-11T15:01:24Z",
+  "name_schema": "multilingual_v1"
+}

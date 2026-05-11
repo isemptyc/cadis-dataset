@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "tj.admin",
+  "country_iso": "TJ",
+  "country_name": "Tajikistan",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "d9f13f692f0e1e599f86352b9daecd5d7f94253c",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/tajikistan",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "fbb3b2d09f1490f03cc740189b468511690b0ace024d752929c6c112acb9a894"
+  },
+  "runtime_compat": {
+    "min": "0.8.94",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "b5e9c9bfa8fb521e892ba77b804a4b08887538a1b6de90ff9b41202b8a9f79e8",
+        "size": 88280
+      },
+      "geometry_meta.json": {
+        "sha256": "3b3622b170c8f82852d20bac37d8545d0c6d44007a59860dd06b8d50c0b223a6",
+        "size": 39904
+      },
+      "hierarchy.json": {
+        "sha256": "1e5eaaacfc5e9c22762b393a59be539a78033b16fc336f5872fecfcf6d6a724e",
+        "size": 25805
+      },
+      "runtime_policy.json": {
+        "sha256": "75ea0f1cb5c7a3d1652936444c5191fff7eab258d278c7111af55cfe169b4b78",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:37:27Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "bw.admin",
+  "country_iso": "BW",
+  "country_name": "Botswana",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "efcee2021c71ddb588e1b8ffca5c869e2839295c",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/botswana",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "dd863d5e0dd43ebf7634f56efd1e8629f0bc86945e0c13fbab86995e9d7f5e15"
+  },
+  "runtime_compat": {
+    "min": "0.8.101",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "cd757b60dbde3115e9a7c46a901358803e49878a2391ae20341c283c79af35db",
+        "size": 10644
+      },
+      "geometry_meta.json": {
+        "sha256": "7f760357fefdbf26f5ffa401dc84bc004e0ff40b25503470e7ec03984c63db9f",
+        "size": 6037
+      },
+      "hierarchy.json": {
+        "sha256": "94e2629c4499270e7cabe9fdc3e2728afa44edb8b1178bb9d59d6faa3b66fa38",
+        "size": 3700
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:20:08Z",
+  "name_schema": "multilingual_v1"
+}

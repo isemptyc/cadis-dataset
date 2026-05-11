@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "sz.admin",
+  "country_iso": "SZ",
+  "country_name": "Eswatini",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "c8941ddf91591ce1793eca6b5d2a571b9c04a52b",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/swaziland",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "6d5572b432d28ecd27aafd64a6ca361926b548525a66828c8cb360872a1903d8"
+  },
+  "runtime_compat": {
+    "min": "0.8.146",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "c9708c413a2d554cd6b5ed4bf77e713754d59c21f4ca5cb4fa13edf43614b6b5",
+        "size": 21452
+      },
+      "geometry_meta.json": {
+        "sha256": "f456c0ef27c90a1a63fed3f161bd665264fb36eb08b2ef9e1d479e25227d6af8",
+        "size": 15357
+      },
+      "hierarchy.json": {
+        "sha256": "96e17f403372d0aae4fcc536626fdab86c12a9d37174755746d886f528c6720d",
+        "size": 8518
+      },
+      "runtime_policy.json": {
+        "sha256": "89c1e02d68c74c04d13ca8d01550e1c8912cd6a434528f2ed624e525d1c374b6",
+        "size": 2290
+      }
+    }
+  },
+  "generated_at": "2026-05-11T19:12:38Z",
+  "name_schema": "multilingual_v1"
+}

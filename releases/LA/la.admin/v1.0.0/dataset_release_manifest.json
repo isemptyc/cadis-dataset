@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "la.admin",
+  "country_iso": "LA",
+  "country_name": "Laos",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "bf143d035df09765d73389b5cdb09a34d569456d",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/laos",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "87f29258dbd2afaf553764e80a019414cb72b6b5c55d7833ccc4583a035bf13e"
+  },
+  "runtime_compat": {
+    "min": "0.8.83",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "87bf913bdaec560f179f4b7d1b858641c54e5dfbc998e1f93d2dc490872b6589",
+        "size": 117680
+      },
+      "geometry_meta.json": {
+        "sha256": "a980a9289370047119869a7b419f6f8c82cfecea836cee6fb2e20b9e660e37b8",
+        "size": 52234
+      },
+      "hierarchy.json": {
+        "sha256": "a62674ecf049fb71938028cd64b957761ce5d34b7ff39ebf1ed740ed2e716d47",
+        "size": 31979
+      },
+      "runtime_policy.json": {
+        "sha256": "0e19ec7a1bfcbacb7d4eb551ca2310d8c855585940a5adaa68b20d6c3cf6f3b9",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:20:39Z",
+  "name_schema": "multilingual_v1"
+}

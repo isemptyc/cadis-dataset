@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "af.admin",
+  "country_iso": "AF",
+  "country_name": "Afghanistan",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "087d4b77de58a1ab474012a2b2a6747879c8b499",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/afghanistan",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "1a474b5fc4de466cd3baa57a1ebddecd823bcfba916e7f7767534ba8f6287fda"
+  },
+  "runtime_compat": {
+    "min": "0.8.63",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "dbb7f9f28796b70c205ec6833ac1e2635dfb595c12f6d9c2df2fda7cb7a02931",
+        "size": 211804
+      },
+      "geometry_meta.json": {
+        "sha256": "fcd8539df42cc694d543a0769525c28f38664958de7225e91e24cd98d51ad43d",
+        "size": 175780
+      },
+      "hierarchy.json": {
+        "sha256": "f9bd8b05111c869b984335b5885a1573f9ff815529f6a6be4fccf7aa0d4e7ec4",
+        "size": 121999
+      },
+      "runtime_policy.json": {
+        "sha256": "543eac3ed3af75a5e3bbcac327e9973666c515464667aa6004264e5c4ccc878b",
+        "size": 2290
+      }
+    }
+  },
+  "generated_at": "2026-05-11T16:30:50Z",
+  "name_schema": "multilingual_v1"
+}

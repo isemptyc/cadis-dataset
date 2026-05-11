@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "gh.admin",
+  "country_iso": "GH",
+  "country_name": "Ghana",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "5d2236316269ba6845c51567d2e5d5c69ed01022",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/ghana",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "59c62a26afe141737bfb189f1ea52b9f1efca19e9eea18d2b1a4176d5b630b36"
+  },
+  "runtime_compat": {
+    "min": "0.8.117",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "ce5901eeca2b21d7387143d4126a7874bd718d8b26211e8c20c37b573a07b254",
+        "size": 228880
+      },
+      "geometry_meta.json": {
+        "sha256": "afe2dd06e5a489b4e712ba1e9f1e5e6f98b65b8aeaf6c97bc34769eee7914079",
+        "size": 95785
+      },
+      "hierarchy.json": {
+        "sha256": "06910ebc07d3d2f9634828ede2c975cf05bda3fedc2f3cbe9f7c288f63fe4561",
+        "size": 53283
+      },
+      "runtime_policy.json": {
+        "sha256": "00258be1a9a1e4781f7695997dd25a0b4e66e353466697ea724ac93b3cf78702",
+        "size": 9080
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:37:01Z",
+  "name_schema": "multilingual_v1"
+}

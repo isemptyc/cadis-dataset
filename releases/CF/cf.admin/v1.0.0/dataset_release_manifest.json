@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cf.admin",
+  "country_iso": "CF",
+  "country_name": "Central African Republic",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "5b261ebf1735502dfdd62896ba9d6597d3e950ab",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:africa/central-african-republic",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "26e26b9b35dc8cc6822e4f2d764f412e7e011da7ad199358bc9c9dc097b8f17b"
+  },
+  "runtime_compat": {
+    "min": "0.8.106",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "e3bcb1a9e92cdbaacdb2232120eea3a82cfb52c644fba28841d28ff72e3c66fd",
+        "size": 17888
+      },
+      "geometry_meta.json": {
+        "sha256": "3233b3f776d573d33c984b876391dc658b7ccf0357c737a3ba06a4ea81fb6fa4",
+        "size": 18679
+      },
+      "hierarchy.json": {
+        "sha256": "df71db5fc5f66a68924d73d2bc930f6637c6d53177f2275482d2da6c2b312d98",
+        "size": 10497
+      },
+      "runtime_policy.json": {
+        "sha256": "6c1d15155fff50bdc53466d39a8700acb25241e98ec0e2c095e6006946c551b0",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-11T18:25:31Z",
+  "name_schema": "multilingual_v1"
+}

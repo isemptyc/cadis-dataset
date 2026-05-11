@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "kg.admin",
+  "country_iso": "KG",
+  "country_name": "Kyrgyzstan",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8c2c51f73f742ad5d4fd621ba85344105f5bba48",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/kyrgyzstan",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "bd8752005d894f686f6048e7bb1c843f115ffb183fa4c45e28816cf1979a53b4"
+  },
+  "runtime_compat": {
+    "min": "0.8.82",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "e2b617bb5a66733e7b4194dbba204a37706e53eae56b09f2cb906e56201b314f",
+        "size": 102840
+      },
+      "geometry_meta.json": {
+        "sha256": "f91c36b7cd8559d95e7697710b8f892a32ad643121a3b071b6cffe99a532ce3d",
+        "size": 23613
+      },
+      "hierarchy.json": {
+        "sha256": "23b626d460b85b299069bcdd8c8300e693b1dba99b6a1103b60bed2466d905a5",
+        "size": 15471
+      },
+      "runtime_policy.json": {
+        "sha256": "7bb95ac7e0e232cf8ee427cecbeb5ef59eb7b9257f9bd0a4e0fbe32c5aebb26c",
+        "size": 19114
+      }
+    }
+  },
+  "generated_at": "2026-05-11T17:19:12Z",
+  "name_schema": "multilingual_v1"
+}

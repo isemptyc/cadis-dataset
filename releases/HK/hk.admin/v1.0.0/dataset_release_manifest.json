@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "hk.admin",
+  "country_iso": "HK",
+  "country_name": "Hong Kong",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "346d30284c2bfdc975b67f027ec4ad29588c102e",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/hong-kong",
+    "replication_timestamp_utc": "2026-05-11T20:20:52Z",
+    "file_sha256": "1c4476f2d6da2a35e797885751eecd7553bfab27aa5631130fc6331149c34080"
+  },
+  "runtime_compat": {
+    "min": "0.8.154",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "51196a9aff0690469983e6e62671f9a78710a4fb05e7ecc1389aa358cd4e45d5",
+        "size": 9068
+      },
+      "geometry_meta.json": {
+        "sha256": "67e3174f42ae12d5f6cecab24c7e3952998951d596d2767e3b999fb266aa1a19",
+        "size": 9012
+      },
+      "hierarchy.json": {
+        "sha256": "4ffb36411b2c90d5bf235cf0f88393fcdd0c5cce6294273fb580998026390bc8",
+        "size": 5675
+      },
+      "runtime_policy.json": {
+        "sha256": "aefe2e318cf6c42f432faf462448a27ca58ac4e6b7ba0376a1d0a647261fdf4f",
+        "size": 18984
+      }
+    }
+  },
+  "generated_at": "2026-05-12T03:37:36Z",
+  "name_schema": "multilingual_v1"
+}

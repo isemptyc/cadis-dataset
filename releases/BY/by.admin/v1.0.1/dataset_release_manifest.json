@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "by.admin",
+  "country_iso": "BY",
+  "country_name": "Belarus",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "c139f250231e8d968581a65a6379558c943b5e85",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/belarus",
+    "replication_timestamp_utc": "2026-05-11T20:20:52Z",
+    "file_sha256": "c049ac0361f674b923aa9c00ce0b8012a93d81bcfdbc936328d2abc88f00fa2c"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bdad55455fc10704ac5e9b62dd74dc0b1c38012ea0aa3f497404874bc62b105c",
+        "size": 839212
+      },
+      "geometry_meta.json": {
+        "sha256": "c35a0382b69651f22605d02e0b10fe7caf330669809943e9ba15fbb0c394330c",
+        "size": 575112
+      },
+      "hierarchy.json": {
+        "sha256": "c0979d0e894f0d96d365b28803b97f843ed7d57de00ded9ae23f17f502fc495f",
+        "size": 413569
+      },
+      "runtime_policy.json": {
+        "sha256": "d4b29df4c09d90b62428f1bac6ee88191dc56f6701437df28a4902b4b66cae3c",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-12T10:53:27Z",
+  "name_schema": "multilingual_v1"
+}

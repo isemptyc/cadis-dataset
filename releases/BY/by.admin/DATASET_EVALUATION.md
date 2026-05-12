@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `by.admin`
-Version: `v1.0.0`
+Version: `v1.0.1`
 Country: `BY`
 Policy Version: `1.0`
 
@@ -11,13 +11,9 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `by.admin v1.0.0` dataset under Cadis Runtime.
+This document evaluates `by.admin v1.0.1` under Cadis Runtime after removing detailed locality/admin-unit geometry from the runtime contract.
 
-This report describes the source-data scope, administrative model, lookup behavior, deterministic policy effects, boundary isolation, and reproducibility evidence for release review.
-
-OSM data is not incorrect. Observed sparse lower-level outcomes reflect structural coverage or boundary-edge behavior, not geometric invalidity.
-
-Cadis does not modify geography. It enforces structural determinism.
+Belarus level `10` contributed a very large detailed administrative layer, and levels `9` and `11` were sparse/local detail. Version `v1.0.1` keeps country, region, municipality, and locality semantics while excluding those fine-grained layers.
 
 ---
 
@@ -26,11 +22,11 @@ Cadis does not modify geography. It enforces structural determinism.
 | Field | Value |
 | ----- | ----- |
 | Dataset ID | `by.admin` |
-| Dataset Version | `v1.0.0` |
+| Dataset Version | `v1.0.1` |
 | Country | `BY` |
 | Country Name | `Belarus` |
 | Policy Version | `1.0` |
-| Cadis Version | `v0.8.156` |
+| Cadis Version | `v0.8.160` |
 | Hierarchy Required | `True` |
 | Repair Required | `False` |
 | Runtime Policy Detected | `True` |
@@ -51,24 +47,28 @@ Cadis does not modify geography. It enforces structural determinism.
 | OSM Source | `geofabrik:europe/belarus` |
 | OSM Snapshot Timestamp | `2026-05-11T20:20:52Z` |
 
-The same scoped boundary was used for both build and evaluation.
-
-The v1.0.0 scope is Belarus administrative coverage represented by materialized OSM level 2 administrative relations, with lower-level detail where OSM administrative coverage is available.
+The same scoped boundary was used for build and evaluation.
 
 ---
 
 # 4. Administrative Model
 
+The reduced Belarus engine exposes these OSM administrative levels:
+
 | Level | Runtime Label | Dataset Count | Notes |
 | ----: | ------------- | ------------: | ----- |
-| 2 | `admin_country` | 1 | Coverage where available |
-| 4 | `admin_region` | 7 | Coverage where available |
-| 6 | `admin_municipality` | 128 | Coverage where available |
-| 8 | `admin_locality` | 1287 | Coverage where available |
-| 9 | `admin_locality` | 25 | Coverage where available |
-| 10 | `admin_detail` | 22342 | Coverage where available |
+| 2 | `admin_country` | 1 | Country coverage anchor |
+| 4 | `admin_region` | 7 | Regions and Minsk |
+| 6 | `admin_municipality` | 128 | Municipality/district coverage |
+| 8 | `admin_locality` | 1,287 | Locality-level coverage retained where available |
 
-The engine uses canonical names from `name:en`, `name`, `official_name`, `name:be`, and `name:ru`, with bounded multilingual aliases.
+Probe evidence also found:
+
+| Level | Probe Count | Decision |
+| ----: | ----------: | -------- |
+| 9 | 25 | Excluded from `v1.0.1`; sparse local detail |
+| 10 | 22,342 | Excluded from `v1.0.1`; detailed layer too large for Cadis semantic resolution |
+| 11 | 0 | Excluded from `v1.0.1`; no scoped coverage in the release report |
 
 ---
 
@@ -76,11 +76,8 @@ The engine uses canonical names from `name:en`, `name`, `official_name`, `name:b
 
 * Total samples: `10,000`
 * Sampling mode: mixed inside/outside stress testing
-* Inside samples: `9,000`
-* Outside samples: `1,000`
-* Dataset path: `BY/by.admin/v1.0.0`
-
-The test intentionally injects about 10% out-of-country points to validate boundary rejection behavior, offshore classification, policy-layer containment, and cross-border isolation.
+* Expected inside ratio: `0.9`
+* Dataset path: `BY/by.admin/v1.0.1`
 
 ---
 
@@ -92,10 +89,8 @@ The test intentionally injects about 10% out-of-country points to validate bound
 | Inside Coverage Pass Rate | `100.00%` |
 | Policy Pass Rate | `100.00%` |
 | Failed Samples | `0` |
-| Throughput | `2285.870` QPS |
-| Total Runtime | `4.375 sec` |
-
-This run confirms no policy or inside-coverage failures.
+| Throughput | `4345.310` QPS |
+| Total Runtime | `2.301 sec` |
 
 ---
 
@@ -103,11 +98,11 @@ This run confirms no policy or inside-coverage failures.
 
 | Scenario | Pass Rate | Inside Pass Rate | Failed | Inside Failed | Status Counts (`ok`/`partial`/`failed`/`unknown`) |
 | -------- | --------: | ---------------: | -----: | ------------: | -------------------------------------------------- |
-| full_policy | 100.00% | 100.00% | 0 | 0 | 9,012 / 10 / 978 / 0 |
-| no_hierarchy | 100.00% | 100.00% | 0 | 0 | 9,012 / 10 / 978 / 0 |
-| no_repair | 100.00% | 100.00% | 0 | 0 | 9,012 / 10 / 978 / 0 |
-| no_nearby | 100.00% | 100.00% | 0 | 0 | 8,990 / 10 / 1,000 / 0 |
-| osm_only | 100.00% | 100.00% | 0 | 0 | 8,990 / 10 / 1,000 / 0 |
+| full_policy | 100.00% | 100.00% | 0 | 0 | 9,022 / 0 / 978 / 0 |
+| no_hierarchy | 100.00% | 100.00% | 0 | 0 | 9,022 / 0 / 978 / 0 |
+| no_repair | 100.00% | 100.00% | 0 | 0 | 9,022 / 0 / 978 / 0 |
+| no_nearby | 100.00% | 100.00% | 0 | 0 | 9,000 / 0 / 1,000 / 0 |
+| osm_only | 100.00% | 100.00% | 0 | 0 | 9,000 / 0 / 1,000 / 0 |
 
 ---
 
@@ -120,41 +115,24 @@ This run confirms no policy or inside-coverage failures.
 | Nearby | 22 |
 | Total vs OSM-only | 22 |
 
-No explicit repair layer is required for `by.admin v1.0.0`.
-
 ---
 
 # 9. Structural Distribution
 
-## 9.1 Shape Distribution
-
 | Shape | Count |
 | ----- | ----: |
-| `[2,4,6,8]` | 8,556 |
+| `[2,4,6,8]` | 8,919 |
 | `[]` | 998 |
-| `[2,4,6,8,10]` | 361 |
-| `[2,4,6,9]` | 36 |
-| `[2,4,6]` | 15 |
-| `[2,4,9]` | 14 |
-| `[6,8]` | 8 |
-| `[2,6,8]` | 5 |
-| `[2,4]` | 4 |
-| `[4,6,8]` | 2 |
+| `[2,4,6]` | 51 |
+| `[2,4]` | 18 |
+| `[2,6,8]` | 13 |
 | `[2,4,8]` | 1 |
-
-Empty shapes correspond to:
-
-* `empty_shape`: 978
-* `offshore`: 20
-
-## 9.2 Node Source Distribution
 
 | Source | Count |
 | ------ | ----: |
 | polygon | 9,000 |
+| admin_tree_id | 10 |
 | nearby | 2 |
-
-## 9.3 Policy Reason Distribution
 
 | Reason | Count |
 | ------ | ----: |
@@ -166,7 +144,7 @@ Empty shapes correspond to:
 
 # 10. Level-4 Coverage
 
-No level-4 city hit-rate section is required for this release. The runtime contract is anchored by level 2 administrative coverage and lower-level administrative detail where present in OSM.
+The run hit all `7` level-4 units, with `8,989` total level-4 hits and `8,987` inside level-4 hits.
 
 ---
 
@@ -179,17 +157,15 @@ Under stress testing with 10% forced out-of-bound samples:
 * No evidence was observed that hierarchy or nearby layers created cross-border escalation.
 * The same `tmp/by_country.json` scoped boundary was used for build and evaluation.
 
-This confirms strict boundary containment within the Belarus dataset scope.
-
 ---
 
 # 12. Structural Observations
 
-1. Geometry integrity is high; no repair layer activation was needed.
-2. The level 2 administrative fallback guarantees deterministic in-scope behavior.
-3. Lower administrative levels provide valid detail where available.
-4. Nearby fallback is bounded at 2 km and accounts for a small rescue effect around administrative edges where observed.
-5. Dataset achieves full inside-boundary coverage under full policy mode for the scoped administrative coverage.
+1. The runtime contract now exposes levels 2, 4, 6, and 8.
+2. Level 10 was removed because 22,342 detailed features made metadata and hierarchy disproportionate to Cadis semantic needs.
+3. Sparse levels 9 and 11 were also removed from the runtime contract.
+4. Package size is now `0.9 MB` compressed and `1.7 MB` unpacked, down from the prior `3.6 MB` compressed and `16.1 MB` unpacked release.
+5. Evaluation behavior remains stable, with 100% overall, policy, and inside pass rates.
 
 ---
 
@@ -198,22 +174,20 @@ This confirms strict boundary containment within the Belarus dataset scope.
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `15a69e7093a622a8646eaededf39ead95f0b5809`
+  `c139f250231e8d968581a65a6379558c943b5e85`
 - Cadis version:
-  `0.8.156`
+  `0.8.160`
+- Runtime compatibility minimum:
+  `0.8.35`
+- Source OSM SHA256:
+  `c049ac0361f674b923aa9c00ce0b8012a93d81bcfdbc936328d2abc88f00fa2c`
 - Boundary builder: `scripts/build_by_boundaries.py`
 - Build boundary: `tmp/by_country.json`
 - Evaluation boundary: `tmp/by_country.json`
-- Staged dataset: `BY/by.admin/v1.0.0`
-- Source OSM SHA256:
-  `c049ac0361f674b923aa9c00ce0b8012a93d81bcfdbc936328d2abc88f00fa2c`
-
-The dataset package was generated from a clean `cadis_dataset_engine` working tree.
+- Staged dataset: `BY/by.admin/v1.0.1`
 
 ---
 
 # 14. Conclusion
 
-The `by.admin v1.0.0` dataset demonstrates full inside-boundary coverage, strict boundary isolation, high geometric integrity, no required repair layer, bounded nearby fallback behavior, and stable administrative coverage for Belarus.
-
-The dataset is suitable for autonomous release.
+The `by.admin v1.0.1` dataset passes evaluation and is suitable for release. The runtime model keeps useful Belarus administrative semantics while excluding overly detailed locality/admin-unit geometry.

@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `cn.admin`
-Version: `v1.0.1`
+Version: `v1.0.2`
 Country: `CN`
 Policy Version: `1.0`
 
@@ -11,9 +11,11 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `cn.admin v1.0.1` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `cn.admin v1.0.2` dataset under Cadis Runtime.
 
 This release keeps `CN` as the public Cadis-routable dataset and includes Tibet as an internal source component. Tibet is not published as a standalone routable dataset because the Natural Earth world classifier resolves Tibet coordinates to `CN`.
+
+The v1.0.2 language profile preserves Tibetan `name:bo` aliases for Tibet-source administrative features while keeping the CN Chinese profile on `zh` rather than adding `zh-Hant`.
 
 Cadis does not modify geography. It enforces structural determinism over the administrative coverage available in the source data.
 
@@ -24,11 +26,11 @@ Cadis does not modify geography. It enforces structural determinism over the adm
 | Field | Value |
 | ----- | ----- |
 | Dataset ID | `cn.admin` |
-| Dataset Version | `v1.0.1` |
+| Dataset Version | `v1.0.2` |
 | Country | `CN` |
 | Country Name | `China` |
 | Policy Version | `1.0` |
-| Cadis Version | `v0.8.158` |
+| Cadis Version | `v0.8.159` |
 | Hierarchy Required | `True` |
 | Repair Required | `False` |
 | Runtime Policy Detected | `True` |
@@ -51,7 +53,7 @@ Cadis does not modify geography. It enforces structural determinism over the adm
 
 The same scoped boundary was used for both build and evaluation.
 
-The v1.0.1 scope is China administrative coverage represented by materialized OSM level 4 administrative relations plus Tibet level 5/6 source coverage, with lower-level detail where OSM administrative coverage is available.
+The v1.0.2 scope is China administrative coverage represented by materialized OSM level 4 administrative relations plus Tibet level 5/6 source coverage, with lower-level detail where OSM administrative coverage is available.
 
 ---
 
@@ -70,7 +72,7 @@ The v1.0.1 scope is China administrative coverage represented by materialized OS
 | 12 | `admin_unit` | 4 | Coverage where available |
 | 14 | `admin_unit` | 0 | No rows in this snapshot |
 
-The engine uses canonical names from `name:en`, `name`, `official_name`, `name:zh`, and `name:ru`, with bounded multilingual aliases.
+The engine uses canonical names from `name:en`, `name`, `official_name`, `name:zh`, `name:bo`, and `name:ru`, with bounded multilingual aliases for `en`, `zh`, `bo`, and `ru`.
 
 ---
 
@@ -80,7 +82,7 @@ The engine uses canonical names from `name:en`, `name`, `official_name`, `name:z
 * Sampling mode: mixed inside/outside stress testing
 * Inside samples: `85,000`
 * Outside samples: `15,000`
-* Dataset path: `CN/cn.admin/v1.0.1`
+* Dataset path: `CN/cn.admin/v1.0.2`
 
 The test intentionally injects out-of-country points to validate boundary rejection behavior, offshore classification, policy-layer containment, and cross-border isolation.
 
@@ -95,8 +97,8 @@ The test intentionally injects out-of-country points to validate boundary reject
 | Policy Pass Rate | `100.00%` |
 | Failed Samples | `0` |
 | HTTP 200 Responses | `100,000` |
-| Throughput | `1010.850` QPS |
-| Total Runtime | `98.927 sec` |
+| Throughput | `965.420` QPS |
+| Total Runtime | `103.582 sec` |
 
 This run confirms no policy or inside-coverage failures.
 
@@ -123,7 +125,7 @@ This run confirms no policy or inside-coverage failures.
 | Nearby | 40 |
 | Total vs OSM-only | 40 |
 
-No explicit repair layer is required for `cn.admin v1.0.1`.
+No explicit repair layer is required for `cn.admin v1.0.2`.
 
 ---
 
@@ -187,7 +189,7 @@ The dataset is anchored by level 4 administrative coverage for China proper and 
 | `Jilin` | 1,909 | 1.91% | 1,909 | 2.25% |
 | `Guangdong` | 1,902 | 1.90% | 1,902 | 2.24% |
 
-The Tibet source component appears in runtime shapes anchored at level 5 or level 6, primarily through `[5,6,8]`, `[6,8]`, and related shapes. A direct Lhasa smoke lookup returned `Lhasa > Chengguan District > Jêbumgang Subdistrict`.
+The Tibet source component appears in runtime shapes anchored at level 5 or level 6, primarily through `[5,6,8]`, `[6,8]`, and related shapes. A direct Lhasa smoke lookup returned `Lhasa > Chengguan District > Jêbumgang Subdistrict` with Tibetan `bo` aliases preserved in the returned `names` payload.
 
 ---
 
@@ -209,9 +211,10 @@ This confirms strict boundary containment within the China dataset scope.
 1. Geometry integrity is high; no repair layer activation was needed.
 2. China proper remains anchored by level 4 administrative coverage.
 3. Tibet is included as an internal source component anchored at level 5 or level 6, matching the available OSM administrative structure.
-4. Lower administrative levels provide valid detail where available.
-5. Nearby fallback is bounded at 2 km and accounts for a small rescue effect around administrative edges where observed.
-6. Dataset achieves full inside-boundary coverage under full policy mode for the scoped administrative coverage.
+4. Tibetan `name:bo` aliases are preserved where source tags are available.
+5. Lower administrative levels provide valid detail where available.
+6. Nearby fallback is bounded at 2 km and accounts for a small rescue effect around administrative edges where observed.
+7. Dataset achieves full inside-boundary coverage under full policy mode for the scoped administrative coverage.
 
 ---
 
@@ -220,13 +223,13 @@ This confirms strict boundary containment within the China dataset scope.
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `8234fd18285ae1c16add5699ae56c524a5e9f10f`
+  `bc51496004e100df9ea8152b31fef42c40fc38dd`
 - Cadis version:
-  `0.8.158`
+  `0.8.159`
 - Boundary builder: `scripts/build_cn_boundaries.py`
 - Build boundary: `tmp/cn_country.json`
 - Evaluation boundary: `tmp/cn_country.json`
-- Staged dataset: `CN/cn.admin/v1.0.1`
+- Staged dataset: `CN/cn.admin/v1.0.2`
 - Source OSM manifest SHA256:
   `4dba19915bbc48b3a2164e0cd8514c07832ddc3a4fc8e177dcab8ba0fe312558`
 - Source OSM components:
@@ -241,6 +244,6 @@ The dataset package was generated from a clean `cadis_dataset_engine` working tr
 
 # 14. Conclusion
 
-The `cn.admin v1.0.1` dataset demonstrates full inside-boundary coverage, strict boundary isolation, high geometric integrity, no required repair layer, bounded nearby fallback behavior, and stable composite administrative coverage for China with Tibet included as an internal source component.
+The `cn.admin v1.0.2` dataset demonstrates full inside-boundary coverage, strict boundary isolation, high geometric integrity, no required repair layer, bounded nearby fallback behavior, and stable composite administrative coverage for China with Tibet included as an internal source component.
 
 The dataset is suitable for autonomous release.

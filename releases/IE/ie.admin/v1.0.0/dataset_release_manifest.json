@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ie.admin",
+  "country_iso": "IE",
+  "country_name": "Ireland",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "629081b95fb6c37816e2a9796106a8a5c4abe208",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/ireland-and-northern-ireland",
+    "replication_timestamp_utc": "2026-05-11T20:20:52Z",
+    "file_sha256": "fed9ae5866fdde0f6582939b2f10a3393509416d281bba7e6336fc6fa7f07d6e"
+  },
+  "runtime_compat": {
+    "min": "0.8.160",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "37aa670155ed3557f1d5db7cd0ee2c832cbf60965ef790a79f78066791e55788",
+        "size": 1691096
+      },
+      "geometry_meta.json": {
+        "sha256": "fb09e082a16643fb8b69e726115da462cf28ea7d72b8cd565ab6151f5c0563b7",
+        "size": 979371
+      },
+      "hierarchy.json": {
+        "sha256": "04fb277a0b1deddda823897b63b5d03bbaa7cf7ff0623e0bc600ee788ed183ce",
+        "size": 535203
+      },
+      "runtime_policy.json": {
+        "sha256": "9e9de5000d0c53cf3d3b48ad40e1bd32316efeb0c9dba743e0457d115974cfaf",
+        "size": 4555
+      }
+    }
+  },
+  "generated_at": "2026-05-12T08:56:22Z",
+  "name_schema": "multilingual_v1"
+}

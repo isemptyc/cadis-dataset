@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-12T10:28:57Z",
+  "generated_at": "2026-05-12T10:43:13Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -184,8 +184,8 @@
     },
     "TR": {
       "tr.admin": {
-        "latest": "v1.0.0",
-        "manifest": "releases/TR/tr.admin/v1.0.0/dataset_release_manifest.json"
+        "latest": "v1.0.1",
+        "manifest": "releases/TR/tr.admin/v1.0.1/dataset_release_manifest.json"
       }
     },
     "BR": {
@@ -304,8 +304,8 @@
     },
     "RO": {
       "ro.admin": {
-        "latest": "v1.0.0",
-        "manifest": "releases/RO/ro.admin/v1.0.0/dataset_release_manifest.json"
+        "latest": "v1.0.1",
+        "manifest": "releases/RO/ro.admin/v1.0.1/dataset_release_manifest.json"
       }
     },
     "RS": {

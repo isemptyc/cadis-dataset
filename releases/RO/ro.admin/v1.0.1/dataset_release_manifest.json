@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ro.admin",
+  "country_iso": "RO",
+  "country_name": "Romania",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "78b7894d1a8b40ba0aba480bc9a2cfa1e442c192",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/romania",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "337bedf448b7a7b0100e652fabff3b6a3668aff059e17cd5152176ce7f87859d"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "4943617fb4faa491c6b8e2f1a3bc3357275c3a86a250039e189dbe48900003bf",
+        "size": 6223752
+      },
+      "geometry_meta.json": {
+        "sha256": "74c00a7f7bae273fa7f0e631c9234d791427a3fc914e9683bf2f451b1ff61aa0",
+        "size": 857268
+      },
+      "hierarchy.json": {
+        "sha256": "0d88ed697029bebcbec4731da96cab8b10da570ec9e052e944698b78a938602a",
+        "size": 478442
+      },
+      "runtime_policy.json": {
+        "sha256": "7c9ff1c2ec33119cb97b5415ab3cfe09ba71f9f0bd6165deb7f507cc8d416553",
+        "size": 786
+      }
+    }
+  },
+  "generated_at": "2026-05-12T10:43:06Z",
+  "name_schema": "multilingual_v1"
+}

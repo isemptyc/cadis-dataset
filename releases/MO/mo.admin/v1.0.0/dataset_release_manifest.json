@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mo.admin",
+  "country_iso": "MO",
+  "country_name": "Macau",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "0852142f5fdef699dcd0faefce871967c9291eb1",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/macau",
+    "replication_timestamp_utc": "2026-05-11T20:20:52Z",
+    "file_sha256": "222cdb54cae22bdf5581ef102de80f24809b1bbf15fe7c3dc03a95dbe1312109"
+  },
+  "runtime_compat": {
+    "min": "0.8.155",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "0f28951f445398127602d13865f26525bd27a66cbe823b692c39450083217e4d",
+        "size": 332
+      },
+      "geometry_meta.json": {
+        "sha256": "7dbebfb8db0c342d5e0498e354f55539a4e973a91f57f3510051f00e3b08fb29",
+        "size": 642
+      },
+      "hierarchy.json": {
+        "sha256": "a1d4d4cd6faf78f4ac6eecc13a72a3e0a3909229166b13c5ffa33e5dce5e3461",
+        "size": 429
+      },
+      "runtime_policy.json": {
+        "sha256": "b2736c5fe2b99844c68854210baaaf1b0ec46176eb4aa50092222a65750b6c99",
+        "size": 786
+      }
+    }
+  },
+  "generated_at": "2026-05-12T03:40:03Z",
+  "name_schema": "multilingual_v1"
+}

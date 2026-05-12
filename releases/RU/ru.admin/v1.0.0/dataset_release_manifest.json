@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ru.admin",
+  "country_iso": "RU",
+  "country_name": "Russia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8c733b3981f1f98fc06b1c44e09a8ec6b54b246a",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/russia",
+    "replication_timestamp_utc": "2026-05-11T20:20:52Z",
+    "file_sha256": "6bf8b6e73c2785cdac5cb1f20b6d98c453bef15ef6601bc6aba57179f3b3f391"
+  },
+  "runtime_compat": {
+    "min": "0.8.159",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "51254a2b691c5e10a1e780f257e09ee0dc597001e9d14aa4bb1bb5588efe1d61",
+        "size": 7768944
+      },
+      "geometry_meta.json": {
+        "sha256": "96b8131f5db554e49b6ff1d1ae3b92602fa174de4accdb61a7b3196012fb9d52",
+        "size": 5876304
+      },
+      "hierarchy.json": {
+        "sha256": "3763e9d8db421f315e17c7fbfb336e8f684462d8fc98fb55bef63bb80ae779a4",
+        "size": 3781744
+      },
+      "runtime_policy.json": {
+        "sha256": "067d4a00dd4e89e2225ee46daf41ca3963fc129fa423fb0292cbd9efefea44e6",
+        "size": 9146
+      }
+    }
+  },
+  "generated_at": "2026-05-12T07:30:06Z",
+  "name_schema": "multilingual_v1"
+}

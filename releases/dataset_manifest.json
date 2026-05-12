@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-12T12:06:51Z",
+  "generated_at": "2026-05-12T19:22:54Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -689,331 +689,771 @@
     "DZ": {
       "dz.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/DZ/dz.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/DZ/dz.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "AO": {
       "ao.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/AO/ao.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/AO/ao.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BJ": {
       "bj.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BJ/bj.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BJ/bj.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BW": {
       "bw.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BW/bw.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BW/bw.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BF": {
       "bf.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BF/bf.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BF/bf.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BI": {
       "bi.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BI/bi.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BI/bi.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CM": {
       "cm.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CM/cm.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CM/cm.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CV": {
       "cv.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CV/cv.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CV/cv.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CF": {
       "cf.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CF/cf.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CF/cf.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TD": {
       "td.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TD/td.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TD/td.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "KM": {
       "km.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/KM/km.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/KM/km.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CG": {
       "cg.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CG/cg.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CG/cg.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CD": {
       "cd.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CD/cd.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CD/cd.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "DJ": {
       "dj.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/DJ/dj.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/DJ/dj.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "EG": {
       "eg.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/EG/eg.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/EG/eg.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GQ": {
       "gq.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/GQ/gq.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/GQ/gq.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "ER": {
       "er.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/ER/er.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/ER/er.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "ET": {
       "et.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/ET/et.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/ET/et.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GA": {
       "ga.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/GA/ga.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/GA/ga.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GH": {
       "gh.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/GH/gh.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/GH/gh.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GN": {
       "gn.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/GN/gn.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/GN/gn.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GW": {
       "gw.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/GW/gw.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/GW/gw.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CI": {
       "ci.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CI/ci.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CI/ci.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "KE": {
       "ke.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/KE/ke.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/KE/ke.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "LS": {
       "ls.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/LS/ls.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/LS/ls.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "LR": {
       "lr.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/LR/lr.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/LR/lr.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "LY": {
       "ly.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/LY/ly.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/LY/ly.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MG": {
       "mg.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MG/mg.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MG/mg.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MW": {
       "mw.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MW/mw.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MW/mw.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "ML": {
       "ml.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/ML/ml.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/ML/ml.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MR": {
       "mr.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MR/mr.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MR/mr.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MU": {
       "mu.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MU/mu.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MU/mu.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MA": {
       "ma.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MA/ma.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MA/ma.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MZ": {
       "mz.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MZ/mz.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MZ/mz.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NA": {
       "na.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/NA/na.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/NA/na.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NE": {
       "ne.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/NE/ne.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/NE/ne.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NG": {
       "ng.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/NG/ng.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/NG/ng.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "RW": {
       "rw.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/RW/rw.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/RW/rw.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SH": {
       "sh.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SH/sh.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SH/sh.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "ST": {
       "st.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/ST/st.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/ST/st.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SN": {
       "sn.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SN/sn.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SN/sn.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GM": {
       "gm.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/GM/gm.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/GM/gm.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SC": {
       "sc.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SC/sc.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SC/sc.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SL": {
       "sl.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SL/sl.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SL/sl.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SO": {
       "so.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SO/so.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SO/so.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "ZA": {
       "za.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/ZA/za.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/ZA/za.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SS": {
       "ss.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SS/ss.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SS/ss.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SD": {
       "sd.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SD/sd.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SD/sd.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SZ": {
       "sz.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SZ/sz.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SZ/sz.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TZ": {
       "tz.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TZ/tz.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TZ/tz.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TG": {
       "tg.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TG/tg.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TG/tg.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TN": {
       "tn.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TN/tn.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TN/tn.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "UG": {
       "ug.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/UG/ug.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/UG/ug.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "ZM": {
       "zm.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/ZM/zm.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/ZM/zm.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "ZW": {
       "zw.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/ZW/zw.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/ZW/zw.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "africa",
+          "path": "releases/africa.tar.gz",
+          "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
+          "size": 9867553,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CN": {

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "cn.admin",
+  "country_iso": "CN",
+  "country_name": "China",
+  "dataset_version": "v1.0.3",
+  "engine_commit": "b0e83736c7df45ecd2ebdc732c209e2a3ce7d472",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/china+asia/tibet",
+    "replication_timestamp_utc": "2026-05-11T20:20:52Z",
+    "file_sha256": "a0e099ef0a2354b890463b615e240ccc51d7950cddd19c45b6d211966d053bdf"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "062a9c922de7e060bd91c1927e6902bf1fefdbbd8b5b4e497f1a8843e770bb19",
+        "size": 5569400
+      },
+      "geometry_meta.json": {
+        "sha256": "db7d68b325d5d84f5a30bc342f4646c4e8aa674d35b0320fb9849a5fc750c6f9",
+        "size": 1022098
+      },
+      "hierarchy.json": {
+        "sha256": "2564f5361eb1e2327d5317046a44bc350f3e39527392e5777adae46b95fedb23",
+        "size": 673300
+      },
+      "runtime_policy.json": {
+        "sha256": "aa9d98a4434813d838e37e0a0e5ce4cb03fcf89d21c46c6005d81df8a4baaf27",
+        "size": 1385
+      }
+    }
+  },
+  "generated_at": "2026-05-12T11:13:39Z",
+  "name_schema": "multilingual_v1"
+}

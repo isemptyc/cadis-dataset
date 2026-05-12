@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `in.admin`
-Version: `v1.0.0`
+Version: `v1.0.1`
 Country: `IN`
 Policy Version: `1.0`
 
@@ -11,202 +11,137 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `in.admin v1.0.0` dataset under Cadis Runtime.
+This document evaluates `in.admin v1.0.1` under Cadis Runtime after removing village/locality-level geometry from the runtime contract.
 
-This report:
-
-* Describes the selected India dataset scope
-* Quantifies structural completeness under randomized lookup stress testing
-* Documents deterministic policy effects
-* Validates boundary isolation against the declared evaluation boundary
-* Provides reproducible integrity metrics for release review
-
-OSM data is not incorrect.
-Observed sparse shapes reflect structural incompleteness or intentionally partial administrative coverage, not geometric invalidity.
-
-Cadis does not modify geography.
-It enforces structural determinism.
+Cadis is a semantic resolver, not a GIS boundary system. For India, OSM admin level `9` introduces a very large and complex village/locality layer whose completeness and real-world alignment are not appropriate assumptions for Cadis runtime semantics. Version `v1.0.1` therefore keeps state, district, and subdistrict semantics while excluding level `9`.
 
 ---
 
 # 2. Dataset Identity
 
-| Field                   | Value                  |
-| ----------------------- | ---------------------- |
-| Dataset ID              | `in.admin`             |
-| Dataset Version         | `v1.0.0`               |
-| Country                 | `IN`                   |
-| Country Name            | `India`                |
-| Policy Version          | `1.0`                  |
-| Name Schema             | `multilingual_v1`      |
-| Hierarchy Required      | `True`                 |
-| Repair Required         | `False`                |
-| Runtime Policy Detected | `True`                 |
-| Minimum Cadis Version   | `0.8.16`               |
+| Field | Value |
+| ----- | ----- |
+| Dataset ID | `in.admin` |
+| Dataset Version | `v1.0.1` |
+| Country | `IN` |
+| Country Name | `India` |
+| Policy Version | `1.0` |
+| Cadis Version | `v0.8.160` |
+| Hierarchy Required | `True` |
+| Repair Required | `False` |
+| Runtime Policy Detected | `True` |
+| Name Schema | `multilingual_v1` |
 
 ---
 
 # 3. Dataset Scope
 
-The `in.admin v1.0.0` release scope is:
-
-`OSM admin-level-4 coverage union, derived from India state/union-territory polygons after Natural Earth IN admin-0 filtering`
-
-Boundary source of truth:
-
-* Tracked builder script: `build_in_boundaries.py`
-* Generated build/evaluation boundary: `in_country.json`
-* Natural Earth source: `ne_10m_admin_0_countries.dbf`
-* OSM source: `india-260509.osm.pbf`
-* Selection rule: union all extracted India `admin_level=4` state and union-territory polygons after NE `IN` admin-0 filtering
-* Admin-level-4 polygon count: `34`
-* Scoped boundary bbox: `[68.1756585, 6.757237, 96.0124397, 35.6728459]`
+| Field | Value |
+| ----- | ----- |
+| Scope Label | `admin-level-4 coverage union` |
+| Boundary Builder | `scripts/build_in_boundaries.py` |
+| Generated Boundary | `tmp/in_country.json` |
+| Boundary Source | `OSM admin-level-4 coverage union after Natural Earth IN admin-0 filtering` |
+| Boundary BBox | `[68.1756585, 6.757237, 96.0124397, 35.6728459]` |
+| OSM Source | `geofabrik:asia/india` |
+| OSM Snapshot Timestamp | `2026-05-09T20:21:02Z` |
 
 The same scoped boundary was used for build and evaluation.
-Natural Earth components not covered by OSM admin-level-4 state/union-territory polygons are outside this v1.0.0 dataset evaluation scope.
 
 ---
 
-# 4. Test Methodology
+# 4. Administrative Model
 
-## 4.1 Sampling Strategy
+The reduced India engine exposes these OSM administrative levels:
+
+| Level | Runtime Label | Dataset Count | Notes |
+| ----: | ------------- | ------------: | ----- |
+| 4 | `admin_state_union_territory` | 34 | States and union territories |
+| 5 | `admin_district` | 752 | Districts |
+| 6 | `admin_subdistrict` | 6,266 | Subdistrict-level administrative units |
+
+Probe evidence also found:
+
+| Level | Probe Count | Decision |
+| ----: | ----------: | -------- |
+| 9 | 55,000 | Excluded from `v1.0.1`; too large and too locality-specific for Cadis semantic resolution |
+
+---
+
+# 5. Test Methodology
 
 * Total samples: `50,000`
 * Sampling mode: mixed inside/outside stress testing
-* Inside ratio: `0.9`
-* Expected outside ratio: `0.1`
-* Evaluation boundary: `in_country.json`
-
-The test intentionally injects ~10% out-of-scope points to validate:
-
-* Boundary rejection behavior
-* Offshore classification
-* Policy-layer containment
-* Cross-border isolation
+* Expected inside ratio: `0.9`
+* Dataset path: `IN/in.admin/v1.0.1`
 
 Sampling is uniform over the declared scope, not population-weighted.
 
 ---
 
-# 5. Performance Metrics
+# 6. Evaluation Results
 
-| Metric                    | Value          |
-| ------------------------- | -------------- |
-| Throughput                | `2310.790` QPS |
-| Total Runtime             | `21.638 sec`   |
-| Overall Pass Rate         | `100.00%`      |
-| Inside Coverage Pass Rate | `100.00%`      |
-| Policy Pass Rate          | `100.00%`      |
-| Failed Samples            | `0`            |
-
-The 50,000-point run included `45,000` inside-scope samples and `5,000` out-of-scope samples.
-
-The staged dataset passed all randomized runtime checks in this evaluation run.
+| Metric | Value |
+| ------ | ----- |
+| Overall Pass Rate | `100.00%` |
+| Inside Coverage Pass Rate | `100.00%` |
+| Policy Pass Rate | `100.00%` |
+| Failed Samples | `0` |
+| Throughput | `6357.310` QPS |
+| Total Runtime | `7.865 sec` |
 
 ---
 
-# 6. Scenario Comparison
+# 7. Scenario Comparison
 
-| Scenario     | Pass Rate | Inside Pass Rate | Failed | Inside Failed | Status (`ok`/`partial`/`failed`) |
-| ------------ | --------- | ---------------- | ------ | ------------- | -------------------------------- |
-| full_policy  | 100.00%   | 100.00%          | 0      | 0             | 43,617 / 1,402 / 4,981           |
-| no_hierarchy | 100.00%   | 100.00%          | 0      | 0             | 43,617 / 1,402 / 4,981           |
-| no_repair    | 100.00%   | 100.00%          | 0      | 0             | 43,617 / 1,402 / 4,981           |
-| no_nearby    | 99.998%   | 99.998%          | 1      | 1             | 43,601 / 1,399 / 5,000           |
-| osm_only     | 99.998%   | 99.998%          | 1      | 1             | 43,601 / 1,399 / 5,000           |
-
----
-
-# 7. Layer Contribution Analysis
-
-| Layer             | Rescued Samples |
-| ----------------- | --------------- |
-| Hierarchy         | 0               |
-| Repair            | 0               |
-| Nearby            | 19              |
-| Total vs OSM-only | 19              |
-
-## Interpretation
-
-* OSM-only success rate was already high for the declared scope.
-* Dataset-scoped hierarchy is present, but the observed randomized sample did not require hierarchy supplementation.
-* No repair layer was required.
-* Nearby fallback rescued a small number of boundary-adjacent samples.
-* The policy mode achieved full inside-boundary coverage for the declared v1.0.0 scope.
+| Scenario | Pass Rate | Inside Pass Rate | Failed | Inside Failed | Status Counts (`ok`/`partial`/`failed`/`unknown`) |
+| -------- | --------: | ---------------: | -----: | ------------: | -------------------------------------------------- |
+| full_policy | 100.00% | 100.00% | 0 | 0 | 43,617 / 1,402 / 4,981 / 0 |
+| no_hierarchy | 100.00% | 100.00% | 0 | 0 | 43,617 / 1,402 / 4,981 / 0 |
+| no_repair | 100.00% | 100.00% | 0 | 0 | 43,617 / 1,402 / 4,981 / 0 |
+| no_nearby | 100.00% | 100.00% | 1 | 1 | 43,601 / 1,399 / 5,000 / 0 |
+| osm_only | 100.00% | 100.00% | 1 | 1 | 43,601 / 1,399 / 5,000 / 0 |
 
 ---
 
-# 8. Structural Distribution
+# 8. Layer Contribution Analysis
 
-## 8.1 Shape Distribution
-
-| Shape       | Count |
-| ----------- | ----- |
-| `[4,5,6]`   | 39,809 |
-| `[]`        | 4,995  |
-| `[4,5,6,9]` | 3,794  |
-| `[4,5]`     | 1,313  |
-| `[4]`       | 40     |
-| `[4,6]`     | 26     |
-| `[4,5,9]`   | 16     |
-| `[4,6,9]`   | 7      |
-
-Empty shapes correspond to expected out-of-scope or offshore samples:
-
-* `empty_shape`: 4,981
-* `offshore`: 14
-
-## 8.2 Node Source Distribution
-
-| Source  | Count |
-| ------- | ----- |
-| polygon         | 45,000 |
-| nearby          | 5      |
-| admin_tree_id   | 1      |
-
-### Source Mix
-
-| Mix     | Count |
-| ------- | ----- |
-| polygon               | 44,999 |
-| none                  | 4,995  |
-| nearby                | 5      |
-| admin_tree_id/polygon | 1      |
+| Layer | Rescued Samples |
+| ----- | --------------- |
+| Hierarchy | 0 |
+| Repair | 0 |
+| Nearby | 19 |
+| Total vs OSM-only | 19 |
 
 ---
 
-# 9. Policy Reason Distribution
+# 9. Structural Distribution
 
-| Reason           | Count |
-| ---------------- | ----- |
+| Shape | Count |
+| ----- | ----: |
+| `[4,5,6]` | 43,603 |
+| `[]` | 4,995 |
+| `[4,5]` | 1,329 |
+| `[4]` | 40 |
+| `[4,6]` | 33 |
+
+| Source | Count |
+| ------ | ----: |
+| polygon | 45,000 |
+| nearby | 5 |
+| admin_tree_id | 1 |
+
+| Reason | Count |
+| ------ | ----: |
 | shape_status_map | 45,005 |
-| empty_shape      | 4,981  |
-| offshore         | 14     |
+| empty_shape | 4,981 |
+| offshore | 14 |
 
 ---
 
 # 10. Level-4 Coverage
 
-* Unique level-4 units hit: `34`
-* Total level-4 hits: `45,005`
-* Total level-4 hits for inside samples: `45,000`
-
-Hit distribution reflects uniform area sampling under the declared boundary.
-
-## 10.1 Top-10 Level-4 Hit Rates
-
-| Level-4 Unit     | Hits | Hit Rate (All Samples) | Hits (Inside Samples) | Hit Rate (Inside Samples) |
-| ---------------- | ---- | ---------------------- | --------------------- | ------------------------- |
-| Rajasthan        | 5,153 | 10.31%                 | 5,153                 | 11.45%                    |
-| Madhya Pradesh   | 4,416 | 8.83%                  | 4,416                 | 9.81%                     |
-| Maharashtra      | 4,297 | 8.59%                  | 4,297                 | 9.55%                     |
-| Uttar Pradesh    | 3,685 | 7.37%                  | 3,685                 | 8.19%                     |
-| Karnataka        | 2,701 | 5.40%                  | 2,701                 | 6.00%                     |
-| Gujarat          | 2,642 | 5.28%                  | 2,639                 | 5.86%                     |
-| Andhra Pradesh   | 2,367 | 4.73%                  | 2,366                 | 5.26%                     |
-| Odisha           | 2,207 | 4.41%                  | 2,207                 | 4.90%                     |
-| Chhattisgarh     | 1,967 | 3.93%                  | 1,967                 | 4.37%                     |
-| Tamil Nadu       | 1,808 | 3.62%                  | 1,808                 | 4.02%                     |
+The run hit all `34` level-4 units, with `45,005` total level-4 hits and `45,000` inside level-4 hits.
 
 ---
 
@@ -216,23 +151,18 @@ Under stress testing with 10% forced out-of-scope samples:
 
 * No boundary-leak failure was observed in this sampled run.
 * Empty-shape and offshore outcomes dominated expected outside-labeled samples.
-* No evidence was observed that hierarchy or nearby layers created cross-border escalation in this run.
+* No evidence was observed that hierarchy or nearby layers created cross-border escalation.
 * The evaluation used the same scoped boundary that the build used.
-
-This confirms strict boundary containment within the declared `IN` v1.0.0 scope.
 
 ---
 
-# 12. Artifact Metrics
+# 12. Structural Observations
 
-| Artifact                 | Size     |
-| ------------------------ | -------- |
-| Package tarball          | 32 MB    |
-| Unpacked staged dataset  | 55 MB    |
-| `geometry.ffsf`          | 32 MB    |
-| `geometry_meta.json`     | 15 MB    |
-| `hierarchy.json`         | 8.0 MB   |
-| `runtime_policy.json`    | 2.2 KB   |
+1. The runtime contract now exposes state/union-territory, district, and subdistrict semantics only.
+2. Level 9 was removed because 55,000 village/locality features are too detailed and quality-variable for Cadis semantic resolution.
+3. Package size is now `2.7 MB` compressed and `5.4 MB` unpacked, down from the prior `33.3 MB` compressed and `57.4 MB` unpacked release.
+4. Evaluation behavior remains stable, with 100% overall, policy, and inside pass rates.
+5. Nearby fallback remains minimal and bounded.
 
 ---
 
@@ -240,24 +170,21 @@ This confirms strict boundary containment within the declared `IN` v1.0.0 scope.
 
 All dataset transformations and evaluation results are reproducible using:
 
-* cadis-dataset-engine commit: `bc0589536b07dbafab6efbcf2c5aea7cfc14242d`
-* Cadis version prepared locally: `0.8.16`
-* OSM source label: `geofabrik:asia/india`
-* OSM file: `india-260509.osm.pbf`
-* OSM replication timestamp: `2026-05-09T20:21:02Z`
-* OSM file SHA256: `8e08957fe6ace40ca08056cc1742d744262b722f542cb09b31e16f8dd7f6f65b`
-
-The engine repo was clean and committed before the staged dataset was generated.
+- cadis-dataset-engine commit:
+  `23518e0af4af950f147bdce89b5902b02c2c7411`
+- Cadis version:
+  `0.8.160`
+- Runtime compatibility minimum:
+  `0.8.35`
+- Source OSM SHA256:
+  `8e08957fe6ace40ca08056cc1742d744262b722f542cb09b31e16f8dd7f6f65b`
+- Boundary builder: `scripts/build_in_boundaries.py`
+- Build boundary: `tmp/in_country.json`
+- Evaluation boundary: `tmp/in_country.json`
+- Staged dataset: `IN/in.admin/v1.0.1`
 
 ---
 
 # 14. Conclusion
 
-The `in.admin v1.0.0` staged dataset demonstrates:
-
-* Full pass rate under the declared India v1.0.0 scope
-* Full inside-boundary coverage in the randomized evaluation run
-* High OSM-only coverage with minimal nearby fallback
-* No repair-layer requirement
-* Strict boundary isolation under mixed inside/outside stress testing
-
+The `in.admin v1.0.1` dataset passes evaluation and is suitable for release. The runtime model is better aligned with Cadis' role as a semantic resolver by excluding village/locality-level geometry.

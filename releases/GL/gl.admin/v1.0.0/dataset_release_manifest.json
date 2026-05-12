@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "gl.admin",
+  "country_iso": "GL",
+  "country_name": "Greenland",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "6c542243a0d0985c7441e17c65a3f7ba4174cf53",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:north-america/greenland",
+    "replication_timestamp_utc": "2026-05-11T20:20:52Z",
+    "file_sha256": "d9ebcd860551675d281f257da9aaa55e8fe974573e79cb6c1765dd71e0f6e645"
+  },
+  "runtime_compat": {
+    "min": "0.8.157",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "dc91ac5e086aa4451a683c6a6bf0d1e5de28d2085448f307d13349dab5bec571",
+        "size": 2872
+      },
+      "geometry_meta.json": {
+        "sha256": "db88738070493f2ead2c11da6291804be9b34e4383a961a6e8a9f38605913dee",
+        "size": 2144
+      },
+      "hierarchy.json": {
+        "sha256": "eed4ba2069e57b7c48f3f8c1cc52f57423d2178e9bd0dd0333935d8d724132c6",
+        "size": 1200
+      },
+      "runtime_policy.json": {
+        "sha256": "63b8f5fd02c55841a9264a883f47377bca653f885e9155cc53f34dc734f174eb",
+        "size": 1260
+      }
+    }
+  },
+  "generated_at": "2026-05-12T03:57:37Z",
+  "name_schema": "multilingual_v1"
+}

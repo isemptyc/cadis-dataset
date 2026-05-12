@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-12T08:56:31Z",
+  "generated_at": "2026-05-12T09:09:39Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -310,8 +310,8 @@
     },
     "RS": {
       "rs.admin": {
-        "latest": "v1.0.0",
-        "manifest": "releases/RS/rs.admin/v1.0.0/dataset_release_manifest.json"
+        "latest": "v1.0.1",
+        "manifest": "releases/RS/rs.admin/v1.0.1/dataset_release_manifest.json"
       }
     },
     "SK": {

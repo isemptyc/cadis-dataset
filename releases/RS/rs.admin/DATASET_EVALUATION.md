@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `rs.admin`
-Version: `v1.0.0`
+Version: `v1.0.1`
 Country: `RS`
 Policy Version: `1.0`
 
@@ -11,7 +11,7 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `rs.admin v1.0.0` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `rs.admin v1.0.1` dataset under Cadis Runtime.
 
 This report:
 
@@ -21,8 +21,7 @@ This report:
 * Validates boundary isolation for the Serbia dataset scope
 * Provides reproducible integrity metrics for release review
 
-OSM data is not incorrect.
-Observed sparse outcomes reflect structural coverage or boundary-edge behavior, not geometric invalidity.
+Version `v1.0.1` intentionally removes dense level-9 locality polygons from the runtime dataset. The level-9 OSM data is valid, but it creates an oversized package relative to the Serbia source extract and is not needed for the runtime administrative contract.
 
 Cadis does not modify geography.
 It enforces structural determinism.
@@ -34,11 +33,11 @@ It enforces structural determinism.
 | Field                   | Value             |
 | ----------------------- | ----------------- |
 | Dataset ID              | `rs.admin`        |
-| Dataset Version         | `v1.0.0`          |
+| Dataset Version         | `v1.0.1`          |
 | Country                 | `RS`              |
 | Country Name            | `Serbia`          |
 | Policy Version          | `1.0`             |
-| Cadis Version           | `v0.8.35`         |
+| Cadis Version           | `v0.8.160`        |
 | Hierarchy Required      | `True`            |
 | Repair Required         | `False`           |
 | Runtime Policy Detected | `True`            |
@@ -65,13 +64,12 @@ The same scoped boundary was used for both build and evaluation.
 
 # 4. Administrative Model
 
-The initial Serbia engine exposes these OSM administrative levels:
+The reduced Serbia engine exposes these OSM administrative levels:
 
 | Level | Runtime Label        | Dataset Count | Notes |
 | ----: | -------------------- | ------------: | ----- |
 | 6     | `admin_district`     | 25            | Districts and Belgrade |
 | 8     | `admin_municipality` | 147           | Municipalities and cities |
-| 9     | `admin_locality`     | 4,694         | Settlements and locality-level areas |
 
 Probe evidence also found:
 
@@ -80,6 +78,7 @@ Probe evidence also found:
 | 2     | 1           | Excluded as country-level envelope |
 | 4     | 2           | Excluded as broad regional coverage |
 | 7     | 28          | Excluded as small city overlay coverage |
+| 9     | 4,694       | Excluded from `v1.0.1` for package-size discipline |
 | 10    | 329         | Excluded as sparse neighborhood detail |
 
 The engine uses canonical names from `name:sr-Latn`, `name:sr`, `name`, `name:en`, and `official_name`, with bounded multilingual aliases for `en`, `hr`, `hu`, `ro`, `sr`, and `sr-latn`.
@@ -96,7 +95,7 @@ The engine uses canonical names from `name:sr-Latn`, `name:sr`, `name`, `name:en
 * Outside samples: `1,000`
 * Expected inside ratio: `0.9`
 * Expected outside ratio: `0.1`
-* Dataset path: `RS/rs.admin/v1.0.0`
+* Dataset path: `RS/rs.admin/v1.0.1`
 
 The test intentionally injects about 10% out-of-country points to validate:
 
@@ -111,16 +110,16 @@ Sampling is uniform over land area, not population-weighted.
 
 # 6. Evaluation Results
 
-| Metric                    | Value          |
-| ------------------------- | -------------- |
-| Overall Pass Rate         | `100.00%`      |
-| Inside Coverage Pass Rate | `100.00%`      |
-| Policy Pass Rate          | `100.00%`      |
-| Failed Samples            | `0`            |
-| Throughput                | `9037.930` QPS |
-| Total Runtime             | `1.106 sec`    |
+| Metric                    | Value           |
+| ------------------------- | --------------- |
+| Overall Pass Rate         | `100.00%`       |
+| Inside Coverage Pass Rate | `100.00%`       |
+| Policy Pass Rate          | `100.00%`       |
+| Failed Samples            | `0`             |
+| Throughput                | `11989.260` QPS |
+| Total Runtime             | `0.834 sec`     |
 
-This run confirms no policy or inside-coverage failures.
+This run confirms no policy or inside-coverage failures after removing level-9 locality polygons.
 
 ---
 
@@ -128,11 +127,11 @@ This run confirms no policy or inside-coverage failures.
 
 | Scenario     | Pass Rate | Inside Pass Rate | Failed | Inside Failed | Status Counts (`ok`/`partial`/`failed`/`unknown`) |
 | ------------ | --------: | ---------------: | -----: | ------------: | -------------------------------------------------- |
-| full_policy  | 100.00%   | 100.00%          | 0      | 0             | 9,006 / 17 / 977 / 0 |
-| no_hierarchy | 100.00%   | 100.00%          | 0      | 0             | 9,006 / 17 / 977 / 0 |
-| no_repair    | 100.00%   | 100.00%          | 0      | 0             | 9,006 / 17 / 977 / 0 |
-| no_nearby    | 98.72%    | 98.58%           | 128    | 128           | 8,856 / 17 / 1,127 / 0 |
-| osm_only     | 98.72%    | 98.58%           | 128    | 128           | 8,856 / 17 / 1,127 / 0 |
+| full_policy  | 100.00%   | 100.00%          | 0      | 0             | 9,007 / 16 / 977 / 0 |
+| no_hierarchy | 100.00%   | 100.00%          | 0      | 0             | 9,007 / 16 / 977 / 0 |
+| no_repair    | 100.00%   | 100.00%          | 0      | 0             | 9,007 / 16 / 977 / 0 |
+| no_nearby    | 98.70%    | 98.56%           | 130    | 130           | 8,855 / 16 / 1,129 / 0 |
+| osm_only     | 98.70%    | 98.56%           | 130    | 130           | 8,855 / 16 / 1,129 / 0 |
 
 ---
 
@@ -142,16 +141,16 @@ This run confirms no policy or inside-coverage failures.
 | ----------------- | --------------- |
 | Hierarchy         | 0               |
 | Repair            | 0               |
-| Nearby            | 150             |
-| Total vs OSM-only | 150             |
+| Nearby            | 152             |
+| Total vs OSM-only | 152             |
 
 ## Interpretation
 
-* OSM-only success rate: `98.72%`
+* OSM-only success rate: `98.70%`
 * Full policy success rate: `100.00%`
-* Nearby fallback resolves boundary-adjacent and settlement-edge samples that otherwise miss polygon containment.
+* Nearby fallback resolves boundary-adjacent and municipality-edge samples that otherwise miss polygon containment.
 * Hierarchy and repair layers were not needed to rescue failing samples in this evaluation run.
-* No explicit repair layer is required for `rs.admin v1.0.0`.
+* No explicit repair layer is required for `rs.admin v1.0.1`.
 
 ---
 
@@ -159,15 +158,12 @@ This run confirms no policy or inside-coverage failures.
 
 ## 9.1 Shape Distribution
 
-| Shape     | Count |
-| --------- | ----: |
-| `[6,8,9]` | 6,676 |
-| `[6,9]`   | 2,285 |
-| `[]`      | 991   |
-| `[6,8]`   | 21    |
-| `[8]`     | 16    |
-| `[6]`     | 10    |
-| `[9]`     | 1     |
+| Shape | Count |
+| ----- | ----: |
+| `[6,8]` | 6,698 |
+| `[6]`   | 2,295 |
+| `[]`    | 991   |
+| `[8]`   | 16    |
 
 Empty shapes correspond to:
 
@@ -178,20 +174,11 @@ Empty shapes correspond to:
 
 | Source        | Count |
 | ------------- | ----: |
-| polygon       | 8,873 |
-| nearby        | 136   |
-| admin_tree_id | 10    |
+| polygon       | 8,871 |
+| nearby        | 138   |
+| admin_tree_id | 9     |
 
-## 9.3 Source Mix Distribution
-
-| Mix                    | Count |
-| ---------------------- | ----: |
-| polygon                | 8,863 |
-| none                   | 991   |
-| nearby                 | 136   |
-| admin_tree_id\|polygon | 10    |
-
-## 9.4 Policy Reason Distribution
+## 9.3 Policy Reason Distribution
 
 | Reason           | Count |
 | ---------------- | ----: |
@@ -224,11 +211,11 @@ This confirms strict boundary containment within the Serbia dataset scope.
 
 # 12. Structural Observations
 
-1. Geometry integrity is high; no repair layer activation was needed.
-2. The dominant lookup shape is `[6,8,9]`, reflecting district, municipality, and settlement coverage.
-3. Level 9 provides dense settlement/locality coverage and materially improves lookup detail.
-4. Nearby fallback is bounded and accounts for a moderate rescue effect around polygon edges.
-5. Levels 7 and 10 are intentionally excluded from the initial runtime contract.
+1. Geometry integrity remains high after reducing the runtime contract to levels 6 and 8.
+2. The dominant lookup shape is `[6,8]`, reflecting district and municipality coverage.
+3. Level 9 was excluded from `v1.0.1` because 4,694 locality polygons made the package disproportionate to the Serbia source extract.
+4. The package is now `0.1 MB` compressed and `0.2 MB` unpacked, down from the prior locality-heavy release.
+5. Nearby fallback remains bounded and accounts for a moderate rescue effect around polygon edges.
 6. Dataset achieves full inside-boundary coverage under full policy mode.
 
 ---
@@ -238,13 +225,17 @@ This confirms strict boundary containment within the Serbia dataset scope.
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `e6a356544067c6a3ffb122fde567b3b3cad39b28`
+  `7dc998f10728c440c9f02d0e555a50b877470ec6`
 - Cadis version:
+  `0.8.160`
+- Runtime compatibility minimum:
   `0.8.35`
+- Source OSM SHA256:
+  `912a6eff874fd229495f48d60e5edfde7fb51512c535ff02d614fbe63803fcf6`
 - Boundary builder: `scripts/build_rs_boundaries.py`
 - Build boundary: `tmp/rs_country.json`
 - Evaluation boundary: `tmp/rs_country.json`
-- Staged dataset: `RS/rs.admin/v1.0.0`
+- Staged dataset: `RS/rs.admin/v1.0.1`
 
 The dataset package was generated from a clean `cadis_dataset_engine` working tree.
 
@@ -252,13 +243,12 @@ The dataset package was generated from a clean `cadis_dataset_engine` working tr
 
 # 14. Conclusion
 
-The `rs.admin v1.0.0` dataset demonstrates:
+The `rs.admin v1.0.1` dataset demonstrates:
 
 * Full inside-boundary coverage under policy mode
 * Strict boundary isolation in mixed inside/outside stress testing
-* High geometric integrity
+* High geometric integrity for the reduced administrative contract
 * No required repair layer
-* Bounded nearby fallback behavior
-* Stable administrative coverage for Serbia levels 6, 8, and 9
+* Package sizing appropriate for the Serbia source extract
 
-The dataset is suitable for human quality review.
+This dataset is suitable for release.

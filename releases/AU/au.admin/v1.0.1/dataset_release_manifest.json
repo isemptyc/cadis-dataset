@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "au.admin",
+  "country_iso": "AU",
+  "country_name": "Australia",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "b4a7a36cab502c307d8be05f3f7b256a7c38ac97",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:oceania/Australia",
+    "replication_timestamp_utc": "2026-03-31T20:21:06Z",
+    "file_sha256": "359d2933335054174d01d56d69c2ccfdb6ab4f86527dd991fca3c14b51d2ba50"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "fd11dacdc3713e29731716092f9a962cf0bc20c3db60fde3d6dcff0bb5303964",
+        "size": 500436
+      },
+      "geometry_meta.json": {
+        "sha256": "1d7c83d356c6c4f0f5efef43ec824c7788d1e4468d56debb3a3c3c6f92870403",
+        "size": 167458
+      },
+      "hierarchy.json": {
+        "sha256": "abc09dd4dcaf361355ac37592bad268663c88cd19bb6d6290b3f01ab68784118",
+        "size": 91436
+      },
+      "runtime_policy.json": {
+        "sha256": "5182ba1c050f8091eef7efcf22ecf6b70bfacfbfe5b26c7f391ca0b313809c8f",
+        "size": 1270
+      }
+    }
+  },
+  "generated_at": "2026-05-12T11:26:02Z",
+  "name_schema": "multilingual_v1"
+}

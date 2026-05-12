@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `au.admin`
-Version: `v1.0.0`
+Version: `v1.0.1`
 Country: `AU`
 Policy Version: `1.0`
 
@@ -11,45 +11,39 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `au.admin v1.0.0` dataset under Cadis Runtime.
+This document evaluates `au.admin v1.0.1` under Cadis Runtime after removing the level 9 suburb/locality layer from the runtime contract.
 
-This report:
-
-* Describes the source OSM administrative model selected for Australia
-* Documents the dataset scope used for build and evaluation
-* Quantifies runtime lookup behavior under mixed inside/outside sampling
-* Validates policy-layer containment and nearby fallback behavior
-* Records reproducible integrity metrics for the release candidate
-
-OSM data is not incorrect.
-Observed sparse shapes reflect administrative coverage differences and parent-link incompleteness, not geometric invalidity.
-
-Cadis does not modify geography.
-It enforces structural determinism.
+Cadis is a semantic resolver, not a GIS boundary system. Version `v1.0.1` keeps Australia states/territories, local government areas, and sparse district-like administrative structure at levels 4, 6, and 7, while excluding level 9 suburb/locality geometry.
 
 ---
 
 # 2. Dataset Identity
 
-| Field                   | Value      |
-| ----------------------- | ---------- |
-| Dataset ID              | `au.admin` |
-| Dataset Version         | `v1.0.0`   |
-| Country                 | `AU`       |
-| Policy Version          | `1.0`      |
-| Hierarchy Required      | `True`     |
-| Repair Required         | `False`    |
-| Runtime Policy Detected | `True`     |
-| Cadis Version           | `0.6.9`    |
+| Field | Value |
+| ----- | ----- |
+| Dataset ID | `au.admin` |
+| Dataset Version | `v1.0.1` |
+| Country | `AU` |
+| Country Name | `Australia` |
+| Policy Version | `1.0` |
+| Cadis Version | `v0.8.160` |
+| Hierarchy Required | `True` |
+| Repair Required | `False` |
+| Runtime Policy Detected | `True` |
 
 ---
 
 # 3. Dataset Scope
 
-The Australia release uses a tracked scoped-boundary builder:
+The Australia release uses the tracked scoped-boundary builder:
 
+* Boundary builder: `scripts/build_au_boundaries.py`
 * Boundary source: Natural Earth admin-0 AU polygon plus OSM level-4 administrative relation geometry
 * Deterministic selection rule: union OSM administrative relation areas at level 4 whose representative point is covered by the Natural Earth AU boundary
+* Build boundary: `tmp/au_country.json`
+* Evaluation boundary: `tmp/au_country.json`
+* OSM source: `geofabrik:oceania/Australia`
+* OSM snapshot timestamp: `2026-03-31T20:21:06Z`
 
 Included level-4 units:
 
@@ -63,182 +57,173 @@ Included level-4 units:
 * `Victoria`
 * `Western Australia`
 
-Major external territory components recorded as excluded or not represented as first-class level-4 units in this initial scope:
+Major external territory components recorded as excluded or not represented as first-class level-4 units in this scope:
 
 * `Cocos (Keeling) Islands`
 * `Christmas Island`
 * `Heard Island and McDonald Islands`
 * `Norfolk Island`
 
-Scoped boundary bbox:
+---
 
-```text
-[112.8656697, -55.1730541, 159.3390311, -9.0880125]
-```
+# 4. Administrative Model
+
+The reduced Australia engine exposes these OSM administrative levels:
+
+| Level | Runtime Label | Dataset Count | Notes |
+| ----: | ------------- | ------------: | ----- |
+| 4 | `admin_state_territory` | 9 | State and territory anchors |
+| 6 | `admin_local_government_area` | 599 | Local government area coverage |
+| 7 | `admin_district` | 23 | Sparse district-like administrative coverage |
+
+The previous release also included level 9 suburbs/localities:
+
+| Level | Previous Count | Decision |
+| ----: | -------------: | -------- |
+| 9 | 15,641 | Excluded from `v1.0.1`; locality layer too fine-grained for Cadis semantic resolution and disproportionate to package size |
+
+The engine uses canonical names from `name:en`, `name`, and `official_name`, with bounded multilingual aliases for `en`.
 
 ---
 
-# 4. Test Methodology
+# 5. Evaluation Methodology
 
-## 4.1 Sampling Strategy
-
-* Total samples: `200,000`
+* Total samples: `100,000`
 * Sampling mode: mixed inside/outside stress testing
-* Inside samples: `180,000`
-* Outside samples: `20,000`
+* Inside samples: `90,000`
+* Outside samples: `10,000`
 * Lookup mode: Cadis runtime
 * Evaluation workers: `1`
-
-Single-worker evaluation was used because the current concurrent evaluator path under-counts batch results. The runtime batch path processed all 200,000 samples.
-
----
-
-# 5. Performance Metrics
-
-| Metric                    | Value          |
-| ------------------------- | -------------- |
-| Throughput                | `2171.530` QPS |
-| Total Runtime             | `92.101 sec`   |
-| Overall Pass Rate         | `100.00%`      |
-| Inside Coverage Pass Rate | `100.00%`      |
-| Policy Pass Rate          | `100.00%`      |
-| HTTP/Runtime 200 Count    | `200,000`      |
-
-No policy, coverage, or inside-boundary failures were observed.
+* Dataset path: `AU/au.admin/v1.0.1`
 
 ---
 
-# 6. Scenario Comparison
+# 6. Evaluation Summary
 
-| Scenario     | Pass Rate | Inside Pass Rate | Failed | Inside Failed |
-| ------------ | --------- | ---------------- | ------ | ------------- |
-| full_policy  | 100.00%   | 100.00%          | 0      | 0             |
-| no_hierarchy | 100.00%   | 100.00%          | 0      | 0             |
-| no_repair    | 100.00%   | 100.00%          | 0      | 0             |
-| no_nearby    | 99.98%    | 99.97%           | 46     | 46            |
-| osm_only     | 99.98%    | 99.97%           | 46     | 46            |
-
----
-
-# 7. Layer Contribution Analysis
-
-| Layer             | Rescued Samples |
-| ----------------- | --------------- |
-| Hierarchy         | 0               |
-| Repair            | 0               |
-| Nearby            | 94              |
-| Total vs OSM-only | 94              |
-
-## Interpretation
-
-* Geometry and polygon coverage are strong for the sampled scope.
-* Nearby fallback resolved a small number of coastal or boundary-adjacent samples.
-* No explicit repair layer is required for this release candidate.
-* Hierarchy artifacts are present and required by policy, but this sample did not require hierarchy supplementation to convert failures into successful outcomes.
+| Metric | Value |
+| ------ | ----: |
+| Overall Pass Rate | `100.00%` |
+| Inside Coverage Pass Rate | `100.00%` |
+| Policy Pass Rate | `100.00%` |
+| Failed Samples | `0` |
+| HTTP 200 Responses | `100,000` |
+| Throughput | `7223.340` QPS |
+| Total Runtime | `13.844 sec` |
 
 ---
 
-# 8. Structural Distribution
+# 7. Scenario Comparison
 
-## 8.1 Shape Distribution
-
-| Shape       | Count |
-| ----------- | ----- |
-| `[4,6,9]`   | 169,873 |
-| `[]`        | 19,992  |
-| `[4,6]`     | 5,153   |
-| `[4]`       | 2,733   |
-| `[4,9]`     | 2,108   |
-| `[4,7]`     | 51      |
-| `[6,9]`     | 30      |
-| `[4,6,7,9]` | 30      |
-| `[9]`       | 20      |
-| `[4,7,9]`   | 10      |
-
-Empty shapes correspond to expected outside/offshore samples:
-
-* `empty_shape`: 19,952
-* `offshore`: 40
-
-## 8.2 Node Source Distribution
-
-| Source          | Count |
-| --------------- | ----- |
-| polygon         | 179,954 |
-| nearby          | 54      |
-| admin_tree_id   | 24      |
+| Scenario | Pass Rate | Inside Pass Rate | Failed | Inside Failed | Status (ok/partial/failed/unknown) |
+| -------- | --------: | ---------------: | -----: | ------------: | ----------------------------------- |
+| `full_policy` | 100.00% | 100.00% | 0 | 0 | 87,580 / 2,441 / 9,979 / 0 |
+| `no_hierarchy` | 100.00% | 100.00% | 0 | 0 | 87,580 / 2,441 / 9,979 / 0 |
+| `no_repair` | 100.00% | 100.00% | 0 | 0 | 87,580 / 2,441 / 9,979 / 0 |
+| `no_nearby` | 99.97% | 99.96% | 34 | 34 | 87,553 / 2,413 / 10,034 / 0 |
+| `osm_only` | 99.97% | 99.96% | 34 | 34 | 87,553 / 2,413 / 10,034 / 0 |
 
 ---
 
-# 9. Level-4 Coverage
+# 8. Layer Contribution Analysis
 
-* Unique level-4 units hit: `9`
-* Total level-4 hits: `179,958`
-* Total inside level-4 hits: `179,950`
+| Layer | Rescued Samples |
+| ----- | --------------: |
+| Hierarchy | 0 |
+| Repair | 0 |
+| Nearby | 55 |
+| Total vs OSM-only | 55 |
 
-| Level-4 Unit                 | Hits  | Hit Rate | Inside Hits | Inside Hit Rate |
-| ---------------------------- | ----- | -------- | ----------- | --------------- |
-| Western Australia            | 58,266 | 29.13%   | 58,264     | 32.37%          |
-| Queensland                   | 39,645 | 19.82%   | 39,641     | 22.02%          |
-| Northern Territory           | 29,958 | 14.98%   | 29,956     | 16.64%          |
-| South Australia              | 24,412 | 12.21%   | 24,412     | 13.56%          |
-| New South Wales              | 19,008 | 9.50%    | 19,008     | 10.56%          |
-| Victoria                     | 5,961  | 2.98%    | 5,961      | 3.31%           |
-| Tasmania                     | 2,645  | 1.32%    | 2,645      | 1.47%           |
-| Australian Capital Territory | 62     | 0.03%    | 62         | 0.03%           |
-| Jervis Bay Territory         | 1      | 0.00%    | 1          | 0.00%           |
-
-The 200,000-sample run hit `Jervis Bay Territory` once, which is expected for uniform land-area sampling because it is very small.
+No explicit repair layer is required for `au.admin v1.0.1`.
 
 ---
 
-# 10. Boundary Isolation Validation
+# 9. Structural Distribution
+
+| Shape | Count |
+| ----- | ----: |
+| `[4,6]` | 87,533 |
+| `[]` | 9,997 |
+| `[4]` | 2,428 |
+| `[4,7]` | 29 |
+| `[4,6,7]` | 13 |
+
+| Source | Count |
+| ------ | ----: |
+| polygon | 89,966 |
+| nearby | 37 |
+| admin_tree_id | 24 |
+
+| Reason | Count |
+| ------ | ----: |
+| shape_status_map | 90,003 |
+| empty_shape | 9,979 |
+| offshore | 18 |
+
+---
+
+# 10. Level-4 Coverage
+
+* Unique level-4 units hit: `8`
+* Total level-4 hits (all points): `90,003`
+* Total level-4 hits (inside points): `90,000`
+
+| Level-4 Unit | Hits | Hit Rate (All Points) | Hits (Inside) | Hit Rate (Inside Points) |
+| ------------ | ---: | --------------------: | ------------: | -----------------------: |
+| `Western Australia` | 29,027 | 29.03% | 29,027 | 32.25% |
+| `Queensland` | 19,893 | 19.89% | 19,893 | 22.10% |
+| `Northern Territory` | 14,977 | 14.98% | 14,976 | 16.64% |
+| `South Australia` | 12,182 | 12.18% | 12,181 | 13.53% |
+| `New South Wales` | 9,546 | 9.55% | 9,545 | 10.61% |
+| `Victoria` | 2,993 | 2.99% | 2,993 | 3.33% |
+| `Tasmania` | 1,355 | 1.35% | 1,355 | 1.51% |
+| `Australian Capital Territory` | 30 | 0.03% | 30 | 0.03% |
+
+The sampled run did not hit `Jervis Bay Territory`, which is expected for uniform land-area sampling because it is very small.
+
+---
+
+# 11. Boundary Isolation Validation
 
 Under stress testing with 10% forced out-of-bound samples:
 
 * No boundary-leak failure was observed.
 * Empty-shape and offshore outcomes accounted for expected outside samples.
 * No evidence was observed that hierarchy or nearby layers created cross-boundary escalation.
-
-This confirms strict containment within the declared AU scoped boundary.
-
----
-
-# 11. Structural Observations
-
-1. Australia’s useful OSM administrative model is level 4 states/territories, level 6 local government areas, level 7 ACT/district-like structures, and level 9 suburbs/localities.
-2. The dominant successful shape is `[4,6,9]`.
-3. Sparse valid shapes such as `[4]`, `[4,6]`, and `[4,9]` occur in real coverage and are handled by policy.
-4. The repair layer is not required.
-5. Nearby fallback is bounded and low-volume.
-6. The scoped boundary builder is required to make the release scope explicit and reproducible.
+* The same `tmp/au_country.json` scoped boundary was used for build and evaluation.
 
 ---
 
-# 12. Reproducibility
+# 12. Structural Observations
+
+1. The runtime contract now exposes levels 4, 6, and 7 only.
+2. Australia remains anchored by level 4 state and territory administrative coverage.
+3. Level 6 local government areas provide the main semantic subnational layer.
+4. Level 7 remains because it is small and represents sparse administrative district-like coverage.
+5. Level 9 suburb/locality geometry was removed because it is too fine-grained for Cadis semantic resolution and made package size disproportionate.
+6. Package size is now `0.4 MB` compressed and `0.7 MB` unpacked, down from the prior `23.7 MB` compressed and `30.2 MB` unpacked release.
+7. Evaluation behavior remains stable, with 100% overall, policy, and inside pass rates.
+
+---
+
+# 13. Reproducibility
 
 All dataset transformations and evaluation results are reproducible using:
 
-* cadis-dataset-engine commit: `e69710d0e7af42e2c766da7cd09e8bacc66f0988`
-* Cadis version prepared locally: `0.6.9`
-* OSM source: `geofabrik:oceania/Australia`
-* OSM file: `australia-260331.osm.pbf`
-* OSM SHA256: `359d2933335054174d01d56d69c2ccfdb6ab4f86527dd991fca3c14b51d2ba50`
-* OSM replication timestamp: `2026-03-31T20:21:06Z`
-
-The engine repository was clean and committed before staged dataset generation.
+- cadis-dataset-engine commit:
+  `b4a7a36cab502c307d8be05f3f7b256a7c38ac97`
+- Cadis version:
+  `0.8.160`
+- Runtime compatibility minimum:
+  `0.8.35`
+- Boundary builder: `scripts/build_au_boundaries.py`
+- Build boundary: `tmp/au_country.json`
+- Evaluation boundary: `tmp/au_country.json`
+- Staged dataset: `AU/au.admin/v1.0.1`
+- Source OSM manifest SHA256:
+  `359d2933335054174d01d56d69c2ccfdb6ab4f86527dd991fca3c14b51d2ba50`
 
 ---
 
-# 13. Conclusion
+# 14. Conclusion
 
-The `au.admin v1.0.0` release candidate demonstrates:
-
-* Full inside-boundary coverage under policy mode
-* Strict outside-boundary isolation
-* Strong polygon-based resolution for the declared Australia scope
-* No need for explicit repair rules
-* Low-volume nearby fallback for edge cases
-* Reproducible scoped-boundary generation
-
-Dataset quality is acceptable for the next SOP step: review, then run the official publish command only after operator approval.
+The `au.admin v1.0.1` dataset passes evaluation and is suitable for release. The runtime model preserves Australia semantic administrative anchors while excluding overly detailed suburb/locality geometry.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-12T09:09:39Z",
+  "generated_at": "2026-05-12T09:31:30Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -256,20 +256,20 @@
     },
     "BG": {
       "bg.admin": {
-        "latest": "v1.0.0",
-        "manifest": "releases/BG/bg.admin/v1.0.0/dataset_release_manifest.json"
+        "latest": "v1.0.1",
+        "manifest": "releases/BG/bg.admin/v1.0.1/dataset_release_manifest.json"
       }
     },
     "HR": {
       "hr.admin": {
-        "latest": "v1.0.0",
-        "manifest": "releases/HR/hr.admin/v1.0.0/dataset_release_manifest.json"
+        "latest": "v1.0.1",
+        "manifest": "releases/HR/hr.admin/v1.0.1/dataset_release_manifest.json"
       }
     },
     "EE": {
       "ee.admin": {
-        "latest": "v1.0.0",
-        "manifest": "releases/EE/ee.admin/v1.0.0/dataset_release_manifest.json"
+        "latest": "v1.0.1",
+        "manifest": "releases/EE/ee.admin/v1.0.1/dataset_release_manifest.json"
       }
     },
     "HU": {
@@ -316,8 +316,8 @@
     },
     "SK": {
       "sk.admin": {
-        "latest": "v1.0.0",
-        "manifest": "releases/SK/sk.admin/v1.0.0/dataset_release_manifest.json"
+        "latest": "v1.0.1",
+        "manifest": "releases/SK/sk.admin/v1.0.1/dataset_release_manifest.json"
       }
     },
     "SI": {

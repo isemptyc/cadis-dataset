@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "hr.admin",
+  "country_iso": "HR",
+  "country_name": "Croatia",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "598b60ffe8553d6d0d658aa516bba7b02ca82e6c",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/croatia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "7669481715bd16d1d0ad3989bd8a39b0decbef177ad3b9532116dfc475d42360"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "6222ad35a234a5d9e46369706f20af409c7c417bc1ceab9af15a32aeda457454",
+        "size": 313524
+      },
+      "geometry_meta.json": {
+        "sha256": "85e7c959d1c06bd28e2cd1b70749d5319dacfbb0df5a4eb9c81d011640256c6e",
+        "size": 159141
+      },
+      "hierarchy.json": {
+        "sha256": "ced937851a185afbb58027cc5d2289e6aa0e77a26dbb798ea78dd7acdba8ea78",
+        "size": 91053
+      },
+      "runtime_policy.json": {
+        "sha256": "ea3dea37f0de5c1563fd93977bcc00f9b10d63f96b9e6eef7bde2e1cbb2878a2",
+        "size": 786
+      }
+    }
+  },
+  "generated_at": "2026-05-12T09:29:54Z",
+  "name_schema": "multilingual_v1"
+}

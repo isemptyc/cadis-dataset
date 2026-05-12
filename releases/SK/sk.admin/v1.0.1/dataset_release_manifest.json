@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "sk.admin",
+  "country_iso": "SK",
+  "country_name": "Slovakia",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "598b60ffe8553d6d0d658aa516bba7b02ca82e6c",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:europe/slovakia",
+    "replication_timestamp_utc": "2026-05-10T20:20:31Z",
+    "file_sha256": "4caff7a85d0b21e364e74a4404dcccdc53866a88842e78cd4c80b4eead44860e"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "f73f1800dc3cdf54b14989e9f9ecd2211b6c869da075ca1a2fc8ac58f56b7ad7",
+        "size": 4957576
+      },
+      "geometry_meta.json": {
+        "sha256": "cc5f115e249d433137c41bbe26b79630893798ea708acc82574ef8059fdadff9",
+        "size": 864659
+      },
+      "hierarchy.json": {
+        "sha256": "143360434ab500cf50117ee7241a63f6879c4b28243840b4b19e42cb09db60f0",
+        "size": 521090
+      },
+      "runtime_policy.json": {
+        "sha256": "268cf161de79fdb7f15930daec4b049780d5726e59833e29173897cfda97c52f",
+        "size": 2272
+      }
+    }
+  },
+  "generated_at": "2026-05-12T09:31:22Z",
+  "name_schema": "multilingual_v1"
+}

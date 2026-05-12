@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `gb.admin`
-Version: `v1.0.1`
+Version: `v1.0.2`
 Country: `GB`
 Policy Version: `1.0`
 
@@ -11,243 +11,221 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document provides a structural, behavioral, and boundary-integrity evaluation of the `gb.admin v1.0.1` dataset under Cadis Runtime.
+This document provides a structural, behavioral, and boundary-integrity evaluation of the `gb.admin v1.0.2` dataset under Cadis Runtime.
 
-This report:
+This release keeps `GB` as the public Cadis-routable dataset and treats Northern Ireland as an internal source component. The package is built from a Great Britain source extract plus the Northern Ireland portion of the Ireland and Northern Ireland source extract.
 
-* Describes the condition of the packaged dataset
-* Quantifies structural completeness under runtime policy
-* Documents deterministic policy effects
-* Validates boundary isolation under stress testing
-* Provides reproducible integrity metrics
-
-OSM data is not incorrect.
-Observed anomalies reflect structural incompleteness or expected outside-boundary behavior, not geometric invalidity.
-
-Cadis does not modify geography.
-It enforces structural determinism.
+Cadis does not modify geography. It enforces structural determinism over the administrative coverage available in the source data.
 
 ---
 
 # 2. Dataset Identity
 
-| Field                   | Value        |
-| ----------------------- | ------------ |
-| Dataset ID              | `gb.admin`   |
-| Dataset Version         | `v1.0.1`     |
-| Country                 | `GB`         |
-| Policy Version          | `1.0`        |
-| Hierarchy Required      | `True`       |
-| Repair Required         | `False`      |
-| Runtime Policy Detected | `True`       |
+| Field | Value |
+| ----- | ----- |
+| Dataset ID | `gb.admin` |
+| Dataset Version | `v1.0.2` |
+| Country | `GB` |
+| Country Name | `United Kingdom` |
+| Policy Version | `1.0` |
+| Cadis Version | `v0.8.158` |
+| Hierarchy Required | `True` |
+| Repair Required | `False` |
+| Runtime Policy Detected | `True` |
+| Name Schema | `multilingual_v1` |
 
 ---
 
-# 3. Test Methodology
+# 3. Dataset Scope
 
-## 3.1 Sampling Strategy
+| Field | Value |
+| ----- | ----- |
+| Scope Label | `full ISO2 country scope` |
+| Boundary Builder | `scripts/build_gb_boundaries.py` |
+| Generated Boundary | `tmp/gb_country.json` |
+| Boundary Source | `Natural Earth admin-0` |
+| Boundary Selection Rule | `Full Natural Earth GB admin-0 country boundary, used to combine the Great Britain source extract with the Northern Ireland portion of the Ireland and Northern Ireland source extract.` |
+| Boundary BBox | `[-13.69131425699993, 49.90961334800005, 1.7711694670000497, 60.84788646000004]` |
+| OSM Source | `geofabrik:europe/great-britain+europe/ireland-and-northern-ireland` |
+| OSM Snapshot Timestamp | `2026-05-11T20:20:52Z` |
 
-* Total samples: `30,000`
+The same scoped boundary was used for both build and evaluation.
+
+---
+
+# 4. Administrative Model
+
+| Level | Runtime Label | Dataset Count | Notes |
+| ----: | ------------- | ------------: | ----- |
+| 4 | `admin_country_region` | 4 | England, Scotland, Wales, Northern Ireland |
+| 5 | `admin_county` | 16 | Coverage where available |
+| 6 | `admin_district` | 137 | Coverage where relation-stable OSM areas are available |
+| 7 | `admin_district` | 10 | Includes relation-stable Northern Ireland districts such as Belfast City District |
+| 8 | `admin_locality` | 230 | Coverage where available |
+
+The engine uses canonical names from `name:en`, `name`, and `official_name`, with bounded multilingual aliases for English, Welsh, and Scottish Gaelic.
+
+---
+
+# 5. Test Methodology
+
+* Total samples: `100,000`
 * Sampling mode: mixed inside/outside stress testing
-* Inside ratio: `0.9`
-* Expected outside ratio: `0.1`
-* Lookup mode: `runtime`
+* Inside samples: `85,000`
+* Outside samples: `15,000`
+* Dataset path: `GB/gb.admin/v1.0.2`
 
-The test intentionally injects ~10% out-of-country points to validate:
-
-* Boundary rejection behavior
-* Empty-shape handling
-* Policy-layer containment
-* Cross-border isolation
-
-Sampling is uniform over land area, not population-weighted.
-
-This GB run used an explicit GB boundary JSON derived from Natural Earth `ISO_A2=GB` to avoid the broader `POSTAL=GB` match in the raw shapefile sampler path.
+The test intentionally injects out-of-country points to validate boundary rejection behavior, offshore classification, policy-layer containment, and cross-border isolation.
 
 ---
 
-## 3.2 Observed Distribution
+# 6. Evaluation Results
 
-| Category                               | Count  |
-| -------------------------------------- | ------ |
-| Sample labels: expected inside points  | 27,000 |
-| Sample labels: expected outside points | 3,000  |
-| Structural non-empty outcomes          | 27,053 |
-| Empty-shape outcomes (`[]`)            | 2,947  |
-| Offshore outcomes (subset of `[]`)     | 39     |
+| Metric | Value |
+| ------ | ----- |
+| Overall Pass Rate | `100.00%` |
+| Inside Coverage Pass Rate | `100.00%` |
+| Policy Pass Rate | `100.00%` |
+| Failed Samples | `0` |
+| HTTP 200 Responses | `100,000` |
+| Throughput | `11343.560` QPS |
+| Total Runtime | `8.816 sec` |
 
-Outside-labeled samples are intentional and do not indicate dataset coverage gaps.
-`expected inside/outside` comes from the sampling geometry labels; structural outcomes come from Cadis runtime evaluation.
-
----
-
-# 4. Performance Metrics
-
-| Metric                    | Value         |
-| ------------------------- | ------------- |
-| Throughput                | `709.970` QPS |
-| Total Runtime             | `42.255 sec`  |
-| Overall Pass Rate         | `100.00%`     |
-| Inside Coverage Pass Rate | `100.00%`     |
-| Policy Pass Rate          | `100.00%`     |
-
-This run confirms no policy failures and no inside-boundary coverage failures.
+This run confirms no policy or inside-coverage failures.
 
 ---
 
-# 5. Scenario Comparison
+# 7. Scenario Comparison
 
-| Scenario     | Pass Rate | Inside Pass Rate | Failed |
-| ------------ | --------- | ---------------- | ------ |
-| full_policy  | 100.00%   | 100.00%          | 0      |
-| no_hierarchy | 100.00%   | 100.00%          | 0      |
-| no_repair    | 100.00%   | 100.00%          | 0      |
-| no_nearby    | 99.97%    | 99.96%           | 10     |
-| osm_only     | 99.97%    | 99.96%           | 10     |
-
----
-
-# 6. Layer Contribution Analysis
-
-| Layer             | Rescued Samples |
-| ----------------- | --------------- |
-| Hierarchy         | 0               |
-| Repair            | 0               |
-| Nearby            | 52              |
-| Total vs OSM-only | 52              |
-
-## Interpretation
-
-* OSM-only success rate: `99.97%`
-* Hierarchy supplementation was not needed in this sampled run.
-* No geometric repair operations were triggered.
-* Nearby fallback resolved a small but measurable set of edge cases.
-* Structural coverage is already near-complete from polygon-derived results alone.
-
-Observed failures under `no_nearby` and `osm_only` mode are minimal and bounded.
+| Scenario | Pass Rate | Inside Pass Rate | Failed | Inside Failed | Status Counts (`ok`/`partial`/`failed`/`unknown`) |
+| -------- | --------: | ---------------: | -----: | ------------: | -------------------------------------------------- |
+| full_policy | 100.00% | 100.00% | 0 | 0 | 81,423 / 3,922 / 14,655 / 0 |
+| no_hierarchy | 100.00% | 100.00% | 0 | 0 | 81,423 / 3,922 / 14,655 / 0 |
+| no_repair | 100.00% | 100.00% | 0 | 0 | 81,423 / 3,922 / 14,655 / 0 |
+| no_nearby | 99.97% | 99.96% | 33 | 33 | 81,248 / 3,907 / 14,845 / 0 |
+| osm_only | 99.97% | 99.96% | 33 | 33 | 81,248 / 3,907 / 14,845 / 0 |
 
 ---
 
-# 7. Structural Distribution
+# 8. Layer Contribution Analysis
 
-## 7.1 Shape Distribution
+| Layer | Rescued Samples |
+| ----- | --------------- |
+| Hierarchy | 0 |
+| Repair | 0 |
+| Nearby | 190 |
+| Total vs OSM-only | 190 |
 
-| Shape     | Count |
-| --------- | ----- |
-| [4,6]     | 15,037 |
-| [4,6,8]   | 4,287  |
-| []        | 2,947  |
-| [4,5,6,8] | 2,519  |
-| [4,5,6]   | 2,403  |
-| [4]       | 1,848  |
-| [4,5,8]   | 952    |
-| [4,8]     | 5      |
-| [4,5]     | 2      |
-
-Empty shapes correspond to:
-
-* `empty_shape`: 2,908
-* `offshore`: 39
+No explicit repair layer is required for `gb.admin v1.0.2`.
 
 ---
 
-## 7.2 Node Source Distribution
+# 9. Structural Distribution
 
-| Source  | Count |
-| ------- | ----- |
-| polygon | 27,040 |
-| nearby  | 13     |
+## 9.1 Shape Distribution
 
-### Source Mix
+| Shape | Count |
+| ----- | ----: |
+| `[4,6]` | 46,900 |
+| `[]` | 14,795 |
+| `[4,6,8]` | 13,090 |
+| `[4,5,6,8]` | 7,516 |
+| `[4,5,6]` | 7,342 |
+| `[4,7]` | 6,435 |
+| `[4,5,8]` | 2,869 |
+| `[4]` | 1,003 |
+| Other valid administrative shapes | 50 |
 
-| Mix     | Count |
-| ------- | ----- |
-| polygon | 27,040 |
-| none    | 2,947  |
-| nearby  | 13     |
+Empty shapes correspond to expected outside/offshore samples:
+
+* `empty_shape`: 14,655
+* `offshore`: 140
+
+## 9.2 Node Source Distribution
+
+| Source | Count |
+| ------ | ----: |
+| polygon | 85,155 |
+| nearby | 50 |
+
+## 9.3 Policy Reason Distribution
+
+| Reason | Count |
+| ------ | ----: |
+| shape_status_map | 85,205 |
+| empty_shape | 14,655 |
+| offshore | 140 |
 
 ---
 
-# 8. Policy Reason Distribution
+# 10. Level-4 Coverage
 
-| Reason           | Count |
-| ---------------- | ----- |
-| shape_status_map | 27,053 |
-| empty_shape      | 2,908  |
-| offshore         | 39     |
-
----
-
-# 9. Level-4 Coverage
+The dataset is anchored by level 4 administrative coverage for the United Kingdom constituent countries.
 
 * Unique level-4 units hit: `4`
-* Total level-4 hits (all samples): `27,053`
-* Total level-4 hits (inside samples): `27,000`
+* Total level-4 hits (all points): `85,192`
+* Total level-4 hits (inside points): `84,987`
 
-Hit distribution reflects uniform land-area sampling rather than population density.
+| Level-4 Unit | Hits | Hit Rate (All Points) | Hits (Inside) | Hit Rate (Inside Points) |
+| ------------ | ---: | --------------------: | ------------: | -----------------------: |
+| `England` | 43,065 | 43.06% | 43,002 | 50.59% |
+| `Scotland` | 28,586 | 28.59% | 28,474 | 33.50% |
+| `Wales` | 6,830 | 6.83% | 6,811 | 8.01% |
+| `Northern Ireland` | 6,711 | 6.71% | 6,700 | 7.88% |
 
-## 9.1 Level-4 Hit Rates
-
-| Level-4 Unit      | Hits  | Hit Rate (All Samples) | Hits (Inside Samples) | Hit Rate (Inside Samples) |
-| ----------------- | ----- | ---------------------- | --------------------- | ------------------------- |
-| England           | 13,997 | 46.66%                 | 13,983                | 51.79%                    |
-| Scotland          | 9,182  | 30.61%                 | 9,146                 | 33.87%                    |
-| Wales             | 2,244  | 7.48%                  | 2,241                 | 8.30%                     |
-| Northern Ireland  | 1,630  | 5.43%                  | 1,630                 | 6.04%                     |
+A direct Belfast smoke lookup returned `Northern Ireland > Belfast City District`.
 
 ---
 
-# 10. Boundary Isolation Validation
+# 11. Boundary Isolation Validation
 
-Under stress testing with 10% forced out-of-bound samples:
+Under stress testing with 15% forced out-of-bound samples:
 
 * No boundary-leak failure was observed in this sampled run.
-* Expected outside-labeled samples resolved to empty shapes or offshore outcomes as intended.
+* Empty-shape and offshore outcomes dominated expected outside-labeled samples.
 * No evidence was observed that hierarchy or nearby layers created cross-border escalation.
-* Nearby fallback remained tightly bounded at `13` direct uses and `52` scenario-rescued samples.
+* The same `tmp/gb_country.json` scoped boundary was used for build and evaluation.
 
-This confirms strict boundary containment within the GB dataset in this runtime evaluation.
+This confirms strict boundary containment within the GB dataset scope.
 
 ---
 
-# 11. Structural Observations
+# 12. Structural Observations
 
 1. Geometry integrity is high; no repair layer activation was needed.
-2. Polygon-derived results account for nearly all successful classifications.
-3. Hierarchy supplementation was not required in this sampled run.
-4. Nearby fallback usage is low and well-bounded.
-5. Dataset achieves full inside-boundary coverage under policy mode.
-6. Boundary rejection behavior is strict and leak-free in this evaluation.
+2. Northern Ireland is included as an internal source component of `gb.admin`.
+3. Relation-stable level 7 districts are included so Northern Ireland locations can resolve below level 4 when source coverage is available.
+4. Nearby fallback is bounded at 2 km and accounts for a small rescue effect around administrative edges where observed.
+5. Dataset achieves full inside-boundary coverage under full policy mode for the scoped administrative coverage.
 
 ---
 
-# 12. Reproducibility
+# 13. Reproducibility
 
 All dataset transformations and evaluation results are reproducible using:
 
 - cadis-dataset-engine commit:
-  `5ff06d4d5aafb8b5bf958cbcc45ffb42013db285`
-- cadis version:
-  `v0.4.6`
+  `c3215ce8f173f17755573bb6d067aaed4fc3e1fc`
+- Cadis version:
+  `0.8.158`
+- Boundary builder: `scripts/build_gb_boundaries.py`
+- Build boundary: `tmp/gb_country.json`
+- Evaluation boundary: `tmp/gb_country.json`
+- Staged dataset: `GB/gb.admin/v1.0.2`
+- Source OSM manifest SHA256:
+  `ebb86f3dc2ce08596e75512d13a3f672d3519b14fec083093d198494a4d60543`
+- Source OSM components:
+  `great-britain-latest.osm.pbf`, `ireland-and-northern-ireland-latest.osm.pbf`
+- Source OSM component SHA256:
+  `great-britain-latest.osm.pbf=94f02e1b81936b70296e097981c821c473eb872c776808bfb32df5abb3ad260a`
+  `ireland-and-northern-ireland-latest.osm.pbf=fed9ae5866fdde0f6582939b2f10a3393509416d281bba7e6336fc6fa7f07d6e`
 
-The dataset package was generated from a clean working tree.
-No local modifications were present at release time.
+The dataset package was generated from a clean `cadis_dataset_engine` working tree.
 
 ---
 
-# 13. Conclusion
+# 14. Conclusion
 
-The `gb.admin v1.0.1` dataset demonstrates:
+The `gb.admin v1.0.2` dataset demonstrates full inside-boundary coverage, strict boundary isolation, high geometric integrity, no required repair layer, bounded nearby fallback behavior, and stable composite administrative coverage for the United Kingdom with Northern Ireland included as an internal source component.
 
-* High geometric integrity
-* Near-complete structural coverage from polygon data alone
-* No observed need for hierarchy supplementation in this sampled run
-* Low nearby fallback usage
-* Full inside-boundary coverage under policy
-* Strict cross-border isolation
-
-OSM data is not incorrect.
-It is occasionally incomplete.
-
-Cadis does not modify geography.
-It enforces structural determinism and boundary integrity.
+The dataset is suitable for autonomous release.

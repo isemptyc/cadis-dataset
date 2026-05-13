@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-13T07:53:08Z",
+  "generated_at": "2026-05-13T08:26:50Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -17,7 +17,15 @@
     "GB": {
       "gb.admin": {
         "latest": "v1.0.3",
-        "manifest": "releases/GB/gb.admin/v1.0.3/dataset_release_manifest.json"
+        "manifest": "releases/GB/gb.admin/v1.0.3/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "british-isles",
+          "path": "releases/british-isles.tar.gz",
+          "sha256": "cd76be2fb218f48f83a34f292c7fd170c7d7ccd450c42f0b9f9b82edf36a0563",
+          "size": 6375493,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "IT": {
@@ -35,31 +43,71 @@
     "SE": {
       "se.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/SE/se.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/SE/se.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "nordic",
+          "path": "releases/nordic.tar.gz",
+          "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
+          "size": 1590051,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NO": {
       "no.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/NO/no.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/NO/no.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "nordic",
+          "path": "releases/nordic.tar.gz",
+          "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
+          "size": 1590051,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "DK": {
       "dk.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/DK/dk.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/DK/dk.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "nordic",
+          "path": "releases/nordic.tar.gz",
+          "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
+          "size": 1590051,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BE": {
       "be.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/BE/be.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/BE/be.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "west-europe",
+          "path": "releases/west-europe.tar.gz",
+          "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
+          "size": 9810325,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NL": {
       "nl.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/NL/nl.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/NL/nl.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "west-europe",
+          "path": "releases/west-europe.tar.gz",
+          "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
+          "size": 9810325,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "FR": {
@@ -89,7 +137,15 @@
     "FI": {
       "fi.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/FI/fi.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/FI/fi.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "nordic",
+          "path": "releases/nordic.tar.gz",
+          "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
+          "size": 1590051,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "US": {
@@ -119,13 +175,29 @@
     "IS": {
       "is.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/IS/is.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/IS/is.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "nordic",
+          "path": "releases/nordic.tar.gz",
+          "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
+          "size": 1590051,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CH": {
       "ch.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CH/ch.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CH/ch.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "west-europe",
+          "path": "releases/west-europe.tar.gz",
+          "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
+          "size": 9810325,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "AT": {
@@ -143,7 +215,15 @@
     "LU": {
       "lu.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/LU/lu.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/LU/lu.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "west-europe",
+          "path": "releases/west-europe.tar.gz",
+          "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
+          "size": 9810325,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CZ": {
@@ -285,61 +365,141 @@
     "AL": {
       "al.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/AL/al.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/AL/al.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "balkans",
+          "path": "releases/balkans.tar.gz",
+          "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
+          "size": 3776482,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BA": {
       "ba.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BA/ba.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BA/ba.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "balkans",
+          "path": "releases/balkans.tar.gz",
+          "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
+          "size": 3776482,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BG": {
       "bg.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/BG/bg.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/BG/bg.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "east-europe",
+          "path": "releases/east-europe.tar.gz",
+          "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
+          "size": 7188165,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "HR": {
       "hr.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/HR/hr.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/HR/hr.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "balkans",
+          "path": "releases/balkans.tar.gz",
+          "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
+          "size": 3776482,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "EE": {
       "ee.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/EE/ee.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/EE/ee.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "nordic",
+          "path": "releases/nordic.tar.gz",
+          "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
+          "size": 1590051,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "HU": {
       "hu.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/HU/hu.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/HU/hu.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-europe",
+          "path": "releases/central-europe.tar.gz",
+          "sha256": "4e7a34b6d629766577aafb50a4620e7b9239c9e148ca828c2fbf58989839fd9d",
+          "size": 7319177,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "LV": {
       "lv.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/LV/lv.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/LV/lv.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "east-europe",
+          "path": "releases/east-europe.tar.gz",
+          "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
+          "size": 7188165,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "LT": {
       "lt.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/LT/lt.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/LT/lt.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "east-europe",
+          "path": "releases/east-europe.tar.gz",
+          "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
+          "size": 7188165,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MC": {
       "mc.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MC/mc.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MC/mc.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "west-europe",
+          "path": "releases/west-europe.tar.gz",
+          "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
+          "size": 9810325,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "ME": {
       "me.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/ME/me.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/ME/me.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "balkans",
+          "path": "releases/balkans.tar.gz",
+          "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
+          "size": 3776482,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "RO": {
@@ -351,19 +511,43 @@
     "RS": {
       "rs.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/RS/rs.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/RS/rs.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "balkans",
+          "path": "releases/balkans.tar.gz",
+          "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
+          "size": 3776482,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SK": {
       "sk.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/SK/sk.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/SK/sk.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-europe",
+          "path": "releases/central-europe.tar.gz",
+          "sha256": "4e7a34b6d629766577aafb50a4620e7b9239c9e148ca828c2fbf58989839fd9d",
+          "size": 7319177,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SI": {
       "si.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SI/si.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SI/si.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-europe",
+          "path": "releases/central-europe.tar.gz",
+          "sha256": "4e7a34b6d629766577aafb50a4620e7b9239c9e148ca828c2fbf58989839fd9d",
+          "size": 7319177,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CY": {
@@ -375,25 +559,57 @@
     "GE": {
       "ge.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/GE/ge.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/GE/ge.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "east-europe",
+          "path": "releases/east-europe.tar.gz",
+          "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
+          "size": 7188165,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "XK": {
       "xk.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/XK/xk.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/XK/xk.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "balkans",
+          "path": "releases/balkans.tar.gz",
+          "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
+          "size": 3776482,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MK": {
       "mk.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MK/mk.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MK/mk.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "balkans",
+          "path": "releases/balkans.tar.gz",
+          "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
+          "size": 3776482,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MD": {
       "md.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MD/md.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MD/md.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "east-europe",
+          "path": "releases/east-europe.tar.gz",
+          "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
+          "size": 7188165,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "UA": {
@@ -1717,7 +1933,15 @@
     "BY": {
       "by.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/BY/by.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/BY/by.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "east-europe",
+          "path": "releases/east-europe.tar.gz",
+          "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
+          "size": 7188165,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GL": {
@@ -1735,7 +1959,15 @@
     "IE": {
       "ie.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/IE/ie.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/IE/ie.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "british-isles",
+          "path": "releases/british-isles.tar.gz",
+          "sha256": "cd76be2fb218f48f83a34f292c7fd170c7d7ccd450c42f0b9f9b82edf36a0563",
+          "size": 6375493,
+          "archive_type": "tar.gz"
+        }
       }
     }
   }

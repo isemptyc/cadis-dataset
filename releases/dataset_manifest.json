@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-12T19:22:54Z",
+  "generated_at": "2026-05-13T07:27:01Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -191,7 +191,15 @@
     "BR": {
       "br.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/BR/br.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/BR/br.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "IN": {
@@ -221,25 +229,57 @@
     "AR": {
       "ar.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/AR/ar.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/AR/ar.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CL": {
       "cl.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CL/cl.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CL/cl.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "CO": {
       "co.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CO/co.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CO/co.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "PE": {
       "pe.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/PE/pe.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/PE/pe.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "AL": {
@@ -365,43 +405,99 @@
     "BO": {
       "bo.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BO/bo.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BO/bo.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "EC": {
       "ec.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/EC/ec.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/EC/ec.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GY": {
       "gy.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/GY/gy.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/GY/gy.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "PY": {
       "py.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/PY/py.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/PY/py.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SR": {
       "sr.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SR/sr.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SR/sr.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "UY": {
       "uy.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/UY/uy.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/UY/uy.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "VE": {
       "ve.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/VE/ve.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/VE/ve.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-america",
+          "path": "releases/south-america.tar.gz",
+          "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
+          "size": 12341501,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BS": {

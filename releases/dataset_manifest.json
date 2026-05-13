@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-13T08:42:44Z",
+  "generated_at": "2026-05-13T08:52:39Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -19,15 +19,7 @@
     "JP": {
       "jp.admin": {
         "latest": "v1.0.2",
-        "manifest": "releases/JP/jp.admin/v1.0.2/dataset_release_manifest.json",
-        "region_archive": {
-          "type": "remote-archive",
-          "region_id": "japan",
-          "path": "releases/japan.tar.gz",
-          "sha256": "1e1a04a3f959b7c1f83137997f80ef78da8c026a73b33324316c6ffa3b61fd81",
-          "size": 20388772,
-          "archive_type": "tar.gz"
-        }
+        "manifest": "releases/JP/jp.admin/v1.0.2/dataset_release_manifest.json"
       }
     },
     "GB": {
@@ -2348,6 +2340,84 @@
       "nr.admin": {
         "latest": "v1.0.0",
         "manifest": "releases/NR/nr.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "NC": {
+      "nc.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/NC/nc.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "NU": {
+      "nu.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/NU/nu.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "PW": {
+      "pw.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/PW/pw.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "PG": {
+      "pg.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/PG/pg.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "PN": {
+      "pn.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/PN/pn.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "PF": {
+      "pf.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/PF/pf.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "WS": {
+      "ws.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/WS/ws.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "SB": {
+      "sb.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/SB/sb.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "TK": {
+      "tk.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/TK/tk.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "TO": {
+      "to.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/TO/to.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "TV": {
+      "tv.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/TV/tv.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "VU": {
+      "vu.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/VU/vu.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "WF": {
+      "wf.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/WF/wf.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

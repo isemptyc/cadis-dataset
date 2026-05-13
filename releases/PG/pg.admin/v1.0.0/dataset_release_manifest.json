@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "pg.admin",
+  "country_iso": "PG",
+  "country_name": "Papua New Guinea",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/papua-new-guinea",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "cac2bb25ffafd4568041cfe4dc42bd8cc56832753e5d95f8947166f940f6c2e3"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "ba8659778e250b0334032656f144e8edb8a94d0aaf61fdf1f50885dfa5ef30cc",
+        "size": 8916
+      },
+      "geometry_meta.json": {
+        "sha256": "b2e700a468895f1af0570d2bde29fe759ab5751bf0127ef6ec6d7af255184acf",
+        "size": 6844
+      },
+      "hierarchy.json": {
+        "sha256": "392ac341a43fb53e2d24d9d15f4c1a627d03b0f343da582de48c8350370bb275",
+        "size": 3711
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:51:12Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "nr.admin",
+  "country_iso": "NR",
+  "country_name": "Nauru",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/nauru",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "f910917563cb4f2f3fde50a0ceadaa86f049c20a049dffab73e00d2627baf41b"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "71e8275c929154eea28121b4a3e03828db936165804d99fc25782735b7ea9d25",
+        "size": 2084
+      },
+      "geometry_meta.json": {
+        "sha256": "36bfcf03a679f66b5da453dfd1b70b342ea6c977f1c3338b97d739b196971034",
+        "size": 6305
+      },
+      "hierarchy.json": {
+        "sha256": "80b7cef3cecfaf5ac0a4db59d415c792e7f6222912ebce7abfc1274819ad3417",
+        "size": 3634
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:42:38Z",
+  "name_schema": "multilingual_v1"
+}

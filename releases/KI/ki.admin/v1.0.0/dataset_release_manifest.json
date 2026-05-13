@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ki.admin",
+  "country_iso": "KI",
+  "country_name": "Kiribati",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/kiribati",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "8b1fb5a0e1ee6d0bd06c61f01e6ca23859df35e28e718b93b482b917705df5ee"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "d2776505e2a7ffa5c9332c2b04205a3266e1da52667da403f7051ae3ad040a61",
+        "size": 8732
+      },
+      "geometry_meta.json": {
+        "sha256": "cd5db627ffbec5ecc2cbb0a5872d813a91f5004edad536222bdb51291171c866",
+        "size": 6976
+      },
+      "hierarchy.json": {
+        "sha256": "5dc921a658c8c24f357671116992336aabe5b2617165bde563c7803ad2afe870",
+        "size": 3783
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:42:14Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "vu.admin",
+  "country_iso": "VU",
+  "country_name": "Vanuatu",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/vanuatu",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "633dae05729ec5f1e68e45cc917580c492c629df1eb89d1cf195e18cdea5d971"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "61dfecd91dfb2eee8184a9c0f8d9f2f11896c7fb83f5f9d4b9066d47d53ffd75",
+        "size": 768
+      },
+      "geometry_meta.json": {
+        "sha256": "136b4e5beda894ae62c9f93123b4ee4937be1d7e390ec95c14c93369662bbf81",
+        "size": 1963
+      },
+      "hierarchy.json": {
+        "sha256": "8dd65ac3ae76b9d0f46a2c30001f8df1a007c4ae1441277801dc441daf27c8c8",
+        "size": 1159
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:52:27Z",
+  "name_schema": "multilingual_v1"
+}

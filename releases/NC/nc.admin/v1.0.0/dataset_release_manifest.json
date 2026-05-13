@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "nc.admin",
+  "country_iso": "NC",
+  "country_name": "New Caledonia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/new-caledonia",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "59a5ad24f14b7ac49c1eb538f4e977b79e034a2df62e9a7a53b682ff86c8c808"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bb56edc493928cd1af2ab9a7019b73475d5e4c963fd3974136223b59cab294fd",
+        "size": 49480
+      },
+      "geometry_meta.json": {
+        "sha256": "b8265afe6cb2853e77daf6fbfc63218df0bac95318bca830aca41404ef0d3b72",
+        "size": 20480
+      },
+      "hierarchy.json": {
+        "sha256": "0277ca97cfef3c57618ed195114b818d4d0e59d4328f1e7509eb9ba04ec6e651",
+        "size": 10925
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:50:38Z",
+  "name_schema": "multilingual_v1"
+}

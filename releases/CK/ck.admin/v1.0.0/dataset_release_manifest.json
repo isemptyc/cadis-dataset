@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ck.admin",
+  "country_iso": "CK",
+  "country_name": "Cook Islands",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/cook-islands",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "1a973bd47524ef446c0090b6897ca25fac6ce7ca4686b5128d2a002fd97eb183"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "45368338177ea069fc3998537575ff8d69c720ac5b450d26e17d74ce1ea93653",
+        "size": 3780
+      },
+      "geometry_meta.json": {
+        "sha256": "276f3f00084f28d6a7805123438ea6fc41dbd14f646b96dc10bdbbb8a3924677",
+        "size": 4387
+      },
+      "hierarchy.json": {
+        "sha256": "f742c9367a30cc92e9880c06be9a18289b19f03c85c2d1a29d247c47195e5535",
+        "size": 2348
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:39:51Z",
+  "name_schema": "multilingual_v1"
+}

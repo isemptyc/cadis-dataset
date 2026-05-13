@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "fm.admin",
+  "country_iso": "FM",
+  "country_name": "Micronesia",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/micronesia",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "c6b2801d411a338ceafec16ffe47db6e8f40286fb5993bb971e0c03d00c28989"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "12a2fd798d6ddf43cbc0a5dd1291726492a7ed1790f2cb058395a94759a98827",
+        "size": 29844
+      },
+      "geometry_meta.json": {
+        "sha256": "f6d6877a48b8f67f4b0b5c7bed1773f56a2ee883a4cf21c1f4291c9bc17c38a2",
+        "size": 19976
+      },
+      "hierarchy.json": {
+        "sha256": "fcff3631027c94f93b4b14e4f1dfd87c0f7202d89c01e396f406785a9044e168",
+        "size": 10465
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:42:30Z",
+  "name_schema": "multilingual_v1"
+}

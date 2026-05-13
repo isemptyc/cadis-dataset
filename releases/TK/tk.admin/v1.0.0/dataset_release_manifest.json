@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "tk.admin",
+  "country_iso": "TK",
+  "country_name": "Tokelau",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/tokelau",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "b0c77fa94451e297ad630147c91019cd547685e121bb91853348ef213e5636ab"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "f4df210f2bae5a19635c118f328da9e7ac6f77a1b772891909907832d8e96089",
+        "size": 1220
+      },
+      "geometry_meta.json": {
+        "sha256": "a0666186bcec63d2fff48906687c9d304ddc9d94012ec7222fe6398e8148a357",
+        "size": 1074
+      },
+      "hierarchy.json": {
+        "sha256": "900bce8464c342b1f3ff9b29bac7807012a4ad8cc3faae399f4468ceca3fce33",
+        "size": 636
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:52:04Z",
+  "name_schema": "multilingual_v1"
+}

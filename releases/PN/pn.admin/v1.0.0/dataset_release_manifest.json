@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "pn.admin",
+  "country_iso": "PN",
+  "country_name": "Pitcairn Islands",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/pitcairn-islands",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "b00e7c32ffc760b6965180e7153e016dd98d49d46f97f255d9f24686e8035899"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "2c12638066b185a5d00097dc788a0885d198b46087ab26ba16b49d67455ac827",
+        "size": 448
+      },
+      "geometry_meta.json": {
+        "sha256": "e18cddefadd8fc0c823fa9c0a0b9d258e25f99c0cb3586a2e1864702592e340e",
+        "size": 287
+      },
+      "hierarchy.json": {
+        "sha256": "18ba5be5690bd9732e125d77e55838e7615758865b4404e9c5d18b861fcd13dc",
+        "size": 191
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:51:24Z",
+  "name_schema": "multilingual_v1"
+}

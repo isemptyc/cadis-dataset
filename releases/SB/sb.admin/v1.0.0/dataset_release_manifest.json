@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "sb.admin",
+  "country_iso": "SB",
+  "country_name": "Solomon Islands",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/solomon-islands",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "778c413ad490c7136127b6225585f139ca53cc8df1621d53396475f02b95df94"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "a3b74f784ca4d70df16e4c7b8a44880a43aa4a706e3c10b83e8b9462781dd5a5",
+        "size": 3040
+      },
+      "geometry_meta.json": {
+        "sha256": "96d7947e832c1a0bd45d0ef791d3d97017ad603b8e8f65116f580ff8b8269070",
+        "size": 2890
+      },
+      "hierarchy.json": {
+        "sha256": "da30f774ac3a87fa5bbe69fef070544b78107e23f22690a19deec31370c564ec",
+        "size": 1609
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:51:56Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "fj.admin",
+  "country_iso": "FJ",
+  "country_name": "Fiji",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/fiji",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "290ef8992fd57a7a84c0cd45aa38d0cdc0c572a7589f4ceaf53385ada2b4230b"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "9f403bf7a3d4f220626a6cb8cc133f194d7108667ff44b54fa19631d957afe94",
+        "size": 16080
+      },
+      "geometry_meta.json": {
+        "sha256": "131728d248fd66d9a4ff47ed4c151e0cdaaba94d44f94965069002c9d62ae727",
+        "size": 5034
+      },
+      "hierarchy.json": {
+        "sha256": "af67c67fc20d52d19843ed8aa94fd0cf846c99eae0b3e3d635a399a27675b7be",
+        "size": 2682
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:42:04Z",
+  "name_schema": "multilingual_v1"
+}

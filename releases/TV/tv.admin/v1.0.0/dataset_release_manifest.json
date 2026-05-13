@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "tv.admin",
+  "country_iso": "TV",
+  "country_name": "Tuvalu",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/tuvalu",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "a198b3b74730d2fc6b68112095d2243624c90cc79b72985e8a53e4a2d86a61c6"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "0883375f4d74bfb473e6ecdeb935764c9cc29bce001fe678f8ddac8cb6791d93",
+        "size": 2872
+      },
+      "geometry_meta.json": {
+        "sha256": "dfaf6dfac6aae4e52b20263efb40baa515c9d1f62787e89109704181bd9f6935",
+        "size": 2247
+      },
+      "hierarchy.json": {
+        "sha256": "f610e5831793a830fe751d4cd16cb72d156482bf0d9bf1658a5596adfc3ee6a1",
+        "size": 1204
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:52:19Z",
+  "name_schema": "multilingual_v1"
+}

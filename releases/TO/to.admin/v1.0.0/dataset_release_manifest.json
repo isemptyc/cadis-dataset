@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "to.admin",
+  "country_iso": "TO",
+  "country_name": "Tonga",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/tonga",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "1d03f4b6085c9afddc6c96bd1251ed1a6964cf8ada67572c83f8a048d9a842cc"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "08ebb691cfe6bd3f5274ffbfe973fab206c9adc78075ca0feb9e01b547f89650",
+        "size": 1308
+      },
+      "geometry_meta.json": {
+        "sha256": "1a81e35c44bdea2b87fa7143268749733543f063f2242c7fe9f6223c551a9ffa",
+        "size": 1221
+      },
+      "hierarchy.json": {
+        "sha256": "052d092a4afdbacaa71b7f6488588950f22219e7f220b9394d1a5ed4ba08c5ca",
+        "size": 647
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:52:12Z",
+  "name_schema": "multilingual_v1"
+}

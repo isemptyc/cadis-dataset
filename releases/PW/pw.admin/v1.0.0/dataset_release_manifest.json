@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "pw.admin",
+  "country_iso": "PW",
+  "country_name": "Palau",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/palau",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "5e6a4a3b0ea04374511cda52db239fa493a031a81e641588a7de4f3713933063"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "00d2810f706254eb1b758bf0eda10db772d4e9195f55dc12ffe5ba19652945a3",
+        "size": 1480
+      },
+      "geometry_meta.json": {
+        "sha256": "74de8280c964be7915d3db33d4fcf27f74a026c7b2173dce34c3d7f2f0ed3e48",
+        "size": 4261
+      },
+      "hierarchy.json": {
+        "sha256": "a7db8bfd5271a0da5a045a4c40c3bc74739851f76f3f8011bad7d2203c8af9e3",
+        "size": 2261
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:50:55Z",
+  "name_schema": "multilingual_v1"
+}

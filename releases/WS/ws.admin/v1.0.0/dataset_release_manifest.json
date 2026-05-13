@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ws.admin",
+  "country_iso": "WS",
+  "country_name": "Samoa",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/samoa",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "fbe0ac542c9fd3c5b917aca69a4cf716049fc039c3d68ed73c64373492a0891a"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "966c91fa6ce48914bca7bccaec032c80c22578e1a0d8e6b6d1753212e3d11d48",
+        "size": 3012
+      },
+      "geometry_meta.json": {
+        "sha256": "fdbaabb6215af0a92fa3ad3160a6bfda552834e469f0c85dede01a11f5bc4b4c",
+        "size": 3352
+      },
+      "hierarchy.json": {
+        "sha256": "f56c38ef7ad0ba214bb65b9f38e4058e09b7e83df931ae4275ca09ea879e5f59",
+        "size": 1788
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:51:46Z",
+  "name_schema": "multilingual_v1"
+}

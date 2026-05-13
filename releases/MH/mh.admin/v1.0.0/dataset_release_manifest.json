@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "mh.admin",
+  "country_iso": "MH",
+  "country_name": "Marshall Islands",
+  "dataset_version": "v1.0.0",
+  "engine_commit": "8085199c43c6a216f0575d344cd6c3e8f3b5bcf7",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:australia-oceania/marshall-islands",
+    "replication_timestamp_utc": "2026-05-12T20:21:00Z",
+    "file_sha256": "50000cd2c6e3c607b003f60c58803497ecfa4dd02da3669dce676f8a92bdc84b"
+  },
+  "runtime_compat": {
+    "min": "0.8.35",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "0571fd66266065bdaa3b0dc0a03cd2ddb461da45a774503e73f8acb91242f626",
+        "size": 6148
+      },
+      "geometry_meta.json": {
+        "sha256": "9ef11b93919ee2dc9009e0af1577bcf90e9086bb85ef49d553b59b6a5c486902",
+        "size": 7154
+      },
+      "hierarchy.json": {
+        "sha256": "006bd1f588f03c668397a831b3e3b2105baa4b34f2993969a844b0770e9dd48b",
+        "size": 4152
+      },
+      "runtime_policy.json": {
+        "sha256": "3d949a459e60995412b86febd7c72bf768b41df67808f501a69ac704fb72ec97",
+        "size": 4474
+      }
+    }
+  },
+  "generated_at": "2026-05-13T08:42:22Z",
+  "name_schema": "multilingual_v1"
+}

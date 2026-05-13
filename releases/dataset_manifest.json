@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-13T09:14:10Z",
+  "generated_at": "2026-05-13T09:29:20Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -179,13 +179,29 @@
     "AU": {
       "au.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/AU/au.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/AU/au.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NZ": {
       "nz.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/NZ/nz.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/NZ/nz.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "IS": {
@@ -2309,115 +2325,267 @@
     "CK": {
       "ck.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/CK/ck.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/CK/ck.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "FJ": {
       "fj.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/FJ/fj.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/FJ/fj.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "KI": {
       "ki.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/KI/ki.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/KI/ki.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MH": {
       "mh.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MH/mh.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MH/mh.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "FM": {
       "fm.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/FM/fm.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/FM/fm.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NR": {
       "nr.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/NR/nr.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/NR/nr.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NC": {
       "nc.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/NC/nc.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/NC/nc.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NU": {
       "nu.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/NU/nu.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/NU/nu.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "PW": {
       "pw.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/PW/pw.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/PW/pw.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "PG": {
       "pg.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/PG/pg.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/PG/pg.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "PN": {
       "pn.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/PN/pn.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/PN/pn.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "PF": {
       "pf.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/PF/pf.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/PF/pf.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "WS": {
       "ws.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/WS/ws.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/WS/ws.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SB": {
       "sb.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SB/sb.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SB/sb.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TK": {
       "tk.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TK/tk.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TK/tk.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TO": {
       "to.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TO/to.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TO/to.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TV": {
       "tv.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TV/tv.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TV/tv.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "VU": {
       "vu.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/VU/vu.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/VU/vu.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "WF": {
       "wf.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/WF/wf.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/WF/wf.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "australia-oceania",
+          "path": "releases/australia-oceania.tar.gz",
+          "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
+          "size": 871263,
+          "archive_type": "tar.gz"
+        }
       }
     }
   }

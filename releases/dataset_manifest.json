@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-13T07:39:49Z",
+  "generated_at": "2026-05-13T07:53:08Z",
   "countries": {
     "TW": {
       "tw.admin": {
@@ -713,37 +713,85 @@
     "BH": {
       "bh.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BH/bh.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BH/bh.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "gcc-states",
+          "path": "releases/gcc-states.tar.gz",
+          "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
+          "size": 793369,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "KW": {
       "kw.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/KW/kw.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/KW/kw.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "gcc-states",
+          "path": "releases/gcc-states.tar.gz",
+          "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
+          "size": 793369,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "OM": {
       "om.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/OM/om.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/OM/om.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "gcc-states",
+          "path": "releases/gcc-states.tar.gz",
+          "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
+          "size": 793369,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "QA": {
       "qa.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/QA/qa.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/QA/qa.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "gcc-states",
+          "path": "releases/gcc-states.tar.gz",
+          "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
+          "size": 793369,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SA": {
       "sa.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SA/sa.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SA/sa.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "gcc-states",
+          "path": "releases/gcc-states.tar.gz",
+          "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
+          "size": 793369,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "AE": {
       "ae.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/AE/ae.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/AE/ae.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "gcc-states",
+          "path": "releases/gcc-states.tar.gz",
+          "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
+          "size": 793369,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "IR": {

@@ -1,17 +1,33 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-13T08:26:50Z",
+  "generated_at": "2026-05-13T08:42:44Z",
   "countries": {
     "TW": {
       "tw.admin": {
         "latest": "v1.0.5",
-        "manifest": "releases/TW/tw.admin/v1.0.5/dataset_release_manifest.json"
+        "manifest": "releases/TW/tw.admin/v1.0.5/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "north-east-asia",
+          "path": "releases/north-east-asia.tar.gz",
+          "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
+          "size": 10175382,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "JP": {
       "jp.admin": {
         "latest": "v1.0.2",
-        "manifest": "releases/JP/jp.admin/v1.0.2/dataset_release_manifest.json"
+        "manifest": "releases/JP/jp.admin/v1.0.2/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "japan",
+          "path": "releases/japan.tar.gz",
+          "sha256": "1e1a04a3f959b7c1f83137997f80ef78da8c026a73b33324316c6ffa3b61fd81",
+          "size": 20388772,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GB": {
@@ -37,7 +53,15 @@
     "KR": {
       "kr.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/KR/kr.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/KR/kr.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "north-east-asia",
+          "path": "releases/north-east-asia.tar.gz",
+          "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
+          "size": 10175382,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SE": {
@@ -235,25 +259,57 @@
     "SG": {
       "sg.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SG/sg.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SG/sg.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MY": {
       "my.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MY/my.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MY/my.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TH": {
       "th.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TH/th.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TH/th.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "ID": {
       "id.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/ID/id.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/ID/id.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "GR": {
@@ -265,7 +321,15 @@
     "TR": {
       "tr.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/TR/tr.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/TR/tr.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BR": {
@@ -285,7 +349,15 @@
     "IN": {
       "in.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/IN/in.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/IN/in.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MX": {
@@ -297,13 +369,29 @@
     "PH": {
       "ph.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/PH/ph.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/PH/ph.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "VN": {
       "vn.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/VN/vn.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/VN/vn.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "AR": {
@@ -887,43 +975,99 @@
     "AF": {
       "af.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/AF/af.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/AF/af.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "AM": {
       "am.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/AM/am.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/AM/am.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "AZ": {
       "az.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/AZ/az.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/AZ/az.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BD": {
       "bd.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BD/bd.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BD/bd.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BT": {
       "bt.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BT/bt.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BT/bt.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "KH": {
       "kh.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/KH/kh.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/KH/kh.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TL": {
       "tl.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TL/tl.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TL/tl.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BH": {
@@ -1013,133 +1157,309 @@
     "IR": {
       "ir.admin": {
         "latest": "v1.0.1",
-        "manifest": "releases/IR/ir.admin/v1.0.1/dataset_release_manifest.json"
+        "manifest": "releases/IR/ir.admin/v1.0.1/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "IQ": {
       "iq.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/IQ/iq.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/IQ/iq.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "IL": {
       "il.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/IL/il.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/IL/il.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "PS": {
       "ps.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/PS/ps.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/PS/ps.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "JO": {
       "jo.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/JO/jo.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/JO/jo.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "KZ": {
       "kz.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/KZ/kz.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/KZ/kz.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "KG": {
       "kg.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/KG/kg.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/KG/kg.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "LA": {
       "la.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/LA/la.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/LA/la.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "LB": {
       "lb.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/LB/lb.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/LB/lb.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BN": {
       "bn.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/BN/bn.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/BN/bn.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MV": {
       "mv.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MV/mv.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MV/mv.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MN": {
       "mn.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MN/mn.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MN/mn.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "north-east-asia",
+          "path": "releases/north-east-asia.tar.gz",
+          "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
+          "size": 10175382,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MM": {
       "mm.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MM/mm.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MM/mm.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "south-east-asia",
+          "path": "releases/south-east-asia.tar.gz",
+          "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
+          "size": 12525754,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "NP": {
       "np.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/NP/np.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/NP/np.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "KP": {
       "kp.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/KP/kp.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/KP/kp.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "north-east-asia",
+          "path": "releases/north-east-asia.tar.gz",
+          "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
+          "size": 10175382,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "PK": {
       "pk.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/PK/pk.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/PK/pk.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "LK": {
       "lk.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/LK/lk.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/LK/lk.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "SY": {
       "sy.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/SY/sy.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/SY/sy.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TJ": {
       "tj.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TJ/tj.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TJ/tj.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "TM": {
       "tm.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/TM/tm.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/TM/tm.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "UZ": {
       "uz.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/UZ/uz.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/UZ/uz.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "YE": {
       "ye.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/YE/ye.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/YE/ye.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "central-south-west-asia",
+          "path": "releases/central-south-west-asia.tar.gz",
+          "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
+          "size": 10216008,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "DZ": {
@@ -1915,19 +2235,43 @@
     "CN": {
       "cn.admin": {
         "latest": "v1.0.3",
-        "manifest": "releases/CN/cn.admin/v1.0.3/dataset_release_manifest.json"
+        "manifest": "releases/CN/cn.admin/v1.0.3/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "north-east-asia",
+          "path": "releases/north-east-asia.tar.gz",
+          "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
+          "size": 10175382,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "HK": {
       "hk.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/HK/hk.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/HK/hk.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "north-east-asia",
+          "path": "releases/north-east-asia.tar.gz",
+          "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
+          "size": 10175382,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "MO": {
       "mo.admin": {
         "latest": "v1.0.0",
-        "manifest": "releases/MO/mo.admin/v1.0.0/dataset_release_manifest.json"
+        "manifest": "releases/MO/mo.admin/v1.0.0/dataset_release_manifest.json",
+        "region_archive": {
+          "type": "remote-archive",
+          "region_id": "north-east-asia",
+          "path": "releases/north-east-asia.tar.gz",
+          "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
+          "size": 10175382,
+          "archive_type": "tar.gz"
+        }
       }
     },
     "BY": {
@@ -1968,6 +2312,42 @@
           "size": 6375493,
           "archive_type": "tar.gz"
         }
+      }
+    },
+    "CK": {
+      "ck.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/CK/ck.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "FJ": {
+      "fj.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/FJ/fj.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "KI": {
+      "ki.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/KI/ki.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "MH": {
+      "mh.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/MH/mh.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "FM": {
+      "fm.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/FM/fm.admin/v1.0.0/dataset_release_manifest.json"
+      }
+    },
+    "NR": {
+      "nr.admin": {
+        "latest": "v1.0.0",
+        "manifest": "releases/NR/nr.admin/v1.0.0/dataset_release_manifest.json"
       }
     }
   }

@@ -9,7 +9,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "north-east-asia",
-          "path": "releases/north-east-asia.tar.gz",
+          "path": "releases/regions/north-east-asia.tar.gz",
           "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
           "size": 10175382,
           "archive_type": "tar.gz"
@@ -29,7 +29,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "british-isles",
-          "path": "releases/british-isles.tar.gz",
+          "path": "releases/regions/british-isles.tar.gz",
           "sha256": "cd76be2fb218f48f83a34f292c7fd170c7d7ccd450c42f0b9f9b82edf36a0563",
           "size": 6375493,
           "archive_type": "tar.gz"
@@ -49,7 +49,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "north-east-asia",
-          "path": "releases/north-east-asia.tar.gz",
+          "path": "releases/regions/north-east-asia.tar.gz",
           "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
           "size": 10175382,
           "archive_type": "tar.gz"
@@ -63,7 +63,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "nordic",
-          "path": "releases/nordic.tar.gz",
+          "path": "releases/regions/nordic.tar.gz",
           "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
           "size": 1590051,
           "archive_type": "tar.gz"
@@ -77,7 +77,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "nordic",
-          "path": "releases/nordic.tar.gz",
+          "path": "releases/regions/nordic.tar.gz",
           "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
           "size": 1590051,
           "archive_type": "tar.gz"
@@ -91,7 +91,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "nordic",
-          "path": "releases/nordic.tar.gz",
+          "path": "releases/regions/nordic.tar.gz",
           "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
           "size": 1590051,
           "archive_type": "tar.gz"
@@ -105,7 +105,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "west-europe",
-          "path": "releases/west-europe.tar.gz",
+          "path": "releases/regions/west-europe.tar.gz",
           "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
           "size": 9810325,
           "archive_type": "tar.gz"
@@ -119,7 +119,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "west-europe",
-          "path": "releases/west-europe.tar.gz",
+          "path": "releases/regions/west-europe.tar.gz",
           "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
           "size": 9810325,
           "archive_type": "tar.gz"
@@ -157,7 +157,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "nordic",
-          "path": "releases/nordic.tar.gz",
+          "path": "releases/regions/nordic.tar.gz",
           "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
           "size": 1590051,
           "archive_type": "tar.gz"
@@ -183,7 +183,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -197,7 +197,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -211,7 +211,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "nordic",
-          "path": "releases/nordic.tar.gz",
+          "path": "releases/regions/nordic.tar.gz",
           "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
           "size": 1590051,
           "archive_type": "tar.gz"
@@ -225,7 +225,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "west-europe",
-          "path": "releases/west-europe.tar.gz",
+          "path": "releases/regions/west-europe.tar.gz",
           "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
           "size": 9810325,
           "archive_type": "tar.gz"
@@ -251,7 +251,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "west-europe",
-          "path": "releases/west-europe.tar.gz",
+          "path": "releases/regions/west-europe.tar.gz",
           "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
           "size": 9810325,
           "archive_type": "tar.gz"
@@ -271,7 +271,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -285,7 +285,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -299,7 +299,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -313,7 +313,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -333,7 +333,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -347,7 +347,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -361,7 +361,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -381,7 +381,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -395,7 +395,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -409,7 +409,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -423,7 +423,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -437,7 +437,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -451,7 +451,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -465,7 +465,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "balkans",
-          "path": "releases/balkans.tar.gz",
+          "path": "releases/regions/balkans.tar.gz",
           "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
           "size": 3776482,
           "archive_type": "tar.gz"
@@ -479,7 +479,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "balkans",
-          "path": "releases/balkans.tar.gz",
+          "path": "releases/regions/balkans.tar.gz",
           "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
           "size": 3776482,
           "archive_type": "tar.gz"
@@ -493,7 +493,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "east-europe",
-          "path": "releases/east-europe.tar.gz",
+          "path": "releases/regions/east-europe.tar.gz",
           "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
           "size": 7188165,
           "archive_type": "tar.gz"
@@ -507,7 +507,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "balkans",
-          "path": "releases/balkans.tar.gz",
+          "path": "releases/regions/balkans.tar.gz",
           "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
           "size": 3776482,
           "archive_type": "tar.gz"
@@ -521,7 +521,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "nordic",
-          "path": "releases/nordic.tar.gz",
+          "path": "releases/regions/nordic.tar.gz",
           "sha256": "edd380ee7cc299b42cbf99bbf4e6a150784bc73a8540d6191f986807bb93f2ac",
           "size": 1590051,
           "archive_type": "tar.gz"
@@ -535,7 +535,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-europe",
-          "path": "releases/central-europe.tar.gz",
+          "path": "releases/regions/central-europe.tar.gz",
           "sha256": "4e7a34b6d629766577aafb50a4620e7b9239c9e148ca828c2fbf58989839fd9d",
           "size": 7319177,
           "archive_type": "tar.gz"
@@ -549,7 +549,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "east-europe",
-          "path": "releases/east-europe.tar.gz",
+          "path": "releases/regions/east-europe.tar.gz",
           "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
           "size": 7188165,
           "archive_type": "tar.gz"
@@ -563,7 +563,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "east-europe",
-          "path": "releases/east-europe.tar.gz",
+          "path": "releases/regions/east-europe.tar.gz",
           "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
           "size": 7188165,
           "archive_type": "tar.gz"
@@ -577,7 +577,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "west-europe",
-          "path": "releases/west-europe.tar.gz",
+          "path": "releases/regions/west-europe.tar.gz",
           "sha256": "8beeaabadf7d43545aa6dea0cda8721b59b2c9abf5a12aec4204fa8eecfa7fb0",
           "size": 9810325,
           "archive_type": "tar.gz"
@@ -591,7 +591,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "balkans",
-          "path": "releases/balkans.tar.gz",
+          "path": "releases/regions/balkans.tar.gz",
           "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
           "size": 3776482,
           "archive_type": "tar.gz"
@@ -611,7 +611,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "balkans",
-          "path": "releases/balkans.tar.gz",
+          "path": "releases/regions/balkans.tar.gz",
           "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
           "size": 3776482,
           "archive_type": "tar.gz"
@@ -625,7 +625,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-europe",
-          "path": "releases/central-europe.tar.gz",
+          "path": "releases/regions/central-europe.tar.gz",
           "sha256": "4e7a34b6d629766577aafb50a4620e7b9239c9e148ca828c2fbf58989839fd9d",
           "size": 7319177,
           "archive_type": "tar.gz"
@@ -639,7 +639,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-europe",
-          "path": "releases/central-europe.tar.gz",
+          "path": "releases/regions/central-europe.tar.gz",
           "sha256": "4e7a34b6d629766577aafb50a4620e7b9239c9e148ca828c2fbf58989839fd9d",
           "size": 7319177,
           "archive_type": "tar.gz"
@@ -659,7 +659,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "east-europe",
-          "path": "releases/east-europe.tar.gz",
+          "path": "releases/regions/east-europe.tar.gz",
           "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
           "size": 7188165,
           "archive_type": "tar.gz"
@@ -673,7 +673,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "balkans",
-          "path": "releases/balkans.tar.gz",
+          "path": "releases/regions/balkans.tar.gz",
           "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
           "size": 3776482,
           "archive_type": "tar.gz"
@@ -687,7 +687,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "balkans",
-          "path": "releases/balkans.tar.gz",
+          "path": "releases/regions/balkans.tar.gz",
           "sha256": "3ad8ea91ab8cd1b3bf4902d3b3ec914bcbbacefb2950342478e94ee0b6cbc37e",
           "size": 3776482,
           "archive_type": "tar.gz"
@@ -701,7 +701,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "east-europe",
-          "path": "releases/east-europe.tar.gz",
+          "path": "releases/regions/east-europe.tar.gz",
           "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
           "size": 7188165,
           "archive_type": "tar.gz"
@@ -721,7 +721,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -735,7 +735,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -749,7 +749,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -763,7 +763,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -777,7 +777,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -791,7 +791,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -805,7 +805,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-america",
-          "path": "releases/south-america.tar.gz",
+          "path": "releases/regions/south-america.tar.gz",
           "sha256": "7ca1a2f0f63639b6cd9c0e4b015abb80c4cda430c970929f804cd8a0699d7712",
           "size": 12341501,
           "archive_type": "tar.gz"
@@ -819,7 +819,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -833,7 +833,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -847,7 +847,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -861,7 +861,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -875,7 +875,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -889,7 +889,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -903,7 +903,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -917,7 +917,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -931,7 +931,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -945,7 +945,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -959,7 +959,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -973,7 +973,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-america",
-          "path": "releases/central-america.tar.gz",
+          "path": "releases/regions/central-america.tar.gz",
           "sha256": "b6d8be33365c45590f9b60f4d434104f5499b953f4aa65e6cd11d2f1f2cc3228",
           "size": 3519238,
           "archive_type": "tar.gz"
@@ -987,7 +987,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1001,7 +1001,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1015,7 +1015,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1029,7 +1029,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1043,7 +1043,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1057,7 +1057,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -1071,7 +1071,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -1085,7 +1085,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "gcc-states",
-          "path": "releases/gcc-states.tar.gz",
+          "path": "releases/regions/gcc-states.tar.gz",
           "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
           "size": 793369,
           "archive_type": "tar.gz"
@@ -1099,7 +1099,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "gcc-states",
-          "path": "releases/gcc-states.tar.gz",
+          "path": "releases/regions/gcc-states.tar.gz",
           "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
           "size": 793369,
           "archive_type": "tar.gz"
@@ -1113,7 +1113,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "gcc-states",
-          "path": "releases/gcc-states.tar.gz",
+          "path": "releases/regions/gcc-states.tar.gz",
           "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
           "size": 793369,
           "archive_type": "tar.gz"
@@ -1127,7 +1127,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "gcc-states",
-          "path": "releases/gcc-states.tar.gz",
+          "path": "releases/regions/gcc-states.tar.gz",
           "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
           "size": 793369,
           "archive_type": "tar.gz"
@@ -1141,7 +1141,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "gcc-states",
-          "path": "releases/gcc-states.tar.gz",
+          "path": "releases/regions/gcc-states.tar.gz",
           "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
           "size": 793369,
           "archive_type": "tar.gz"
@@ -1155,7 +1155,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "gcc-states",
-          "path": "releases/gcc-states.tar.gz",
+          "path": "releases/regions/gcc-states.tar.gz",
           "sha256": "2f4fb7461b670b66b829a348f2ea457ce8a3bd9a6a130bd54136167be1822609",
           "size": 793369,
           "archive_type": "tar.gz"
@@ -1169,7 +1169,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1183,7 +1183,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1197,7 +1197,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1211,7 +1211,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1225,7 +1225,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1239,7 +1239,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1253,7 +1253,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1267,7 +1267,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -1281,7 +1281,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1295,7 +1295,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -1309,7 +1309,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1323,7 +1323,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "north-east-asia",
-          "path": "releases/north-east-asia.tar.gz",
+          "path": "releases/regions/north-east-asia.tar.gz",
           "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
           "size": 10175382,
           "archive_type": "tar.gz"
@@ -1337,7 +1337,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
-          "path": "releases/south-east-asia.tar.gz",
+          "path": "releases/regions/south-east-asia.tar.gz",
           "sha256": "aa66ea8a4a122c1401d8e7f92577aabd252ef2f45b99fa7f782fef6f86724b8f",
           "size": 12525754,
           "archive_type": "tar.gz"
@@ -1351,7 +1351,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1365,7 +1365,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "north-east-asia",
-          "path": "releases/north-east-asia.tar.gz",
+          "path": "releases/regions/north-east-asia.tar.gz",
           "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
           "size": 10175382,
           "archive_type": "tar.gz"
@@ -1379,7 +1379,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1393,7 +1393,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1407,7 +1407,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1421,7 +1421,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1435,7 +1435,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1449,7 +1449,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1463,7 +1463,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "central-south-west-asia",
-          "path": "releases/central-south-west-asia.tar.gz",
+          "path": "releases/regions/central-south-west-asia.tar.gz",
           "sha256": "1d67ab8979eaabd6c3dbaa9720d9bf408ad9079c323b27050c3e916d415e6942",
           "size": 10216008,
           "archive_type": "tar.gz"
@@ -1477,7 +1477,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1491,7 +1491,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1505,7 +1505,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1519,7 +1519,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1533,7 +1533,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1547,7 +1547,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1561,7 +1561,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1575,7 +1575,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1589,7 +1589,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1603,7 +1603,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1617,7 +1617,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1631,7 +1631,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1645,7 +1645,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1659,7 +1659,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1673,7 +1673,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1687,7 +1687,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1701,7 +1701,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1715,7 +1715,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1729,7 +1729,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1743,7 +1743,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1757,7 +1757,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1771,7 +1771,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1785,7 +1785,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1799,7 +1799,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1813,7 +1813,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1827,7 +1827,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1841,7 +1841,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1855,7 +1855,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1869,7 +1869,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1883,7 +1883,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1897,7 +1897,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1911,7 +1911,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1925,7 +1925,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1939,7 +1939,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1953,7 +1953,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1967,7 +1967,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1981,7 +1981,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -1995,7 +1995,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2009,7 +2009,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2023,7 +2023,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2037,7 +2037,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2051,7 +2051,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2065,7 +2065,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2079,7 +2079,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2093,7 +2093,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2107,7 +2107,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2121,7 +2121,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2135,7 +2135,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2149,7 +2149,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2163,7 +2163,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2177,7 +2177,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2191,7 +2191,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2205,7 +2205,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2219,7 +2219,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2233,7 +2233,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "africa",
-          "path": "releases/africa.tar.gz",
+          "path": "releases/regions/africa.tar.gz",
           "sha256": "98a94d30e1cf25dbef6cee6ab830947d5a96b9af26abbcf5a93ca60101a1a56c",
           "size": 9867553,
           "archive_type": "tar.gz"
@@ -2247,7 +2247,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "north-east-asia",
-          "path": "releases/north-east-asia.tar.gz",
+          "path": "releases/regions/north-east-asia.tar.gz",
           "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
           "size": 10175382,
           "archive_type": "tar.gz"
@@ -2261,7 +2261,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "north-east-asia",
-          "path": "releases/north-east-asia.tar.gz",
+          "path": "releases/regions/north-east-asia.tar.gz",
           "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
           "size": 10175382,
           "archive_type": "tar.gz"
@@ -2275,7 +2275,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "north-east-asia",
-          "path": "releases/north-east-asia.tar.gz",
+          "path": "releases/regions/north-east-asia.tar.gz",
           "sha256": "2f0a219f1ff635f58c4d981a13775f34e4259d79ec56d74971a53c67ecd2eebf",
           "size": 10175382,
           "archive_type": "tar.gz"
@@ -2289,7 +2289,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "east-europe",
-          "path": "releases/east-europe.tar.gz",
+          "path": "releases/regions/east-europe.tar.gz",
           "sha256": "9e29c34c5609597cb9e9dc29953c456f4e6374640955bbf3e22fd02b0285d82d",
           "size": 7188165,
           "archive_type": "tar.gz"
@@ -2315,7 +2315,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "british-isles",
-          "path": "releases/british-isles.tar.gz",
+          "path": "releases/regions/british-isles.tar.gz",
           "sha256": "cd76be2fb218f48f83a34f292c7fd170c7d7ccd450c42f0b9f9b82edf36a0563",
           "size": 6375493,
           "archive_type": "tar.gz"
@@ -2329,7 +2329,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2343,7 +2343,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2357,7 +2357,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2371,7 +2371,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2385,7 +2385,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2399,7 +2399,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2413,7 +2413,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2427,7 +2427,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2441,7 +2441,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2455,7 +2455,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2469,7 +2469,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2483,7 +2483,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2497,7 +2497,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2511,7 +2511,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2525,7 +2525,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2539,7 +2539,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2553,7 +2553,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2567,7 +2567,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"
@@ -2581,7 +2581,7 @@
         "region_archive": {
           "type": "remote-archive",
           "region_id": "australia-oceania",
-          "path": "releases/australia-oceania.tar.gz",
+          "path": "releases/regions/australia-oceania.tar.gz",
           "sha256": "7f8cc58f89b2ad9ea2d2abb6964caf97f91596e282ada933e7b27976102109d5",
           "size": 871263,
           "archive_type": "tar.gz"

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-13T09:29:20Z",
+  "generated_at": "2026-06-26T04:36:30Z",
   "global_datasets": {
     "waterbody.global": {
       "latest": "v1.0.0",
@@ -31,8 +31,8 @@
     },
     "JP": {
       "jp.admin": {
-        "latest": "v1.0.2",
-        "manifest": "releases/JP/jp.admin/v1.0.2/dataset_release_manifest.json"
+        "latest": "v1.0.3",
+        "manifest": "releases/JP/jp.admin/v1.0.3/dataset_release_manifest.json"
       }
     },
     "GB": {

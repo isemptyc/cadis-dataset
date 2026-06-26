@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "waterbody.global",
+  "dataset_version": "v1.0.0",
+  "description": "Global named water body dataset (bays, straits, gulfs, inland seas)",
+  "runtime_compat": {
+    "min": "0.4.6",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "waterbody.ffsf": {
+        "sha256": "c1d64485889d2213015bb25958cc5a29762f1e20c4a929081d8798f8ee3860d5",
+        "size": 33295672
+      },
+      "waterbody_meta.json": {
+        "sha256": "dfc17a4aeec1d2f0db5d40d4a909260c873ddfa516532da02a122029660a17c6",
+        "size": 154589
+      }
+    }
+  },
+  "generated_at": "2026-06-26T03:05:25Z",
+  "source": "openstreetmap",
+  "feature_count": 903
+}

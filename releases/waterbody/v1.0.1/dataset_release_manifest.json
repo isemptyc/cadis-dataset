@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "waterbody.global",
+  "dataset_version": "v1.0.1",
+  "description": "Global named water body dataset (seas, bays, straits, lakes, rivers) with type classification",
+  "runtime_compat": {
+    "min": "0.4.6",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "archive": {
+    "filename": "dataset_package.tar.gz",
+    "sha256": "3ecfaf7d15f6b6b21f36bd1a96c2e15c7db44065286fbf8169b1c343dc774d4d",
+    "size": 6524842
+  },
+  "checksums": {
+    "files": {
+      "waterbody.ffsf": {
+        "sha256": "6f20f829e36157f93289bf5fe70918ae636e25cd5ab9dd1d4e2e52fd0ae575cc",
+        "size": 8259460
+      },
+      "waterbody_meta.json": {
+        "sha256": "3f66bcbfceae1ad5b2a9432afa38d9928203044872b8ce89b6a70c5daf8f7431",
+        "size": 467669
+      }
+    }
+  },
+  "generated_at": "2026-06-26T08:17:19Z",
+  "source": "openstreetmap",
+  "feature_count": 1381
+}

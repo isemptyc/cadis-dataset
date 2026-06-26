@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-26T04:36:30Z",
+  "generated_at": "2026-06-26T08:17:19Z",
   "global_datasets": {
     "waterbody.global": {
-      "latest": "v1.0.0",
-      "manifest": "releases/waterbody/v1.0.0/dataset_release_manifest.json",
-      "manifest_sha256": "4796f651311d0eec468e7356cf9590d816ea405db189dbe4d03fbca02a4638c3",
+      "latest": "v1.0.1",
+      "manifest": "releases/waterbody/v1.0.1/dataset_release_manifest.json",
+      "manifest_sha256": "d1d1711c36d0da764b5ce9e2825c727020d75b6b786a60b7992a714b59be6ebe",
       "archive": {
-        "path": "releases/waterbody/v1.0.0/dataset_package.tar.gz",
-        "sha256": "5716f1e783e4a42229e3c24ec1d77584d8c8cef6f4f366c9e9763f336d786e42",
-        "size": 28405157,
+        "path": "releases/waterbody/v1.0.1/dataset_package.tar.gz",
+        "sha256": "3ecfaf7d15f6b6b21f36bd1a96c2e15c7db44065286fbf8169b1c343dc774d4d",
+        "size": 6524842,
         "archive_type": "tar.gz"
       }
     }

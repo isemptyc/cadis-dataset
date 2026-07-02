@@ -3,7 +3,7 @@
 ## Cadis Dataset Evaluation Report
 
 Dataset: `in.admin`
-Version: `v1.0.1`
+Version: `v1.0.2`
 Country: `IN`
 Policy Version: `1.0`
 
@@ -11,180 +11,139 @@ Policy Version: `1.0`
 
 # 1. Purpose
 
-This document evaluates `in.admin v1.0.1` under Cadis Runtime after removing village/locality-level geometry from the runtime contract.
-
-Cadis is a semantic resolver, not a GIS boundary system. For India, OSM admin level `9` introduces a very large and complex village/locality layer whose completeness and real-world alignment are not appropriate assumptions for Cadis runtime semantics. Version `v1.0.1` therefore keeps state, district, and subdistrict semantics while excluding level `9`.
-
----
-
-# 2. Dataset Identity
-
-| Field | Value |
-| ----- | ----- |
-| Dataset ID | `in.admin` |
-| Dataset Version | `v1.0.1` |
-| Country | `IN` |
-| Country Name | `India` |
-| Policy Version | `1.0` |
-| Cadis Version | `v0.8.160` |
-| Hierarchy Required | `True` |
-| Repair Required | `False` |
-| Runtime Policy Detected | `True` |
-| Name Schema | `multilingual_v1` |
+This document evaluates `in.admin v1.0.2` after correcting the India admin-level-4 scope generation.
+The previous scope was derived from India state/union-territory polygons after Natural Earth admin-0 filtering,
+which excluded the valid OSM union territory relation for Lakshadweep. Version `v1.0.2` builds the scope from
+all extracted India admin-level-4 state and union territory polygons in the Geofabrik India PBF; Natural Earth
+is retained as provenance only.
 
 ---
 
-# 3. Dataset Scope
+# 2. Dataset Scope
 
 | Field | Value |
 | ----- | ----- |
 | Scope Label | `admin-level-4 coverage union` |
 | Boundary Builder | `scripts/build_in_boundaries.py` |
 | Generated Boundary | `tmp/in_country.json` |
-| Boundary Source | `OSM admin-level-4 coverage union after Natural Earth IN admin-0 filtering` |
-| Boundary BBox | `[68.1756585, 6.757237, 96.0124397, 35.6728459]` |
+| Boundary Source | `OSM admin-level-4 coverage union from Geofabrik India PBF` |
 | OSM Source | `geofabrik:asia/india` |
-| OSM Snapshot Timestamp | `2026-05-09T20:21:02Z` |
-
-The same scoped boundary was used for build and evaluation.
 
 ---
 
-# 4. Administrative Model
+# 3. Administrative Model
 
-The reduced India engine exposes these OSM administrative levels:
+| Level | Runtime Label | Dataset Count |
+| ----: | ------------- | ------------: |
+| 4 | `admin_state_union_territory` | 35 |
+| 5 | `admin_district` | 753 |
+| 6 | `admin_subdistrict` | 6,276 |
 
-| Level | Runtime Label | Dataset Count | Notes |
-| ----: | ------------- | ------------: | ----- |
-| 4 | `admin_state_union_territory` | 34 | States and union territories |
-| 5 | `admin_district` | 752 | Districts |
-| 6 | `admin_subdistrict` | 6,266 | Subdistrict-level administrative units |
-
-Probe evidence also found:
-
-| Level | Probe Count | Decision |
-| ----: | ----------: | -------- |
-| 9 | 55,000 | Excluded from `v1.0.1`; too large and too locality-specific for Cadis semantic resolution |
+`Lakshadweep` is present as `in_r2027460`.
 
 ---
 
-# 5. Test Methodology
+# 4. Evaluation Summary
 
-* Total samples: `50,000`
-* Sampling mode: mixed inside/outside stress testing
-* Expected inside ratio: `0.9`
-* Dataset path: `IN/in.admin/v1.0.1`
+# CADIS Lookup Mass Test Summary (IN)
 
-Sampling is uniform over the declared scope, not population-weighted.
+## Overview
+- Country: `IN`
+- Dataset ID: `in.admin`
+- Dataset Version: `v1.0.2`
+- Dataset Country Name: `India`
+- Dataset Dir: `IN/in.admin/v1.0.2`
+- Samples: `10,000`
+- Throughput: `5882.220` qps (`1.700` sec)
+- Overall pass rate: `100.00%` (10,000/10,000)
+- Policy pass rate: `100.00%`
+- Inside coverage pass rate: `100.00%`
+- Runtime policy detected: `True`
+- Policy version: `1.0`
+- Hierarchy required: `True`
+- Repair required: `False`
+- Hierarchy usage samples: `0`
+- Repair usage samples: `0`
+- Nearby usage samples: `2`
+- Offshore samples: `4`
 
----
+## Scenario Comparison
+| Scenario | Pass Rate | Inside Pass Rate | Failed | Inside Failed | Status (ok/partial/failed/unknown) |
+|---|---:|---:|---:|---:|---|
+| `full_policy` | 100.00% | 100.00% | 0 | 0 | 8,397/608/995/0 |
+| `no_hierarchy` | 100.00% | 100.00% | 0 | 0 | 8,397/608/995/0 |
+| `no_repair` | 100.00% | 100.00% | 0 | 0 | 8,397/608/995/0 |
+| `no_nearby` | 99.99% | 99.99% | 1 | 1 | 8,391/608/1,001/0 |
+| `osm_only` | 99.99% | 99.99% | 1 | 1 | 8,391/608/1,001/0 |
 
-# 6. Evaluation Results
+## Layer Effects
+- Rescued by hierarchy: `0`
+- Rescued by repair: `0`
+- Rescued by nearby: `6`
+- Rescued vs OSM-only: `6`
 
-| Metric | Value |
-| ------ | ----- |
-| Overall Pass Rate | `100.00%` |
-| Inside Coverage Pass Rate | `100.00%` |
-| Policy Pass Rate | `100.00%` |
-| Failed Samples | `0` |
-| Throughput | `6357.310` QPS |
-| Total Runtime | `7.865 sec` |
+## Level 4 City Hit Rates
+- Unique level-4 cities hit: `34`
+- Total level-4 hits (all points): `9,001`
+- Total level-4 hits (inside points): `9,000`
 
----
+| City (Level 4) | Hits | Hit Rate (All Points) | Hits (Inside) | Hit Rate (Inside Points) |
+|---|---:|---:|---:|---:|
+| `Rajasthan` | 1,016 | 10.16% | 1,016 | 11.29% |
+| `Madhya Pradesh` | 893 | 8.93% | 893 | 9.92% |
+| `Maharashtra` | 843 | 8.43% | 843 | 9.37% |
+| `Uttar Pradesh` | 720 | 7.20% | 720 | 8.00% |
+| `Gujarat` | 538 | 5.38% | 538 | 5.98% |
+| `Karnataka` | 488 | 4.88% | 488 | 5.42% |
+| `Andhra Pradesh` | 443 | 4.43% | 443 | 4.92% |
+| `Odisha` | 422 | 4.22% | 422 | 4.69% |
+| `Tamil Nadu` | 358 | 3.58% | 358 | 3.98% |
+| `Chhattisgarh` | 354 | 3.54% | 354 | 3.93% |
+| `Lakshadweep` | 325 | 3.25% | 325 | 3.61% |
+| `Telangana` | 276 | 2.76% | 276 | 3.07% |
+| `Bihar` | 270 | 2.70% | 270 | 3.00% |
+| `Assam` | 239 | 2.39% | 239 | 2.66% |
+| `West Bengal` | 231 | 2.31% | 231 | 2.57% |
+| `Jharkhand` | 211 | 2.11% | 211 | 2.34% |
+| `Ladakh` | 202 | 2.02% | 202 | 2.24% |
+| `Punjab` | 157 | 1.57% | 157 | 1.74% |
+| `Himachal Pradesh` | 157 | 1.57% | 157 | 1.74% |
+| `Uttarakhand` | 152 | 1.52% | 152 | 1.69% |
+| `Haryana` | 145 | 1.45% | 145 | 1.61% |
+| `Kerala` | 121 | 1.21% | 120 | 1.33% |
+| `Jammu and Kashmir` | 121 | 1.21% | 121 | 1.34% |
+| `Manipur` | 65 | 0.65% | 65 | 0.72% |
+| `Meghalaya` | 63 | 0.63% | 63 | 0.70% |
+| `Mizoram` | 56 | 0.56% | 56 | 0.62% |
+| `Nagaland` | 46 | 0.46% | 46 | 0.51% |
+| `Tripura` | 29 | 0.29% | 29 | 0.32% |
+| `Andaman and Nicobar Islands` | 27 | 0.27% | 27 | 0.30% |
+| `Sikkim` | 14 | 0.14% | 14 | 0.16% |
 
-# 7. Scenario Comparison
+## Distributions
+**Shape Distribution**
+- `[4,5,6]`: `8,393`
+- `[]`: `999`
+- `[4]`: `334`
+- `[4,5]`: `267`
+- `[4,6]`: `7`
+**Node Source Distribution**
+- `polygon`: `8,999`
+- `nearby`: `2`
+**Source Mix Distribution**
+- `polygon`: `8,999`
+- `__none__`: `999`
+- `nearby`: `2`
+**Policy Reason Distribution**
+- `shape_status_map`: `9,001`
+- `empty_shape`: `995`
+- `offshore`: `4`
 
-| Scenario | Pass Rate | Inside Pass Rate | Failed | Inside Failed | Status Counts (`ok`/`partial`/`failed`/`unknown`) |
-| -------- | --------: | ---------------: | -----: | ------------: | -------------------------------------------------- |
-| full_policy | 100.00% | 100.00% | 0 | 0 | 43,617 / 1,402 / 4,981 / 0 |
-| no_hierarchy | 100.00% | 100.00% | 0 | 0 | 43,617 / 1,402 / 4,981 / 0 |
-| no_repair | 100.00% | 100.00% | 0 | 0 | 43,617 / 1,402 / 4,981 / 0 |
-| no_nearby | 100.00% | 100.00% | 1 | 1 | 43,601 / 1,399 / 5,000 / 0 |
-| osm_only | 100.00% | 100.00% | 1 | 1 | 43,601 / 1,399 / 5,000 / 0 |
-
----
-
-# 8. Layer Contribution Analysis
-
-| Layer | Rescued Samples |
-| ----- | --------------- |
-| Hierarchy | 0 |
-| Repair | 0 |
-| Nearby | 19 |
-| Total vs OSM-only | 19 |
-
----
-
-# 9. Structural Distribution
-
-| Shape | Count |
-| ----- | ----: |
-| `[4,5,6]` | 43,603 |
-| `[]` | 4,995 |
-| `[4,5]` | 1,329 |
-| `[4]` | 40 |
-| `[4,6]` | 33 |
-
-| Source | Count |
-| ------ | ----: |
-| polygon | 45,000 |
-| nearby | 5 |
-| admin_tree_id | 1 |
-
-| Reason | Count |
-| ------ | ----: |
-| shape_status_map | 45,005 |
-| empty_shape | 4,981 |
-| offshore | 14 |
-
----
-
-# 10. Level-4 Coverage
-
-The run hit all `34` level-4 units, with `45,005` total level-4 hits and `45,000` inside level-4 hits.
-
----
-
-# 11. Boundary Isolation Validation
-
-Under stress testing with 10% forced out-of-scope samples:
-
-* No boundary-leak failure was observed in this sampled run.
-* Empty-shape and offshore outcomes dominated expected outside-labeled samples.
-* No evidence was observed that hierarchy or nearby layers created cross-border escalation.
-* The evaluation used the same scoped boundary that the build used.
-
----
-
-# 12. Structural Observations
-
-1. The runtime contract now exposes state/union-territory, district, and subdistrict semantics only.
-2. Level 9 was removed because 55,000 village/locality features are too detailed and quality-variable for Cadis semantic resolution.
-3. Package size is now `2.7 MB` compressed and `5.4 MB` unpacked, down from the prior `33.3 MB` compressed and `57.4 MB` unpacked release.
-4. Evaluation behavior remains stable, with 100% overall, policy, and inside pass rates.
-5. Nearby fallback remains minimal and bounded.
-
----
-
-# 13. Reproducibility
-
-All dataset transformations and evaluation results are reproducible using:
-
-- cadis-dataset-engine commit:
-  `23518e0af4af950f147bdce89b5902b02c2c7411`
-- Cadis version:
-  `0.8.160`
-- Runtime compatibility minimum:
-  `0.8.35`
-- Source OSM SHA256:
-  `8e08957fe6ace40ca08056cc1742d744262b722f542cb09b31e16f8dd7f6f65b`
-- Boundary builder: `scripts/build_in_boundaries.py`
-- Build boundary: `tmp/in_country.json`
-- Evaluation boundary: `tmp/in_country.json`
-- Staged dataset: `IN/in.admin/v1.0.1`
 
 ---
 
-# 14. Conclusion
+# 5. Verdict
 
-The `in.admin v1.0.1` dataset passes evaluation and is suitable for release. The runtime model is better aligned with Cadis' role as a semantic resolver by excluding village/locality-level geometry.
+`in.admin v1.0.2` passes the staged evaluation with full policy and inside-boundary coverage. The India
+admin-level-4 scope now includes all 35 state/union-territory polygons extracted from the source PBF, including
+Lakshadweep.

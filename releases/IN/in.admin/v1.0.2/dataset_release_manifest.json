@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "in.admin",
+  "country_iso": "IN",
+  "country_name": "India",
+  "dataset_version": "v1.0.2",
+  "engine_commit": "b05d3af01aab376aafb75fad43a31dc51817e587",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/india",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "8e08957fe6ace40ca08056cc1742d744262b722f542cb09b31e16f8dd7f6f65b"
+  },
+  "runtime_compat": {
+    "min": "0.10.4",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "3744f5b7fbea57df53caf649c6bd4ba92e9a75cf6da8d599bda97fe6fe372198",
+        "size": 2738628
+      },
+      "geometry_meta.json": {
+        "sha256": "32bd99e59cb14c55437b4c1c0f5f2d09b7200468de7b7b133e0f0eadcdb07bed",
+        "size": 1901039
+      },
+      "hierarchy.json": {
+        "sha256": "da1b577aaded65dc4c250adc5092209be2099bdc2fe0319ad3c3624cfaccfaef",
+        "size": 1068263
+      },
+      "runtime_policy.json": {
+        "sha256": "89b935c94e009320fe581f71d38d3f3db3a343d03da75972c628a9776c0c7515",
+        "size": 1275
+      }
+    }
+  },
+  "generated_at": "2026-07-02T11:04:16Z",
+  "name_schema": "multilingual_v1"
+}

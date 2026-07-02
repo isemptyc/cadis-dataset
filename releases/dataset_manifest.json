@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-02T11:06:11Z",
+  "generated_at": "2026-07-02T11:20:08Z",
   "global_datasets": {
     "waterbody.global": {
       "latest": "v1.0.5",
@@ -285,8 +285,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -299,8 +299,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -313,8 +313,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -327,8 +327,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -389,14 +389,14 @@
     },
     "PH": {
       "ph.admin": {
-        "latest": "v1.0.0",
-        "manifest": "releases/PH/ph.admin/v1.0.0/dataset_release_manifest.json",
+        "latest": "v1.0.1",
+        "manifest": "releases/PH/ph.admin/v1.0.1/dataset_release_manifest.json",
         "region_archive": {
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -409,8 +409,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -1071,8 +1071,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -1085,8 +1085,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -1281,8 +1281,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -1309,8 +1309,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }
@@ -1351,8 +1351,8 @@
           "type": "remote-archive",
           "region_id": "south-east-asia",
           "path": "releases/regions/south-east-asia.tar.gz",
-          "sha256": "3804e7f639637d791145d604c3c6129679414509b8f8945e7b08623e53fdf5f0",
-          "size": 12688582,
+          "sha256": "84f03a5920fbf356ea41bafd84a3f9cb7a5510a6512ea3edac832c6e1347b61f",
+          "size": 13242770,
           "archive_type": "tar.gz"
         }
       }

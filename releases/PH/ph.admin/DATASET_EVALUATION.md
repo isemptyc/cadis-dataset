@@ -2,148 +2,220 @@
 
 ## Cadis Dataset Evaluation Report
 
-Dataset: `ph.admin`
-Version: `v1.0.1`
-Country: `PH`
+Dataset: `ph.admin`  
+Version: `v1.0.2`  
+Country: `PH`  
 Policy Version: `1.0`
 
 ---
 
 # 1. Purpose
 
-This document evaluates `ph.admin v1.0.1` after correcting Philippines admin-level-4 scope generation.
-The previous scope was derived from province polygons after Natural Earth admin-0 filtering, which excluded
-valid OSM province relations for multiple island/coastal provinces. Version `v1.0.1` builds the scope from all
-extracted Philippines admin-level-4 province polygons in the Geofabrik Philippines PBF; Natural Earth is retained
-as provenance only.
+This document evaluates the rebuilt `ph.admin v1.0.2` dataset under Cadis Runtime.
+
+This rebuild fixes the `v1.0.1` scope defect where Philippines runtime country scope was derived only from admin-level-4 province polygons. That omitted Metro Manila / Manila, because Manila is represented in the source PBF as an admin-level-6 boundary outside province coverage. The triggering regression was `14.608753147958526, 120.97594995915485`, which previously returned `Philippines` with no admin hierarchy and an offshore source.
+
+OSM data is not modified by Cadis. The dataset encodes a deterministic runtime interpretation of available administrative geometry and hierarchy.
 
 ---
 
-# 2. Dataset Scope
+# 2. Dataset Identity
 
 | Field | Value |
-| ----- | ----- |
-| Scope Label | `admin-level-4 coverage union` |
-| Boundary Builder | `scripts/build_ph_boundaries.py` |
-| Generated Boundary | `tmp/ph_country.json` |
-| Boundary Source | `OSM admin-level-4 coverage union from Geofabrik Philippines PBF` |
-| OSM Source | `geofabrik:asia/philippines` |
+| --- | --- |
+| Dataset ID | `ph.admin` |
+| Dataset Version | `v1.0.2` |
+| Country | `PH` |
+| Country Name | `Philippines` |
+| Policy Version | `1.0` |
+| Cadis Version | `0.10.5` |
+| Hierarchy Required | `True` |
+| Repair Required | `False` |
+| Runtime Policy Detected | `True` |
+| Minimum Cadis Version | `0.10.5` |
+| Engine Commit | `b05d3af01aab376aafb75fad43a31dc51817e587` |
 
 ---
 
-# 3. Administrative Model
+# 3. Dataset Scope
 
-| Level | Runtime Label | Dataset Count |
-| ----: | ------------- | ------------: |
-| 4 | `admin_province` | 82 |
-| 6 | `admin_municipality_city` | 861 |
-| 10 | `admin_detail` | 2,851 |
+Scope: `OSM admin-level-4/6 coverage union`
 
-The restored admin-level-4 scope includes Pangasinan, Romblon, Batanes, Samar, Leyte, Palawan, Antique, Cebu,
-Surigao del Norte, Agusan del Norte, Zamboanga Sibugay, and Davao Occidental.
+The source OSM extract is:
+
+* `geofabrik:asia/philippines`
+
+The tracked boundary builder is:
+
+* `scripts/build_ph_boundaries.py`
+
+Boundary generation uses:
+
+* Natural Earth source: `ne_10m_admin_0_countries.dbf`
+* OSM source: `philippines-260509.osm.pbf`
+* Selection rule: union all extracted Philippines admin_level=4 province polygons plus admin_level=6 city/municipality polygons from the Geofabrik Philippines PBF; Natural Earth PH is retained as provenance only
+* Boundary bbox: `[112.6723041, 4.4528442, 126.7396349, 21.2572899]`
+* Source scope polygon counts: level `4` = `82`, level `6` = `899`, total = `981`
+
+`v1.0.2` intentionally adds admin-level-6 polygons to the country scope so highly urbanized / independent city boundaries, including Manila, are inside the runtime scope even when they are not covered by a province polygon.
 
 ---
 
-# 4. Evaluation Summary
+# 4. Runtime Policy
 
-# CADIS Lookup Mass Test Summary (PH)
+| Policy Field | Value |
+| --- | --- |
+| Allowed Levels | `[4, 6, 10]` |
+| Hierarchy Parent Level | `4` |
+| Hierarchy Child Levels | `[6, 10]` |
+| Repair Layer | Disabled |
+| Nearby Policy | Enabled |
+| Nearby Max Distance | `2.0 km` |
+| Offshore Max Distance | `20.0 km` |
+| Name Schema | `multilingual_v1` |
+| Alias Languages | `en`, `es`, `ja`, `ko`, `tl` |
 
-## Overview
-- Country: `PH`
-- Dataset ID: `ph.admin`
-- Dataset Version: `v1.0.1`
-- Dataset Country Name: `Philippines`
-- Dataset Dir: `PH/ph.admin/v1.0.1`
-- Samples: `10,000`
-- Throughput: `11045.560` qps (`0.905` sec)
-- Overall pass rate: `100.00%` (10,000/10,000)
-- Policy pass rate: `100.00%`
-- Inside coverage pass rate: `100.00%`
-- Runtime policy detected: `True`
-- Policy version: `1.0`
-- Hierarchy required: `True`
-- Repair required: `False`
-- Hierarchy usage samples: `0`
-- Repair usage samples: `0`
-- Nearby usage samples: `1`
-- Offshore samples: `7`
+Feature counts in the staged runtime artifacts:
 
-## Scenario Comparison
+| Level | Built Polygon Count |
+| --- | ---: |
+| `4` | `82` |
+| `6` | `898` |
+| `10` | `4,472` |
+
+---
+
+# 5. Regression Validation
+
+The Manila coordinate now resolves inside the staged and published dataset:
+
+| Coordinate | Expected Area | Runtime Result |
+| --- | --- | --- |
+| `14.608753147958526, 120.97594995915485` | Manila, Metro Manila, Philippines | `Manila` |
+
+Runtime lookup for `14.608753147958526, 120.97594995915485` returns:
+
+| Rank | Level | Feature ID | Name | Source |
+| --- | ---: | --- | --- | --- |
+| `0` | `6` | `ph_r103703` | `Manila` | `polygon` |
+
+The result status is `partial`, which is expected for a point with level-6 coverage but no enclosing admin-level-4 province. The important regression fix is that the point is no longer outside the dataset scope and no longer returns an offshore source.
+
+---
+
+# 6. Test Methodology
+
+| Field | Value |
+| --- | --- |
+| Total samples | `10,000` |
+| Inside ratio | `0.9` |
+| Inside samples | `9,000` |
+| Outside samples | `1,000` |
+| Lookup mode | `Runtime` |
+| Evaluation boundary | `tmp/ph_country.json` |
+
+The test intentionally injects approximately 10% out-of-scope points to validate boundary rejection, offshore classification, and cross-border isolation.
+
+---
+
+# 7. Performance Metrics
+
+| Metric | Value |
+| --- | ---: |
+| Throughput | `9897.880 QPS` |
+| Total Runtime | `1.010 sec` |
+| Overall Pass Rate | `100.00%` |
+| Inside Coverage Pass Rate | `100.00%` |
+| Policy Pass Rate | `100.00%` |
+| Failed Samples | `0` |
+
+---
+
+# 8. Scenario Comparison
+
 | Scenario | Pass Rate | Inside Pass Rate | Failed | Inside Failed | Status (ok/partial/failed/unknown) |
-|---|---:|---:|---:|---:|---|
-| `full_policy` | 100.00% | 100.00% | 0 | 0 | 201/8,807/992/0 |
-| `no_hierarchy` | 100.00% | 100.00% | 0 | 0 | 201/8,807/992/0 |
-| `no_repair` | 100.00% | 100.00% | 0 | 0 | 201/8,807/992/0 |
-| `no_nearby` | 100.00% | 100.00% | 0 | 0 | 194/8,806/1,000/0 |
-| `osm_only` | 100.00% | 100.00% | 0 | 0 | 194/8,806/1,000/0 |
-
-## Layer Effects
-- Rescued by hierarchy: `0`
-- Rescued by repair: `0`
-- Rescued by nearby: `8`
-- Rescued vs OSM-only: `8`
-
-## Level 4 City Hit Rates
-- Unique level-4 cities hit: `82`
-- Total level-4 hits (all points): `9,001`
-- Total level-4 hits (inside points): `9,000`
-
-| City (Level 4) | Hits | Hit Rate (All Points) | Hits (Inside) | Hit Rate (Inside Points) |
-|---|---:|---:|---:|---:|
-| `Palawan` | 1,219 | 12.19% | 1,219 | 13.54% |
-| `Cagayan` | 334 | 3.34% | 334 | 3.71% |
-| `Quezon` | 327 | 3.27% | 327 | 3.63% |
-| `Tawi-Tawi` | 288 | 2.88% | 288 | 3.20% |
-| `Sulu` | 241 | 2.41% | 241 | 2.68% |
-| `Cebu` | 214 | 2.14% | 214 | 2.38% |
-| `Masbate` | 211 | 2.11% | 211 | 2.34% |
-| `Negros Occidental` | 207 | 2.07% | 207 | 2.30% |
-| `Occidental Mindoro` | 199 | 1.99% | 199 | 2.21% |
-| `Isabela` | 178 | 1.78% | 178 | 1.98% |
-| `Antique` | 171 | 1.71% | 171 | 1.90% |
-| `Zamboanga del Norte` | 171 | 1.71% | 171 | 1.90% |
-| `Eastern Samar` | 158 | 1.58% | 158 | 1.76% |
-| `Leyte` | 157 | 1.57% | 157 | 1.74% |
-| `Davao Oriental` | 154 | 1.54% | 154 | 1.71% |
-| `Samar` | 152 | 1.52% | 152 | 1.69% |
-| `Camarines Sur` | 145 | 1.45% | 145 | 1.61% |
-| `Bukidnon` | 144 | 1.44% | 144 | 1.60% |
-| `Batanes` | 141 | 1.41% | 141 | 1.57% |
-| `Negros Oriental` | 139 | 1.39% | 139 | 1.54% |
-| `Romblon` | 138 | 1.38% | 138 | 1.53% |
-| `Bohol` | 135 | 1.35% | 135 | 1.50% |
-| `Iloilo` | 124 | 1.24% | 124 | 1.38% |
-| `Pangasinan` | 121 | 1.21% | 121 | 1.34% |
-| `Surigao del Sur` | 120 | 1.20% | 120 | 1.33% |
-| `Agusan del Sur` | 118 | 1.18% | 118 | 1.31% |
-| `Zambales` | 105 | 1.05% | 105 | 1.17% |
-| `Oriental Mindoro` | 98 | 0.98% | 98 | 1.09% |
-| `Sultan Kudarat` | 98 | 0.98% | 98 | 1.09% |
-| `Zamboanga Sibugay` | 97 | 0.97% | 97 | 1.08% |
-
-## Distributions
-**Shape Distribution**
-- `[4,6]`: `5,316`
-- `[4]`: `3,487`
-- `[]`: `999`
-- `[4,6,10]`: `194`
-- `[4,10]`: `4`
-**Node Source Distribution**
-- `polygon`: `9,000`
-- `nearby`: `1`
-**Source Mix Distribution**
-- `polygon`: `9,000`
-- `__none__`: `999`
-- `nearby`: `1`
-**Policy Reason Distribution**
-- `shape_status_map`: `9,001`
-- `empty_shape`: `992`
-- `offshore`: `7`
-
+| --- | ---: | ---: | ---: | ---: | --- |
+| `full_policy` | `100.00%` | `100.00%` | `0` | `0` | `209/8,795/996/0` |
+| `no_hierarchy` | `100.00%` | `100.00%` | `0` | `0` | `209/8,795/996/0` |
+| `no_repair` | `100.00%` | `100.00%` | `0` | `0` | `209/8,795/996/0` |
+| `no_nearby` | `99.98%` | `99.98%` | `2` | `2` | `205/8,793/1,002/0` |
+| `osm_only` | `99.98%` | `99.98%` | `2` | `2` | `205/8,793/1,002/0` |
 
 ---
 
-# 5. Verdict
+# 9. Layer Contribution Analysis
 
-`ph.admin v1.0.1` passes the staged evaluation with full policy and inside-boundary coverage. The Philippines
-admin-level-4 scope now includes all 82 province polygons extracted from the source PBF.
+| Layer | Rescued Samples |
+| --- | ---: |
+| Hierarchy | `0` |
+| Repair | `0` |
+| Nearby | `6` |
+| Total vs OSM-only | `6` |
+
+---
+
+# 10. Structural Distribution
+
+## 10.1 Shape Distribution
+
+| Shape | Count |
+| --- | ---: |
+| `[4,6]` | `5,010` |
+| `[4]` | `3,349` |
+| `[]` | `1,000` |
+| `[6]` | `264` |
+| `[4,6,10]` | `205` |
+| `[6,10]` | `166` |
+| `[4,10]` | `6` |
+
+## 10.2 Node Source Distribution
+
+| Source | Count |
+| --- | ---: |
+| `polygon` | `8,998` |
+| `admin_tree_id` | `9` |
+| `nearby` | `2` |
+
+## 10.3 Source Mix Distribution
+
+| Source Mix | Count |
+| --- | ---: |
+| `polygon` | `8,989` |
+| `__none__` | `1,000` |
+| `admin_tree_id|polygon` | `9` |
+| `nearby` | `2` |
+
+## 10.4 Policy Reason Distribution
+
+| Reason | Count |
+| --- | ---: |
+| `shape_status_map` | `9,000` |
+| `empty_shape` | `996` |
+| `offshore` | `4` |
+
+---
+
+# 11. Level-4 Coverage
+
+* Unique level-4 units hit: `82`
+* Total level-4 hits, all samples: `8,570`
+* Total level-4 hits, inside samples: `8,570`
+
+The sampled run hit all 82 Philippines admin-level-4 units in the rebuilt runtime scope.
+
+---
+
+# 12. Boundary Isolation Validation
+
+Under stress testing with 10% forced out-of-scope samples:
+
+* No inside-boundary coverage failure was observed.
+* No policy failure was observed.
+* Empty-shape and offshore outcomes were limited to expected out-of-scope samples.
+* No evidence was observed that hierarchy or nearby layers created cross-border escalation in this run.
+
+---
+
+# 13. Release Conclusion
+
+`ph.admin v1.0.2` is valid for release. The Manila regression is fixed by expanding the PH dataset scope from province-only coverage to admin-level-4/6 coverage, while preserving the runtime policy contract and passing the mass evaluation.

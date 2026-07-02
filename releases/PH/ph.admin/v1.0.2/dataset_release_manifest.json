@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "ph.admin",
+  "country_iso": "PH",
+  "country_name": "Philippines",
+  "dataset_version": "v1.0.2",
+  "engine_commit": "b05d3af01aab376aafb75fad43a31dc51817e587",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/philippines",
+    "replication_timestamp_utc": "2026-05-09T20:21:02Z",
+    "file_sha256": "c1010249014a3d9b92dce18e7e1205a9b28124ccb40e2555f167a6e06d97d1ee"
+  },
+  "runtime_compat": {
+    "min": "0.10.5",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "bdb1495a4b03ca479d6e5133d2c0185e1f05245833858790b70c189c29cd4815",
+        "size": 3470488
+      },
+      "geometry_meta.json": {
+        "sha256": "f57b6e87dc2a9f2d085d5e34581f60f94840e01bfdf655a5eb158edf0427d0a2",
+        "size": 1414100
+      },
+      "hierarchy.json": {
+        "sha256": "3d1e52b0ffc5bda9b52c50fd0cb1778d99c5be565185bfa4ba10e1e8450937ac",
+        "size": 763211
+      },
+      "runtime_policy.json": {
+        "sha256": "6e42cb539695c8a68023afe608be358831a4f63dd75e0b992d9074fe89ebe0bc",
+        "size": 1285
+      }
+    }
+  },
+  "generated_at": "2026-07-02T15:57:58Z",
+  "name_schema": "multilingual_v1"
+}

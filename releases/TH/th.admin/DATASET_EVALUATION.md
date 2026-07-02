@@ -2,23 +2,18 @@
 
 ## Cadis Dataset Evaluation Report
 
-Dataset: `th.admin`
-Version: `v1.0.0`
-Country: `TH`
+Dataset: `th.admin`  
+Version: `v1.0.1`  
+Country: `TH`  
 Policy Version: `1.0`
 
 ---
 
 # 1. Purpose
 
-This document evaluates the `th.admin v1.0.0` dataset under Cadis Runtime.
+This document evaluates the rebuilt `th.admin v1.0.1` dataset under Cadis Runtime.
 
-The evaluation validates:
-
-* Thailand runtime policy behavior for the selected administrative model
-* Boundary and offshore behavior under mixed inside/outside sampling
-* Dataset-scope consistency between build and evaluation boundaries
-* Multilingual Thai/English name extraction
+This rebuild fixes the `v1.0.0` scope defect where Thailand coastal admin-level-4 provinces were filtered out before runtime export. The triggering regression was Suvarnabhumi Airport at `13.683897, 100.745262`, which previously returned `Thailand / offshore` with no admin hierarchy.
 
 OSM data is not modified by Cadis. The dataset encodes a deterministic runtime interpretation of available administrative geometry and hierarchy.
 
@@ -29,15 +24,15 @@ OSM data is not modified by Cadis. The dataset encodes a deterministic runtime i
 | Field | Value |
 | --- | --- |
 | Dataset ID | `th.admin` |
-| Dataset Version | `v1.0.0` |
+| Dataset Version | `v1.0.1` |
 | Country | `TH` |
 | Country Name | `Thailand` |
 | Policy Version | `1.0` |
-| Cadis Version | `0.8.11` |
+| Cadis Version | `0.10.4` |
 | Hierarchy Required | `True` |
 | Repair Required | `False` |
 | Runtime Policy Detected | `True` |
-| Minimum Cadis Version | `0.8.11` |
+| Minimum Cadis Version | `0.10.4` |
 
 ---
 
@@ -49,15 +44,19 @@ The source OSM extract is:
 
 * `geofabrik:asia/thailand`
 
-The build and evaluation both use a tracked boundary builder:
+The tracked boundary builder is:
+
+* `scripts/build_th_boundaries.py`
+
+Boundary generation uses:
 
 * Natural Earth source: `ne_10m_admin_0_countries.dbf`
 * OSM source: `thailand-latest.osm.pbf`
-* Selection rule: union all extracted Thailand `admin_level=4` province polygons after Natural Earth `TH` admin-0 filtering
+* Selection rule: union all extracted Thailand admin_level=4 province polygons from the Geofabrik Thailand PBF; Natural Earth TH is retained as provenance only
 * Boundary bbox: `[97.3438072, 5.613522, 105.636812, 20.4648135]`
-* Admin-level-4 polygon count: `65`
+* Admin-level-4 polygon count: `77`
 
-This v1.0.0 scope intentionally evaluates the same OSM admin-level-4 coverage union used for the build. Plain Natural Earth `TH` admin-0 sampling includes small coastal/island components where the OSM administrative polygon coverage does not produce a runtime admin hierarchy; using the OSM admin-level-4 union avoids publishing a report whose sampling boundary is broader than the actual dataset scope.
+`v1.0.1` intentionally keeps Natural Earth as provenance only for this scope. It does not filter Thailand provinces by Natural Earth representative-point containment, because coastal province multipolygons can have representative points outside the Natural Earth land polygon.
 
 ---
 
@@ -75,39 +74,61 @@ This v1.0.0 scope intentionally evaluates the same OSM admin-level-4 coverage un
 | Name Schema | `multilingual_v1` |
 | Alias Languages | `th`, `en` |
 
-Level meanings:
+Feature counts in the staged runtime artifacts:
 
-| Level | Label |
-| --- | --- |
-| 4 | Province / Bangkok |
-| 6 | District |
-| 8 | Subdistrict |
-| 10 | Neighborhood |
-
-Level 7 local-authority relations were observed in the raw OSM hierarchy probe, but were not included in v1.0.0 because they were mostly disconnected from the province/district/subdistrict hierarchy and would introduce a separate overlapping administrative model.
+| Level | Built Polygon Count |
+| --- | ---: |
+| `4` | `77` |
+| `6` | `927` |
+| `8` | `750` |
+| `10` | `164` |
 
 ---
 
-# 5. Test Methodology
+# 5. Regression Validation
+
+The Suvarnabhumi Airport coordinate now resolves inside the staged dataset:
+
+| Feature ID | Level | Name | English Name | Parent ID |
+| --- | ---: | --- | --- | --- |
+| `th_r1908815` | `4` | `จังหวัดสมุทรปราการ` | `Samut Prakan Province` | `` |
+| `th_r11580982` | `6` | `อำเภอบางพลี` | `Bang Phli District` | `th_r1908815` |
+| `th_r13005046` | `8` | `ตำบลหนองปรือ` | `Nong Prue Subdistrict` | `th_r11580982` |
+| `th_r13005044` | `8` | `ตำบลราชาเทวะ` | `Racha Thewa Subdistrict` | `th_r11580982` |
+
+Runtime lookup for `13.683897, 100.745262` returns:
+
+| Rank | Level | Feature ID | English Name | Source |
+| --- | ---: | --- | --- | --- |
+| `0` | `4` | `th_r1908815` | `Samut Prakan Province` | `polygon` |
+| `1` | `6` | `th_r11580982` | `Bang Phli District` | `polygon` |
+| `2` | `8` | `th_r13005046` | `Nong Prue Subdistrict` | `polygon` |
+
+Note: OSM `Racha Thewa Subdistrict` (`th_r13005044`) is present in the dataset and is a sibling of `Nong Prue Subdistrict`, but the exact test coordinate falls inside `Nong Prue` according to the source OSM polygon geometry.
+
+---
+
+# 6. Test Methodology
 
 | Field | Value |
 | --- | --- |
-| Total samples | `50,000` |
+| Total samples | `10,000` |
 | Inside ratio | `0.9` |
-| Inside samples | `45,000` |
-| Outside samples | `5,000` |
-| Lookup mode | Runtime |
+| Inside samples | `9,000` |
+| Outside samples | `1,000` |
+| Lookup mode | `Runtime` |
+| Evaluation boundary | `tmp/th_country.json` |
 
 The test intentionally injects approximately 10% out-of-scope points to validate boundary rejection, offshore classification, and cross-border isolation.
 
 ---
 
-# 6. Performance Metrics
+# 7. Performance Metrics
 
 | Metric | Value |
-| --- | --- |
-| Throughput | `12257.990` QPS |
-| Total Runtime | `4.079 sec` |
+| --- | ---: |
+| Throughput | `10879.910 QPS` |
+| Total Runtime | `0.919 sec` |
 | Overall Pass Rate | `100.00%` |
 | Inside Coverage Pass Rate | `100.00%` |
 | Policy Pass Rate | `100.00%` |
@@ -115,98 +136,78 @@ The test intentionally injects approximately 10% out-of-scope points to validate
 
 ---
 
-# 7. Scenario Comparison
+# 8. Scenario Comparison
 
 | Scenario | Pass Rate | Inside Pass Rate | Failed | Inside Failed |
 | --- | ---: | ---: | ---: | ---: |
-| `full_policy` | 100.00% | 100.00% | 0 | 0 |
-| `no_hierarchy` | 100.00% | 100.00% | 0 | 0 |
-| `no_repair` | 100.00% | 100.00% | 0 | 0 |
-| `no_nearby` | 100.00% | 100.00% | 0 | 0 |
-| `osm_only` | 100.00% | 100.00% | 0 | 0 |
+| `full_policy` | `100.00%` | `100.00%` | `0` | `0` |
+| `no_hierarchy` | `100.00%` | `100.00%` | `0` | `0` |
+| `no_repair` | `100.00%` | `100.00%` | `0` | `0` |
+| `no_nearby` | `100.00%` | `100.00%` | `0` | `0` |
+| `osm_only` | `100.00%` | `100.00%` | `0` | `0` |
 
 ---
 
-# 8. Layer Contribution Analysis
+# 9. Layer Contribution Analysis
 
 | Layer | Rescued Samples |
 | --- | ---: |
-| Hierarchy | 0 |
-| Repair | 0 |
-| Nearby | 62 |
-| Total vs OSM-only | 62 |
-
-The hierarchy layer is still required because the runtime dataset ships `hierarchy.json`, but this sampled run did not require hierarchy-only rescue to pass coverage. No repair layer is required.
+| Hierarchy | `0` |
+| Repair | `0` |
+| Nearby | `15` |
+| Total vs OSM-only | `15` |
 
 ---
 
-# 9. Structural Distribution
+# 10. Structural Distribution
 
-The shape distribution is intentionally dominated by `[4,6]`. This is a source-data coverage characteristic, not a build-time exclusion of lower levels.
-
-Build artifacts include level 8 and level 10 polygons, and the runtime hierarchy has parent chains for all emitted level 6, 8, and 10 nodes. However, the union area of lower-level polygons is thin relative to the dataset scope:
-
-| Level | Built Polygon Count | Approx. Scope Coverage |
-| --- | ---: | ---: |
-| 4 | 65 | 100.000% |
-| 6 | 815 | 92.979% |
-| 8 | 679 | 3.904% |
-| 10 | 164 | 0.026% |
-
-Therefore, low `[4,6,8]` and `[4,6,8,10]` hit rates reflect OSM lower-level polygon coverage, not hierarchy incompleteness or build-time filtering. Level 7 local-authority relations are excluded from v1.0.0 because they form an overlapping, mostly disconnected local-government model rather than the territorial `4 -> 6 -> 8 -> 10` hierarchy.
-
-## 9.1 Shape Distribution
+## 10.1 Shape Distribution
 
 | Shape | Count |
 | --- | ---: |
-| `[4,6]` | 40,568 |
-| `[]` | 4,991 |
-| `[4]` | 2,629 |
-| `[4,6,8]` | 1,795 |
-| `[4,8]` | 9 |
-| `[4,6,8,10]` | 8 |
+| `[4,6]` | `7070` |
+| `[4]` | `1607` |
+| `[]` | `997` |
+| `[4,6,8]` | `324` |
+| `[4,8]` | `1` |
+| `[4,8,10]` | `1` |
 
-Empty-shape outcomes correspond to expected out-of-scope or offshore samples:
-
-| Reason | Count |
-| --- | ---: |
-| `empty_shape` | 4,936 |
-| `offshore` | 55 |
-
-## 9.2 Node Source Distribution
+## 10.2 Node Source Distribution
 
 | Source | Count |
 | --- | ---: |
-| `polygon` | 45,002 |
-| `nearby` | 7 |
-| `admin_tree_id` | 2 |
+| `polygon` | `9000` |
+| `nearby` | `3` |
 
----
+## 10.3 Source Mix Distribution
 
-# 10. Level-4 Coverage
-
-* Unique level-4 units hit: `65`
-* Total level-4 hits, all samples: `45,009`
-* Total level-4 hits, inside samples: `45,000`
-
-Top sampled level-4 units by inside hit count:
-
-| Level-4 Unit | Inside Hits |
+| Source Mix | Count |
 | --- | ---: |
-| `จังหวัดเชียงใหม่` | 2,100 |
-| `จังหวัดนครราชสีมา` | 1,963 |
-| `จังหวัดกาญจนบุรี` | 1,768 |
-| `จังหวัดตาก` | 1,554 |
-| `จังหวัดอุบลราชธานี` | 1,441 |
-| `จังหวัดสุราษฎร์ธานี` | 1,252 |
-| `จังหวัดแม่ฮ่องสอน` | 1,224 |
-| `จังหวัดลำปาง` | 1,216 |
-| `จังหวัดชัยภูมิ` | 1,184 |
-| `จังหวัดเพชรบูรณ์` | 1,125 |
+| `polygon` | `9000` |
+| `__none__` | `997` |
+| `nearby` | `3` |
+
+## 10.4 Policy Reason Distribution
+
+| Reason | Count |
+| --- | ---: |
+| `shape_status_map` | `9003` |
+| `empty_shape` | `985` |
+| `offshore` | `12` |
 
 ---
 
-# 11. Boundary Isolation Validation
+# 11. Level-4 Coverage
+
+* Unique level-4 units hit: `77`
+* Total level-4 hits, all samples: `9003`
+* Total level-4 hits, inside samples: `9000`
+
+The sampled run hit all 77 Thailand level-4 units in the rebuilt runtime scope.
+
+---
+
+# 12. Boundary Isolation Validation
 
 Under stress testing with 10% forced out-of-scope samples:
 
@@ -217,26 +218,25 @@ Under stress testing with 10% forced out-of-scope samples:
 
 ---
 
-# 12. Reproducibility
+# 13. Reproducibility
 
 All dataset transformations and evaluation results are reproducible using:
 
-* cadis-dataset-engine commit: `60e55d634557f1104a53d756a4326a6f854225f2`
-* Cadis version: `0.8.11`
+* cadis-dataset-engine commit: `b05d3af01aab376aafb75fad43a31dc51817e587`
+* Cadis version: `0.10.4`
 
-The cadis-dataset-engine build was generated from a clean committed engine tree.
+The staged dataset package was generated without publishing.
 
 ---
 
-# 13. Conclusion
+# 14. Conclusion
 
-The `th.admin v1.0.0` dataset is acceptable for staging under the declared OSM admin-level-4 coverage scope.
+The `th.admin v1.0.1` staged dataset resolves the Suvarnabhumi Airport regression and restores the missing coastal province coverage caused by the previous Natural Earth representative-point filter.
 
-The evaluation shows:
+The staged evaluation shows:
 
 * 100% overall pass rate
 * 100% inside coverage pass rate
 * 100% policy pass rate
-* No repair requirement
-* Full sampled coverage of all 65 level-4 Thailand units
+* Full sampled coverage of all 77 level-4 Thailand units
 * Deterministic Thai/English multilingual naming support

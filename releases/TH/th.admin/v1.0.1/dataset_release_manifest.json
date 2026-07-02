@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "profile": "cadis.dataset.release",
+  "dataset_id": "th.admin",
+  "country_iso": "TH",
+  "country_name": "Thailand",
+  "dataset_version": "v1.0.1",
+  "engine_commit": "b05d3af01aab376aafb75fad43a31dc51817e587",
+  "build_image_digest": "ghcr.io/isemptyc/cadis-dataset-engine@sha256:e5b134214a51368391576e5bbe6b06b403e3acf19d9d91124063caba72f1ae76",
+  "osm_snapshot": {
+    "source": "geofabrik:asia/thailand",
+    "replication_timestamp_utc": "2026-02-09T21:21:43Z",
+    "file_sha256": "5cf9a86630ec28f4c031addca22e65ffa82944c4cceee28bf58c419c7edaf6b8"
+  },
+  "runtime_compat": {
+    "min": "0.8.11",
+    "max_exclusive": "1.0.0"
+  },
+  "checksum_algo": "sha256",
+  "checksums": {
+    "files": {
+      "geometry.ffsf": {
+        "sha256": "3d71aeaf49bed208dbd226b2c7e548503de28c753103ccb6ff24fa6c69703bc1",
+        "size": 1457896
+      },
+      "geometry_meta.json": {
+        "sha256": "9383e887cb190ecdf0e760a43d7ea3518c8bbaa6ce1759c1e95caf2f84378359",
+        "size": 660390
+      },
+      "hierarchy.json": {
+        "sha256": "9a3e0f974169f1558e7d577dbef98b78925bd31ded7fec59999bff26aeebc1f8",
+        "size": 440233
+      },
+      "runtime_policy.json": {
+        "sha256": "a2b14a57592a6b690c8a1a6cb8501ef8be8b8804d09c73553f40c12178770a5d",
+        "size": 2295
+      }
+    }
+  },
+  "generated_at": "2026-07-02T06:13:03Z",
+  "name_schema": "multilingual_v1"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-08T15:26:53Z",
+  "generated_at": "2026-09-03T03:21:19Z",
   "global_datasets": {
     "waterbody.global": {
       "latest": "v1.0.5",
@@ -2255,16 +2255,8 @@
     },
     "CN": {
       "cn.admin": {
-        "latest": "v1.0.3",
-        "manifest": "releases/CN/cn.admin/v1.0.3/dataset_release_manifest.json",
-        "region_archive": {
-          "type": "remote-archive",
-          "region_id": "north-east-asia",
-          "path": "releases/regions/north-east-asia.tar.gz",
-          "sha256": "7a9d1d2fad1ea238226f1fc8657c8b67bd4f36ea761b62b8bc407c2fc661ad76",
-          "size": 10205179,
-          "archive_type": "tar.gz"
-        }
+        "latest": "v1.0.4",
+        "manifest": "releases/CN/cn.admin/v1.0.4/dataset_release_manifest.json"
       }
     },
     "HK": {
